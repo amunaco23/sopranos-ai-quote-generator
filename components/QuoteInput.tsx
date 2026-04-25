@@ -2,13 +2,6 @@
 
 import { useState, useCallback, KeyboardEvent } from 'react';
 
-const PLACEHOLDERS = [
-  "What's eatin' you?",
-  'Talk to me.',
-  "Whatcha thinkin' about?",
-  'Spit it out.',
-];
-
 interface Props {
   onSubmit: (message: string) => void;
   disabled: boolean;
@@ -17,9 +10,6 @@ interface Props {
 export default function QuoteInput({ onSubmit, disabled }: Props) {
   const [value, setValue] = useState('');
   const [shake, setShake] = useState(false);
-  const [placeholder] = useState(
-    () => PLACEHOLDERS[Math.floor(Math.random() * PLACEHOLDERS.length)]
-  );
 
   const handleSubmit = useCallback(() => {
     if (!value.trim()) {
@@ -45,8 +35,9 @@ export default function QuoteInput({ onSubmit, disabled }: Props) {
         onChange={e => setValue(e.target.value)}
         onKeyDown={handleKeyDown}
         disabled={disabled}
-        placeholder={placeholder}
+        placeholder="What's eatin' you?"
         rows={3}
+        suppressHydrationWarning
         className={[
           'w-full bg-[#0D0D0D] text-white placeholder-[#444444]',
           'border border-[#333333] rounded-lg px-4 py-3 text-base',
