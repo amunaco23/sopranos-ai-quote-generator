@@ -21,8 +21,22 @@ function formatQuote(q: Quote): string {
   return `${q.id}. "${q.text}" — ${q.character}${tags}`;
 }
 
+// Find quotes whose tags directly match words in the user's message.
+// These are guaranteed to be included in the response.
+function findTagMatches(userMessage: string, quotes: Quote[]): number[] {
+  const words = userMessage.toLowerCase().split(/\W+/).filter(Boolean);
+  return quotes
+    .filter(q => q.tags?.some(tag => words.some(w => tag === w || tag.includes(w) || w.includes(tag))))
+    .map(q => q.id as number);
+}
+
 export async function matchQuotes(userMessage: string, quotes: Quote[], attempt = 0): Promise<number[]> {
+  const tagMatchIds = findTagMatches(userMessage, quotes);
   const quoteList = quotes.map(formatQuote).join('\n');
+
+  const mandatoryNote = tagMatchIds.length > 0
+    ? `\n\nIMPORTANT: The following quote IDs have tags that directly match the user's input and MUST appear in your response: [${tagMatchIds.join(', ')}]`
+    : '';
 
   const response = await groq.chat.completions.create({
     model: 'llama-3.3-70b-versatile',
@@ -30,7 +44,7 @@ export async function matchQuotes(userMessage: string, quotes: Quote[], attempt 
       { role: 'system', content: SYSTEM_PROMPT },
       {
         role: 'user',
-        content: `User message: "${userMessage}"\n\nQuotes:\n${quoteList}\n\nReturn the IDs of the 2–3 best matching quotes as a JSON array.`,
+        content: `User message: "${userMessage}"\n\nQuotes:\n${quoteList}${mandatoryNote}\n\nReturn the IDs of the 2–3 best matching quotes as a JSON array.`,
       },
     ],
     temperature: 0.3,
