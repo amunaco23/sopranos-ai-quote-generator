@@ -5,1013 +5,1857 @@
       "text": "A grown man made a wager. He lost. He made another one—he lost again. End of story.",
       "character": "Tony Soprano",
       "season": 2,
-      "episode": 6
+      "episode": 6,
+      "tags": [
+        "money"
+      ]
     },
     {
       "id": 2,
       "text": "All this from a slice of gabagool?",
       "character": "Tony Soprano",
       "season": 3,
-      "episode": 3
+      "episode": 3,
+      "tags": [
+        "food"
+      ]
     },
     {
       "id": 3,
       "text": "Alright, we'll find that too.",
       "character": "Tony Soprano",
       "season": 6,
-      "episode": 1
+      "episode": 1,
+      "tags": [
+        "comedy"
+      ]
     },
     {
       "id": 4,
       "text": "Amazing thing about snakes is that they reproduce spontaneously.",
       "character": "Paulie Gualtieri",
       "season": 3,
-      "episode": 9
+      "episode": 9,
+      "tags": [
+        "nature",
+        "animals"
+      ]
     },
     {
       "id": 5,
       "text": "Anthony Jr. might have stumbled onto existentialism. Fucking internet.",
       "character": "Jennifer Melfi / Tony Soprano",
       "season": 2,
-      "episode": 7
+      "episode": 7,
+      "tags": [
+        "technology"
+      ]
     },
     {
       "id": 6,
       "text": "Be a good Catholic for fifteen fucking minutes.",
       "character": "Carmela Soprano",
       "season": 2,
-      "episode": 7
+      "episode": 7,
+      "tags": [
+        "religion"
+      ]
     },
     {
       "id": 7,
       "text": "Better if I never open my mouth.",
       "character": "Livia Soprano",
       "season": 2,
-      "episode": 6
+      "episode": 6,
+      "tags": [
+        "conversation"
+      ]
     },
     {
       "id": 8,
       "text": "Brandy, go sit on a tuffet.",
-      "character": "Tony Soprano"
+      "character": "Tony Soprano",
+      "tags": [
+        "comedy"
+      ]
     },
     {
       "id": 9,
       "text": "Buy land, cause God ain’t making any more of it.",
       "character": "Tony Soprano",
       "season": 3,
-      "episode": 10
+      "episode": 10,
+      "tags": [
+        "religion",
+        "place"
+      ]
     },
     {
       "id": 10,
       "text": "Can’t catch a break.",
-      "character": "Tony Soprano"
+      "character": "Tony Soprano",
+      "tags": [
+        "negativity"
+      ]
     },
     {
       "id": 11,
       "text": "Carmela could you please shut the door!",
       "character": "Tony Soprano",
       "season": 4,
-      "episode": 5
+      "episode": 5,
+      "tags": [
+        "comedy"
+      ]
     },
     {
       "id": 12,
       "text": "Carmela: kiss my ass.",
-      "character": "Carmela Soprano"
+      "character": "Carmela Soprano",
+      "tags": [
+        "insult",
+        "crude humor"
+      ]
     },
     {
       "id": 13,
       "text": "Cazzata Malanga.",
       "character": "Junior Soprano",
       "season": 6,
-      "episode": 1
+      "episode": 1,
+      "tags": [
+        "comedy"
+      ]
     },
     {
       "id": 14,
       "text": "Certain aspects of show business and our thing.",
       "character": "Silvio Dante",
       "season": 4,
-      "episode": 1
+      "episode": 1,
+      "tags": [
+        "power",
+        "respect",
+        "business",
+        "status"
+      ]
     },
     {
       "id": 15,
       "text": "Circle-jerk of life. Where's the dignity?",
       "character": "Tony Soprano",
       "season": 6,
-      "episode": 1
+      "episode": 1,
+      "tags": [
+        "power",
+        "respect",
+        "comedy"
+      ]
     },
     {
       "id": 16,
       "text": "Depression is rage turned inwards.",
       "character": "Dr. Jennifer Melfi",
       "season": 5,
-      "episode": 10
+      "episode": 10,
+      "tags": [
+        "depression",
+        "mental health"
+      ]
     },
     {
       "id": 17,
       "text": "Don't you love me?",
-      "character": "Tony Soprano"
+      "character": "Tony Soprano",
+      "tags": [
+        "love"
+      ]
     },
     {
       "id": 18,
       "text": "Even a broken clock is right twice a day.",
-      "character": "Tony Soprano"
+      "character": "Tony Soprano",
+      "tags": [
+        "comedy"
+      ]
     },
     {
       "id": 19,
       "text": "Everybody knows you’ve been the biggest fucking cooze-hound around for the past 4-5 years. Your midlife crisis, you’d fuck a catcher’s mitt.",
       "character": "Christopher Moltisanti",
       "season": 5,
-      "episode": 5
+      "episode": 5,
+      "tags": [
+        "insult",
+        "crude humor",
+        "sports",
+        "sex"
+      ]
     },
     {
       "id": 20,
       "text": "Everything we see and experience is not all there is.",
-      "character": "Tony Soprano"
+      "character": "Tony Soprano",
+      "tags": [
+        "comedy"
+      ]
     },
     {
       "id": 21,
       "text": "Fear knocked on the door. Faith answered. There was no one there.",
-      "character": "Christopher Moltisanti"
+      "character": "Christopher Moltisanti",
+      "tags": [
+        "religion"
+      ]
     },
     {
       "id": 22,
       "text": "Focus on the good times.",
       "character": "Tony Soprano",
       "season": 6,
-      "episode": 21
+      "episode": 21,
+      "tags": [
+        "optimism",
+        "self-help"
+      ]
     },
     {
       "id": 23,
       "text": "Fuck him. I hope that parasite eats his asshole out.",
       "character": "Christopher Moltisanti",
       "season": 6,
-      "episode": 1
+      "episode": 1,
+      "tags": [
+        "optimism",
+        "self-help",
+        "insult",
+        "crude humor",
+        "nature"
+      ]
     },
     {
       "id": 24,
       "text": "Fuck you want, a boutonniere?",
       "character": "Junior Soprano",
       "season": 6,
-      "episode": 21
+      "episode": 21,
+      "tags": [
+        "insult",
+        "crude humor",
+        "clothes"
+      ]
     },
     {
       "id": 25,
       "text": "Fucking depressing.",
-      "character": "Paulie Gualtieri"
+      "character": "Paulie Gualtieri",
+      "tags": [
+        "negativity"
+      ]
     },
     {
       "id": 26,
       "text": "Get your hearing checked.",
-      "character": "Paulie Gualtieri"
+      "character": "Paulie Gualtieri",
+      "tags": [
+        "health"
+      ]
     },
     {
       "id": 27,
       "text": "Go shit in your hat.",
       "character": "Junior Soprano",
       "season": 5,
-      "episode": 3
+      "episode": 3,
+      "tags": [
+        "insult",
+        "crude humor",
+        "clothes"
+      ]
     },
     {
       "id": 28,
       "text": "Goddamn motherfucking orange peel beef!",
       "character": "Tony Soprano",
       "season": 4,
-      "episode": 13
+      "episode": 13,
+      "tags": [
+        "food",
+        "comedy"
+      ]
     },
     {
       "id": 29,
       "text": "Grab a sandwich and we’ll talk later… I mean, you’re staying over, right?",
       "character": "Tony Soprano",
       "season": 1,
-      "episode": 12
+      "episode": 12,
+      "tags": [
+        "food",
+        "conversation"
+      ]
     },
     {
       "id": 30,
       "text": "Green Grove is a retirement community!",
       "character": "Tony Soprano",
       "season": 1,
-      "episode": 1
+      "episode": 1,
+      "tags": [
+        "place"
+      ]
     },
     {
       "id": 31,
       "text": "Harry Winston, baby! More carrots than Bugs Bunny.",
       "character": "Christopher Moltisanti",
       "season": 4,
-      "episode": 2
+      "episode": 2,
+      "tags": [
+        "food",
+        "pop culture",
+        "history"
+      ]
     },
     {
       "id": 32,
       "text": "He’s an emotional wreck, Tony! So seeing a pair of tits is gonna send him over the edge?",
       "character": "Carmela / Tony Soprano",
       "season": 6,
-      "episode": 17
+      "episode": 17,
+      "tags": [
+        "depression",
+        "mental health",
+        "insult",
+        "crude humor",
+        "sex"
+      ]
     },
     {
       "id": 33,
       "text": "His brother was worse!",
       "character": "Hesh Rabkin",
       "season": 3,
-      "episode": 2
+      "episode": 2,
+      "tags": [
+        "comedy"
+      ]
     },
     {
       "id": 34,
       "text": "Hope comes in many forms.",
       "character": "Dr. Jennifer Melfi",
       "season": 1,
-      "episode": 1
+      "episode": 1,
+      "tags": [
+        "optimism",
+        "self-help"
+      ]
     },
     {
       "id": 35,
       "text": "I am here! I have things to say!",
       "character": "Carmela Soprano",
       "season": 4,
-      "episode": 13
+      "episode": 13,
+      "tags": [
+        "comedy"
+      ]
     },
     {
       "id": 36,
       "text": "I been dreaming of that fucking lo mein all the way the fuck over here. Now, who came in here and ate my shit?",
       "character": "Tony Soprano",
       "season": 3,
-      "episode": 13
+      "episode": 13,
+      "tags": [
+        "food",
+        "insult",
+        "crude humor"
+      ]
     },
     {
       "id": 37,
       "text": "I can’t find Pussy anywhere! Nobody knows anything!",
       "character": "Tony Soprano",
       "season": 1,
-      "episode": 11
+      "episode": 11,
+      "tags": [
+        "insult",
+        "crude humor",
+        "sex"
+      ]
     },
     {
       "id": 38,
       "text": "I'd rather they hold a pillow over my face.",
       "character": "Tony Soprano",
       "season": 6,
-      "episode": 1
+      "episode": 1,
+      "tags": [
+        "health"
+      ]
     },
     {
       "id": 39,
       "text": "I don’t care how close you are: in the end, your friends are gonna let you down. Family. They’re the only ones you can depend on.",
-      "character": "Tony Soprano"
+      "character": "Tony Soprano",
+      "tags": [
+        "family",
+        "trust",
+        "negativity"
+      ]
     },
     {
       "id": 40,
       "text": "I find I have to be the sad clown: laughing on the outside, crying on the inside.",
       "character": "Tony Soprano",
       "season": 1,
-      "episode": 1
+      "episode": 1,
+      "tags": [
+        "depression",
+        "mental health"
+      ]
     },
     {
       "id": 41,
       "text": "I fuckin’ love cheese at my feet! I stick motherfucking Provolone in my socks at night so they’ll smell your sister’s crotch in the morning!",
       "character": "Silvio Dante",
       "season": 2,
-      "episode": 6
+      "episode": 6,
+      "tags": [
+        "food",
+        "family",
+        "insult",
+        "crude humor",
+        "love"
+      ]
     },
     {
       "id": 42,
       "text": "I fucking knew it! No you didn’t fucking know it! I just told you!",
       "character": "Mikey Palmice / Junior Soprano",
       "season": 1,
-      "episode": 9
+      "episode": 9,
+      "tags": [
+        "trust",
+        "negativity"
+      ]
     },
     {
       "id": 43,
       "text": "I GET IT!!!",
       "character": "Tony Soprano",
       "season": 6,
-      "episode": 18
+      "episode": 18,
+      "tags": [
+        "comedy"
+      ]
     },
     {
       "id": 44,
       "text": "I got fuckin’ Johnnie Cochran right here for you!",
       "character": "Big Pussy Bonpensiero",
       "season": 1,
-      "episode": 11
+      "episode": 11,
+      "tags": [
+        "pop culture",
+        "history"
+      ]
     },
     {
       "id": 45,
       "text": "I gotta stand here being threatened?",
-      "character": "Tony Soprano"
+      "character": "Tony Soprano",
+      "tags": [
+        "trust",
+        "negativity",
+        "violence"
+      ]
     },
     {
       "id": 46,
       "text": "I guess you could call that a dick.",
       "character": "Paulie Gualtieri",
       "season": 3,
-      "episode": 7
+      "episode": 7,
+      "tags": [
+        "insult",
+        "crude humor",
+        "sex"
+      ]
     },
     {
       "id": 47,
       "text": "I had a banana in there.",
       "character": "Junior Soprano",
       "season": 6,
-      "episode": 1
+      "episode": 1,
+      "tags": [
+        "food",
+        "comedy"
+      ]
     },
     {
       "id": 48,
       "text": "I like people who don’t need everyone to like them.",
-      "character": "Tony Soprano"
+      "character": "Tony Soprano",
+      "tags": [
+        "comedy"
+      ]
     },
     {
       "id": 49,
       "text": "I'll tell ya, one of the best things about droppin' the weight? All new wardrobe. I keep it up I'm gonna need Clothing Anonymous.",
       "character": "Vito Spatafore",
       "season": 6,
-      "episode": 1
+      "episode": 1,
+      "tags": [
+        "clothes",
+        "health"
+      ]
     },
     {
       "id": 50,
       "text": "I lost my uppers.",
       "character": "Junior Soprano",
       "season": 6,
-      "episode": 1
+      "episode": 1,
+      "tags": [
+        "clothes"
+      ]
     },
     {
       "id": 51,
       "text": "I’m 46 years old. Who am I? Where am I going?",
       "character": "Tony Soprano",
       "season": 6,
-      "episode": 2
+      "episode": 2,
+      "tags": [
+        "confusion",
+        "comedy"
+      ]
     },
     {
       "id": 52,
       "text": "I’m like King Midas in reverse. Everything I touch turns to shit.",
       "character": "Tony Soprano",
       "season": 1,
-      "episode": 1
+      "episode": 1,
+      "tags": [
+        "pop culture",
+        "history",
+        "insult",
+        "crude humor",
+        "negativity"
+      ]
     },
     {
       "id": 53,
       "text": "I’m not saying there’s nothing out there, but to not live your life? What the fuck are you gonna do?",
       "character": "Tony Soprano",
       "season": 6,
-      "episode": 21
+      "episode": 21,
+      "tags": [
+        "insult",
+        "crude humor",
+        "negativity"
+      ]
     },
     {
       "id": 54,
       "text": "I presume you got a family. I’m a family man myself, and I gotta tell you I’d rather take two shots to the back of the head than not be able to feed my family.",
-      "character": "Tony Soprano"
+      "character": "Tony Soprano",
+      "tags": [
+        "family",
+        "money"
+      ]
     },
     {
       "id": 55,
       "text": "I’ve fucking had it. With what? Everything.",
       "character": "Junior / Tony Soprano",
       "season": 4,
-      "episode": 11
+      "episode": 11,
+      "tags": [
+        "confusion",
+        "comedy"
+      ]
     },
     {
       "id": 56,
       "text": "I wish the Lord would take me now.",
       "character": "Livia Soprano",
       "season": 1,
-      "episode": 1
+      "episode": 1,
+      "tags": [
+        "religion"
+      ]
     },
     {
       "id": 57,
       "text": "If you can quote the rules, then you can obey them.",
       "character": "Tony Soprano",
       "season": 4,
-      "episode": 6
+      "episode": 6,
+      "tags": [
+        "power",
+        "respect",
+        "duty"
+      ]
     },
     {
       "id": 58,
       "text": "If you’re going to lie to me.",
       "character": "Junior Soprano",
       "season": 3,
-      "episode": 7
+      "episode": 7,
+      "tags": [
+        "trust",
+        "negativity"
+      ]
     },
     {
       "id": 59,
       "text": "In my thoughts, I use the technique of positive visualization.",
       "character": "Christopher Moltisanti",
       "season": 1,
-      "episode": 8
+      "episode": 8,
+      "tags": [
+        "optimism",
+        "self-help",
+        "conversation"
+      ]
     },
     {
       "id": 60,
       "text": "In my thoughts, I used a technique of positive visualization. How come I always feel undermined?",
       "character": "Christopher Moltisanti",
       "season": 1,
-      "episode": 8
+      "episode": 8,
+      "tags": [
+        "optimism",
+        "self-help",
+        "trust",
+        "negativity",
+        "conversation"
+      ]
     },
     {
       "id": 61,
       "text": "Is everyone in my life fuckin’ bananas?",
-      "character": "Tony Soprano"
+      "character": "Tony Soprano",
+      "tags": [
+        "confusion",
+        "comedy"
+      ]
     },
     {
       "id": 62,
       "text": "Is everything about everybody really about their mothers?",
       "character": "Tony Soprano",
       "season": 4,
-      "episode": 8
+      "episode": 8,
+      "tags": [
+        "confusion",
+        "comedy"
+      ]
     },
     {
       "id": 63,
       "text": "Isaac Newton invented gravity ’cause some asshole hit him with an apple!",
       "character": "Christopher Moltisanti",
       "season": 6,
-      "episode": 17
+      "episode": 17,
+      "tags": [
+        "pop culture",
+        "history",
+        "insult",
+        "crude humor",
+        "health"
+      ]
     },
     {
       "id": 64,
       "text": "It'll take more than the Jamaican bobsled team with cap guns to stop your old man.",
-      "character": "Paulie Gualtieri"
+      "character": "Paulie Gualtieri",
+      "tags": [
+        "sports"
+      ]
     },
     {
       "id": 65,
       "text": "It’s like, not only does he shit on our heads, we’re supposed to say thanks for the hat.",
-      "character": "Brendan Filone"
+      "character": "Brendan Filone",
+      "tags": [
+        "insult",
+        "crude humor",
+        "clothes"
+      ]
     },
     {
       "id": 66,
       "text": "It’s not a nursing home! It’s a retirement community.",
       "character": "Tony Soprano",
       "season": 1,
-      "episode": 1
+      "episode": 1,
+      "tags": [
+        "place"
+      ]
     },
     {
       "id": 67,
       "text": "It's probably salespeople.",
       "character": "Tony Soprano",
       "season": 6,
-      "episode": 1
+      "episode": 1,
+      "tags": [
+        "technology"
+      ]
     },
     {
       "id": 68,
       "text": "It's too bad they don't have a telethon for fuckface-itis, huh?",
-      "character": "Tony Soprano"
+      "character": "Tony Soprano",
+      "tags": [
+        "technology",
+        "comedy"
+      ]
     },
     {
       "id": 69,
       "text": "Just when I thought I was out, they pull me back in.",
       "character": "Silvio Dante",
       "season": 3,
-      "episode": 10
+      "episode": 10,
+      "tags": [
+        "business",
+        "status"
+      ]
     },
     {
       "id": 70,
       "text": "Kinda feel bad for the guy.",
       "character": "Tony Soprano",
       "season": 6,
-      "episode": 1
+      "episode": 1,
+      "tags": [
+        "comedy"
+      ]
     },
     {
       "id": 71,
       "text": "Let me tell you a couple of three things.",
       "character": "Phil Leotardo",
       "season": 6,
-      "episode": 14
+      "episode": 14,
+      "tags": [
+        "comedy"
+      ]
     },
     {
       "id": 72,
       "text": "Let the Pope live with him.",
       "character": "Angie Bompensiero",
       "season": 2,
-      "episode": 4
+      "episode": 4,
+      "tags": [
+        "religion"
+      ]
     },
     {
       "id": 73,
       "text": "Look at this guy. Members Only? How long you been wearin’ that?",
       "character": "Vito Spatafore",
       "season": 6,
-      "episode": 1
+      "episode": 1,
+      "tags": [
+        "confusion",
+        "comedy"
+      ]
     },
     {
       "id": 74,
       "text": "Marty! Kundun, I liked it!",
       "character": "Christopher Moltisanti",
       "season": 2,
-      "episode": 13
+      "episode": 13,
+      "tags": [
+        "pop culture",
+        "history"
+      ]
     },
     {
       "id": 75,
       "text": "Mothafucka.",
       "character": "Artie Bucco",
       "season": 6,
-      "episode": 7
+      "episode": 7,
+      "tags": [
+        "comedy"
+      ]
     },
     {
       "id": 76,
       "text": "Mother of Christ, is this a woman thing? You ask me how I feel, I tell you how I feel, and now you’re gonna torture me with it.",
       "character": "Tony Soprano",
       "season": 2,
-      "episode": 6
+      "episode": 6,
+      "tags": [
+        "family"
+      ]
     },
     {
       "id": 77,
       "text": "My advice, we go get our joints copped, and tomorra, the words’ll come blowin’ out your ass.",
       "character": "Paulie Gualtieri",
       "season": 1,
-      "episode": 8
+      "episode": 8,
+      "tags": [
+        "insult",
+        "crude humor"
+      ]
     },
     {
       "id": 78,
       "text": "My uterus got pierced. Both of them?",
       "character": "Adriana / Christopher",
       "season": 4,
-      "episode": 7
+      "episode": 7,
+      "tags": [
+        "sex"
+      ]
     },
     {
       "id": 79,
       "text": "Oh. Finally. Startin' to grow mushrooms out my ass.",
       "character": "Vito Spatafore",
       "season": 6,
-      "episode": 1
+      "episode": 1,
+      "tags": [
+        "insult",
+        "crude humor",
+        "nature",
+        "animals"
+      ]
     },
     {
       "id": 80,
       "text": "Oh, I didn’t mean to verge.",
       "character": "Tony Soprano",
       "season": 1,
-      "episode": 5
+      "episode": 5,
+      "tags": [
+        "comedy"
+      ]
     },
     {
       "id": 81,
       "text": "Oh, poor baby. What do you want, a Whitman’s Sampler?",
-      "character": "Tony Soprano"
+      "character": "Tony Soprano",
+      "tags": [
+        "negativity"
+      ]
     },
     {
       "id": 82,
       "text": "OHHH I HAD NO IDEA I WAS SO TENSE!",
       "character": "Paulie Gualtieri",
       "season": 5,
-      "episode": 2
+      "episode": 2,
+      "tags": [
+        "comedy"
+      ]
     },
     {
       "id": 83,
       "text": "Other people’s definitions of you, sometimes they’re more about making themselves feel better. You gotta define yourself.",
       "character": "Christopher Moltisanti",
       "season": 5,
-      "episode": 6
+      "episode": 6,
+      "tags": [
+        "optimism",
+        "self-help"
+      ]
     },
     {
       "id": 84,
       "text": "People only see what you allow them to see.",
       "character": "Dr. Jennifer Melfi",
       "season": 6,
-      "episode": 5
+      "episode": 5,
+      "tags": [
+        "comedy"
+      ]
     },
     {
       "id": 85,
       "text": "Phil treats nickels like manhole covers.",
       "character": "Johnny Sack",
       "season": 5,
-      "episode": 11
+      "episode": 11,
+      "tags": [
+        "money"
+      ]
     },
     {
       "id": 86,
       "text": "Poison ivy? He wants to know if it still itches.",
       "character": "Psychic",
       "season": 2,
-      "episode": 9
+      "episode": 9,
+      "tags": [
+        "nature",
+        "animals"
+      ]
     },
     {
       "id": 87,
       "text": "Pours you a drink with one hand. Judges you with the other if you take it.",
-      "character": "Christopher Moltisanti"
+      "character": "Christopher Moltisanti",
+      "tags": [
+        "trust",
+        "negativity"
+      ]
     },
     {
       "id": 88,
       "text": "Probably upstairs.",
       "character": "Tony Soprano",
       "season": 6,
-      "episode": 1
+      "episode": 1,
+      "tags": [
+        "comedy"
+      ]
     },
     {
       "id": 89,
       "text": "Puss… I loved that cocksucker like a brother. And he fucked me in the ass.",
       "character": "Paulie Gualtieri",
       "season": 3,
-      "episode": 10
+      "episode": 10,
+      "tags": [
+        "insult",
+        "crude humor",
+        "love"
+      ]
     },
     {
       "id": 90,
       "text": "Rage, Anthony, is a big loud flaming distraction, from feelings that are even more frightening.",
       "character": "Dr. Jennifer Melfi",
       "season": 2,
-      "episode": 13
+      "episode": 13,
+      "tags": [
+        "depression",
+        "mental health"
+      ]
     },
     {
       "id": 91,
       "text": "Remember when is the lowest form of conversation.",
       "character": "Tony Soprano",
       "season": 6,
-      "episode": 15
+      "episode": 15,
+      "tags": [
+        "conversation",
+        "negativity"
+      ]
     },
     {
       "id": 92,
       "text": "So if you love me, stir my eggs.",
       "character": "Christopher Moltisanti",
       "season": 4,
-      "episode": 5
+      "episode": 5,
+      "tags": [
+        "food",
+        "love"
+      ]
     },
     {
       "id": 93,
       "text": "Some day soon, you’re gonna have families of your own. And if you’re lucky, you’ll remember the little moments — like this — that were good.",
       "character": "Tony Soprano",
       "season": 1,
-      "episode": 13
+      "episode": 13,
+      "tags": [
+        "comedy"
+      ]
     },
     {
       "id": 94,
       "text": "Some people take pleasure in the simple doing of things.",
-      "character": "Dr. Jennifer Melfi"
+      "character": "Dr. Jennifer Melfi",
+      "tags": [
+        "optimism",
+        "self-help"
+      ]
     },
     {
       "id": 95,
       "text": "Sometimes it’s important to give people the illusion of being in control.",
       "character": "Tony Soprano",
       "season": 5,
-      "episode": 12
+      "episode": 12,
+      "tags": [
+        "power",
+        "respect",
+        "trust",
+        "negativity"
+      ]
     },
     {
       "id": 96,
       "text": "Sometimes we’re all hypocrites.",
-      "character": "Meadow Soprano"
+      "character": "Meadow Soprano",
+      "tags": [
+        "trust",
+        "negativity"
+      ]
     },
     {
       "id": 97,
       "text": "Sometimes what happens here is like taking a shit.",
       "character": "Tony Soprano",
       "season": 5,
-      "episode": 9
+      "episode": 9,
+      "tags": [
+        "insult",
+        "crude humor"
+      ]
     },
     {
       "id": 98,
       "text": "Sucks to be you. There’s more where that came from!",
       "character": "A.J. / Tony Soprano",
       "season": 1,
-      "episode": 7
+      "episode": 7,
+      "tags": [
+        "comedy"
+      ]
     },
     {
       "id": 99,
       "text": "Sun Tzu, you fucking ass-kiss!",
       "character": "Silvio Dante",
       "season": 3,
-      "episode": 8
+      "episode": 8,
+      "tags": [
+        "pop culture",
+        "history",
+        "insult",
+        "crude humor"
+      ]
     },
     {
       "id": 100,
       "text": "Swingers! He can suck my dick! It swings, too!",
       "character": "Christopher Moltisanti",
       "season": 2,
-      "episode": 7
+      "episode": 7,
+      "tags": [
+        "insult",
+        "crude humor",
+        "sex"
+      ]
     },
     {
       "id": 101,
       "text": "Teddy Roosevelt once gave an entire speech with a bullet lodged in his chest. Some things are just a matter of duty.",
       "character": "Junior Soprano",
       "season": 3,
-      "episode": 7
+      "episode": 7,
+      "tags": [
+        "power",
+        "respect",
+        "pop culture",
+        "history",
+        "duty"
+      ]
     },
     {
       "id": 102,
       "text": "Ten years you thought about Janice? There are men in the can better-looking than my sister.",
       "character": "Tony Soprano",
       "season": 2,
-      "episode": 5
+      "episode": 5,
+      "tags": [
+        "family"
+      ]
     },
     {
       "id": 103,
       "text": "The belt was his favorite child development tool.",
-      "character": "Tony Soprano"
+      "character": "Tony Soprano",
+      "tags": [
+        "family"
+      ]
     },
     {
       "id": 104,
       "text": "The center cannot hold. The falcon cannot hear the falconer. What the fuck are you talking about?",
       "character": "Jennifer Melfi / Tony Soprano",
       "season": 5,
-      "episode": 10
+      "episode": 10,
+      "tags": [
+        "insult",
+        "crude humor",
+        "nature",
+        "animals"
+      ]
     },
     {
       "id": 105,
       "text": "The fuck I did. I grabbed a pillow but it was — just to keep my hands occupied.",
       "character": "Tony Soprano",
       "season": 6,
-      "episode": 1
+      "episode": 1,
+      "tags": [
+        "insult",
+        "crude humor",
+        "health"
+      ]
     },
     {
       "id": 106,
       "text": "The only thing I ever found in the street was my first wife.",
-      "character": "Eugene Pontecorvo"
+      "character": "Eugene Pontecorvo",
+      "tags": [
+        "family",
+        "place"
+      ]
     },
     {
       "id": 107,
       "text": "The phone keeps ringing, and then they hang up.",
       "character": "Junior Soprano",
       "season": 6,
-      "episode": 1
+      "episode": 1,
+      "tags": [
+        "technology"
+      ]
     },
     {
       "id": 108,
       "text": "The sacred and the propane.",
       "character": "Little Carmine Lupertazzi",
       "season": 6,
-      "episode": 14
+      "episode": 14,
+      "tags": [
+        "religion",
+        "comedy"
+      ]
     },
     {
       "id": 109,
       "text": "The Soprano family has always been a little pushy. Family? They're a glorified crew!",
       "character": "Little Carmine / Carmine Lupertazzi",
       "season": 4,
-      "episode": 12
+      "episode": 12,
+      "tags": [
+        "family",
+        "power",
+        "respect"
+      ]
     },
     {
       "id": 110,
       "text": "There are no scraps in my scrapbook.",
       "character": "Phil Leotardo",
       "season": 6,
-      "episode": 14
+      "episode": 14,
+      "tags": [
+        "business",
+        "status"
+      ]
     },
     {
       "id": 111,
       "text": "There's an image.",
       "character": "Phil Leotardo",
       "season": 6,
-      "episode": 1
+      "episode": 1,
+      "tags": [
+        "business",
+        "status"
+      ]
     },
     {
       "id": 112,
       "text": "There’s no geographical solution to an emotional problem.",
       "character": "Tony Soprano",
       "season": 2,
-      "episode": 13
+      "episode": 13,
+      "tags": [
+        "depression",
+        "mental health",
+        "place"
+      ]
     },
     {
       "id": 113,
       "text": "They’re dropping like fucking flies. It’s all that charcoal-broiled meat you people ate. Nobody told us till the 80s!",
       "character": "Junior / Tony Soprano",
       "season": 3,
-      "episode": 2
+      "episode": 2,
+      "tags": [
+        "food"
+      ]
     },
     {
       "id": 114,
       "text": "Those who want respect, give respect.",
       "character": "Tony Soprano",
       "season": 2,
-      "episode": 12
+      "episode": 12,
+      "tags": [
+        "power",
+        "respect"
+      ]
     },
     {
       "id": 115,
       "text": "Tony Soprano, Original G. Yeah, whatever.",
       "character": "Da Lux / Tony Soprano",
       "season": 6,
-      "episode": 4
+      "episode": 4,
+      "tags": [
+        "business",
+        "status"
+      ]
     },
     {
       "id": 116,
       "text": "Trees, ducks. What the fuck are you, Ranger Rick?",
       "character": "Tony Soprano",
       "season": 1,
-      "episode": 1
+      "episode": 1,
+      "tags": [
+        "pop culture",
+        "history",
+        "insult",
+        "crude humor",
+        "nature"
+      ]
     },
     {
       "id": 117,
       "text": "We go way back to when Moses wore short pants.",
       "character": "Junior Soprano",
       "season": 1,
-      "episode": 13
+      "episode": 13,
+      "tags": [
+        "religion",
+        "comedy"
+      ]
     },
     {
       "id": 118,
       "text": "We’re soldiers. Soldiers don’t go to hell.",
       "character": "Tony Soprano",
       "season": 2,
-      "episode": 9
+      "episode": 9,
+      "tags": [
+        "power",
+        "respect",
+        "religion",
+        "duty",
+        "violence"
+      ]
     },
     {
       "id": 119,
       "text": "We worry so much sometimes it feels like that’s all we do. But in the end it gets washed away. All of it, just washed away.",
       "character": "Carmela Soprano",
       "season": 6,
-      "episode": 11
+      "episode": 11,
+      "tags": [
+        "depression",
+        "mental health",
+        "negativity"
+      ]
     },
     {
       "id": 120,
       "text": "Well in the future I ask that you extend to me the same courtesy as a crack addict.",
       "character": "Dr. Jennifer Melfi",
       "season": 4,
-      "episode": 7
+      "episode": 7,
+      "tags": [
+        "health",
+        "conversation"
+      ]
     },
     {
       "id": 121,
       "text": "What do I find in a pork store? A bunch of guys beating their meat.",
       "character": "Tony Blundetto",
       "season": 5,
-      "episode": 3
+      "episode": 3,
+      "tags": [
+        "food"
+      ]
     },
     {
       "id": 122,
       "text": "What do they eat, tabooli?",
       "character": "Christopher Moltisanti",
       "season": 6,
-      "episode": 1
+      "episode": 1,
+      "tags": [
+        "food"
+      ]
     },
     {
       "id": 123,
       "text": "What do you wanna talk about? Fucking Dick Barone. Well as long as the two of you are happy.",
       "character": "Tony Soprano / Richie Aprile",
       "season": 2,
-      "episode": 10
+      "episode": 10,
+      "tags": [
+        "insult",
+        "crude humor",
+        "conversation",
+        "sex"
+      ]
     },
     {
       "id": 124,
       "text": "What kind of person can I be, where his own mother wants him dead?",
       "character": "Tony Soprano",
       "season": 1,
-      "episode": 13
+      "episode": 13,
+      "tags": [
+        "family",
+        "violence"
+      ]
     },
     {
       "id": 125,
       "text": "What, your father never cut off anybody’s pinky?",
       "character": "Tony Soprano",
       "season": 3,
-      "episode": 3
+      "episode": 3,
+      "tags": [
+        "family"
+      ]
     },
     {
       "id": 126,
       "text": "Whatever you do, do not engage Silvio in conversation.",
-      "character": "Christopher Moltisanti"
+      "character": "Christopher Moltisanti",
+      "tags": [
+        "conversation"
+      ]
     },
     {
       "id": 127,
       "text": "When my time comes, tell me: will I stand up?",
       "character": "Paulie Gualtieri",
       "season": 6,
-      "episode": 15
+      "episode": 15,
+      "tags": [
+        "confusion",
+        "comedy"
+      ]
     },
     {
       "id": 128,
       "text": "Where'd they get this bread? The bread museum?",
       "character": "Silvio Dante",
       "season": 6,
-      "episode": 1
+      "episode": 1,
+      "tags": [
+        "food",
+        "comedy"
+      ]
     },
     {
       "id": 129,
       "text": "Who am I, Mark Fuhrman over here?",
       "character": "Christopher Moltisanti",
       "season": 1,
-      "episode": 8
+      "episode": 8,
+      "tags": [
+        "pop culture",
+        "history"
+      ]
     },
     {
       "id": 130,
       "text": "Who's welfare check you gotta cash to get a burger here?",
-      "character": "Christopher Moltisanti"
+      "character": "Christopher Moltisanti",
+      "tags": [
+        "food",
+        "money"
+      ]
     },
     {
       "id": 131,
       "text": "Why'd they send you over, I'm lookin for a burger, not converted rice.",
-      "character": "Christopher Moltisanti"
+      "character": "Christopher Moltisanti",
+      "tags": [
+        "food",
+        "comedy"
+      ]
     },
     {
       "id": 132,
       "text": "Wonderful, I don't go down enough. That's not what I heard.",
-      "character": "Junior Soprano / Carmela Soprano"
+      "character": "Junior Soprano / Carmela Soprano",
+      "tags": [
+        "sex"
+      ]
     },
     {
       "id": 133,
       "text": "You don’t have to love me, but you will respect me.",
       "character": "Tony Soprano",
       "season": 3,
-      "episode": 12
+      "episode": 12,
+      "tags": [
+        "power",
+        "respect",
+        "love"
+      ]
     },
     {
       "id": 134,
       "text": "You don’t understand.",
       "character": "Tony Soprano",
       "season": 3,
-      "episode": 13
+      "episode": 13,
+      "tags": [
+        "comedy"
+      ]
     },
     {
       "id": 135,
       "text": "You got any idea what my life would be worth if certain people found out I checked into a laughing academy?",
       "character": "Tony Soprano",
       "season": 1,
-      "episode": 12
+      "episode": 12,
+      "tags": [
+        "confusion",
+        "comedy"
+      ]
     },
     {
       "id": 136,
       "text": "You got any thoughts? What else do I have left?",
       "character": "Tony Soprano / Junior Soprano",
       "season": 3,
-      "episode": 8
+      "episode": 8,
+      "tags": [
+        "conversation"
+      ]
     },
     {
       "id": 137,
       "text": "You gotta bee onna your hat.",
       "character": "Furio Giunta",
       "season": 2,
-      "episode": 4
+      "episode": 4,
+      "tags": [
+        "nature",
+        "animals",
+        "clothes",
+        "comedy"
+      ]
     },
     {
       "id": 138,
       "text": "You hear that, T? I asked if he remembers his first blowjob. He says ya, so I says how long did it take the guy to cum? Hehehe.",
       "character": "Paulie Gualtieri",
       "season": 2,
-      "episode": 3
+      "episode": 3,
+      "tags": [
+        "insult",
+        "crude humor",
+        "sex"
+      ]
     },
     {
       "id": 139,
       "text": "You’ll never leave your wife. She might leave you, but you’ll never leave her.",
       "character": "Dr. Jennifer Melfi",
       "season": 3,
-      "episode": 9
+      "episode": 9,
+      "tags": [
+        "family"
+      ]
     },
     {
       "id": 140,
       "text": "You motherfucker! You shot me in my foot! It happens.",
       "character": "Bakery worker / Christopher Moltisanti",
       "season": 1,
-      "episode": 8
+      "episode": 8,
+      "tags": [
+        "violence"
+      ]
     },
     {
       "id": 141,
       "text": "You’re both very angry. Yeah, you must’ve been at the top of your fucking class.",
       "character": "Jennifer Melfi / Tony Soprano",
       "season": 3,
-      "episode": 5
+      "episode": 5,
+      "tags": [
+        "depression",
+        "mental health"
+      ]
     },
     {
       "id": 142,
       "text": "You’re five fucking time-zones behind your own ass.",
       "character": "Silvio Dante",
       "season": 1,
-      "episode": 9
+      "episode": 9,
+      "tags": [
+        "insult",
+        "crude humor"
+      ]
     },
     {
       "id": 143,
       "text": "You're flexinnnng",
-      "character": "Richie Aprile"
+      "character": "Richie Aprile",
+      "tags": [
+        "comedy"
+      ]
     },
     {
       "id": 144,
       "text": "You’re looking at them, asshole.",
-      "character": "Tony Soprano"
+      "character": "Tony Soprano",
+      "tags": [
+        "insult",
+        "crude humor"
+      ]
     },
     {
       "id": 145,
       "text": "You’re not gonna believe this. He killed 16 Czechoslovakians. Guy was an interior decorator. His house looked like shit.",
       "character": "Paulie / Christopher",
       "season": 3,
-      "episode": 11
+      "episode": 11,
+      "tags": [
+        "insult",
+        "crude humor",
+        "violence",
+        "comedy"
+      ]
     },
     {
       "id": 146,
       "text": "You say sign, I sign. You tell me to take a crap on the deck of the Queen Mary, an hour later they’re hosing it down with disinfectant.",
       "character": "Junior Soprano",
       "season": 3,
-      "episode": 7
+      "episode": 7,
+      "tags": [
+        "comedy"
+      ]
     },
     {
       "id": 147,
       "text": "You see I never could please my mother.",
       "character": "Tony Soprano",
       "season": 6,
-      "episode": 21
+      "episode": 21,
+      "tags": [
+        "family"
+      ]
     },
     {
       "id": 148,
       "text": "You shoulda called your sponsor before you bought that jacket.",
       "character": "Raymond Curto",
       "season": 6,
-      "episode": 1
+      "episode": 1,
+      "tags": [
+        "clothes"
+      ]
     },
     {
       "id": 149,
       "text": "You steer the ship the best way you know. Sometimes it’s smooth. Sometimes you hit the rocks. In the meantime, you find your pleasures where you can.",
       "character": "Junior Soprano",
       "season": 3,
-      "episode": 8
+      "episode": 8,
+      "tags": [
+        "optimism",
+        "self-help",
+        "duty",
+        "negativity"
+      ]
     },
     {
       "id": 150,
       "text": "You strong-armed me, using the only weapon you have: your pussy.",
       "character": "Bob Wegler",
       "season": 5,
-      "episode": 6
+      "episode": 6,
+      "tags": [
+        "insult",
+        "crude humor",
+        "sex",
+        "violence"
+      ]
     },
     {
       "id": 151,
       "text": "You want compromise? Twenty years in the can, I wanted manicott. I compromised. I ate grilled cheese off the radiator instead.",
       "character": "Phil Leotardo",
       "season": 6,
-      "episode": 14
+      "episode": 14,
+      "tags": [
+        "food",
+        "power",
+        "respect"
+      ]
     },
     {
       "id": 152,
       "text": "Your kids, though… it’s like when they’re little, and they get sick. You’d give anything in the world to trade places with them, so they don’t have to suffer!",
       "character": "Tony Soprano",
       "season": 6,
-      "episode": 17
+      "episode": 17,
+      "tags": [
+        "depression",
+        "mental health",
+        "family",
+        "health"
+      ]
     },
     {
       "id": 153,
       "text": "Your thoughts have an Eastern flavor to them. I’ve lived in Jersey my whole life.",
       "character": "Jennifer Melfi / Tony Soprano",
       "season": 3,
-      "episode": 9
+      "episode": 9,
+      "tags": [
+        "place",
+        "conversation"
+      ]
+    },
+    {
+      "id": 154,
+      "text": "You know, Quasimodo predicted all this",
+      "character": "Bobby Bacala",
+      "season": 4,
+      "episode": 1,
+      "tags": [
+        "place",
+        "conversation"
+      ]
+    },
+    {
+      "id": 155,
+      "text": "Stupida fucking game",
+      "character": "Furio Giunta",
+      "season": 3,
+      "episode": 7,
+      "tags": [
+        "golf"
+      ]
+    },
+    {
+      "id": 156,
+      "text": "Your brother, Billy, whatever happened there...",
+      "character": "Carmine Lupertazzi Jr.",
+      "tags": [
+        "brother",
+        "brothers"
+      ]
+    },
+    {
+      "id": 157,
+      "text": "The fundamental question is, will I be as effective as a boss like my dad was? And I will be, even more so? But until I am, it's going to be hard to verify that I think I'll be more effective.",
+      "character": "Carmine Lupertazzi Jr.",
+      "season": 5,
+      "episode": 9,
+      "tags": [
+        "leadership",
+        "boss",
+        "management"
+      ]
+    },
+    {
+      "id": 158,
+      "text": "It wasn't about being boss. It was about being happy.",
+      "character": "Carmine Lupertazzi Jr.",
+      "season": 6,
+      "episode": 14,
+      "tags": [
+        "happiness",
+        "thoughtfulness",
+        "psychology"
+      ]
+    },
+    {
+      "id": 159,
+      "text": "I am reminded of Louis the whatever's finance minister...he built this chateau — Nicole and I saw it when we went to Paris — it even outshone Versailles, where the king lived. In the end, Louis clapped him in irons.",
+      "character": "Carmine Lupertazzi Jr.",
+      "season": 4,
+      "episode": 11,
+      "tags": [
+        "nonsense"
+      ]
+    },
+    {
+      "id": 160,
+      "text": "He's an old-fashioned guy, Pop, very allegorical",
+      "character": "Carmine Lupertazzi Jr.",
+      "season": 4,
+      "episode": 12,
+      "tags": [
+        "description",
+        "old man",
+        "old guy",
+        "man"
+      ]
+    },
+    {
+      "id": 161,
+      "text": "He's a bit of a poseur, you ask me.",
+      "character": "Carmine Lupertazzi Jr.",
+      "season": 4,
+      "episode": 12,
+      "tags": [
+        "description",
+        "man",
+        "person"
+      ]
+    },
+    {
+      "id": 162,
+      "text": "Much like a child, a film has many parents, that is to say, many individuals who act like parents...or that by a version, the film is their baby. I, as an executive producer, am one of those individuals.",
+      "character": "Carmine Lupertazzi Jr.",
+      "season": 6,
+      "episode": 14,
+      "tags": [
+        "movies",
+        "film"
+      ]
+    },
+    {
+      "id": 163,
+      "text": "If there's one thing my father taught me, it's this: A pint of blood costs more than a gallon of gold.",
+      "character": "Carmine Lupertazzi Jr.",
+      "season": 6,
+      "episode": 12,
+      "tags": [
+        "quotes",
+        "advice",
+        "knowledge",
+        "leadership"
+      ]
+    },
+    {
+      "id": 164,
+      "text": "“A. She was a hoowah. B. She hit me.”",
+      "character": "Ralph Cifaretto",
+      "season": 3,
+      "episode": 6,
+      "tags": [
+        "women",
+        "fights",
+        "rebuttal",
+        "punch"
+      ]
+    },
+    {
+      "id": 165,
+      "text": "“Tomorrow I can be on time, but you’ll be stupid forever.”",
+      "character": "Ralph Cifaretto",
+      "season": 3,
+      "episode": 10,
+      "tags": [
+        "comebacks",
+        "one liners",
+        "insults",
+        "diss"
+      ]
+    },
+    {
+      "id": 166,
+      "text": "“Why didn’t you just leave some out? I love cheese at my feet!”",
+      "character": "Silvio Dante",
+      "season": 2,
+      "episode": 6
+    },
+    {
+      "id": 167,
+      "text": "“I’ll have a Fresca.”",
+      "character": "Ralph Cifaretto",
+      "season": 3,
+      "episode": 11,
+      "tags": [
+        "drinks",
+        "soda",
+        "food",
+        "ordering"
+      ]
+    },
+    {
+      "id": 168,
+      "text": "“And I know it’s tough on ya, I’m the guy that’s dating your mom.”",
+      "character": "Ralph Cifaretto",
+      "season": 3,
+      "episode": 12,
+      "tags": [
+        "moms",
+        "dating"
+      ]
+    },
+    {
+      "id": 169,
+      "text": "“You know, I don’t understand you, Anthony. We got lucky.”",
+      "character": "Ralph Cifaretto",
+      "season": 4,
+      "episode": 9,
+      "tags": [
+        "lucky",
+        "winning",
+        "betting"
+      ]
+    },
+    {
+      "id": 170,
+      "text": "“It was a fin’ horse! What are you, a vegetarian? You eat beef and sausage by the fin’ carload!”",
+      "character": "Ralph Cifaretto",
+      "season": 4,
+      "episode": 9,
+      "tags": [
+        "horses",
+        "horse racing",
+        "insults",
+        "animals"
+      ]
+    },
+    {
+      "id": 171,
+      "text": "“No, I did not! But so what?!”",
+      "character": "Ralph Cifaretto",
+      "season": 4,
+      "episode": 9,
+      "tags": [
+        "rebuttal"
+      ]
+    },
+    {
+      "id": 172,
+      "text": "“She was a beautiful, innocent creature. What’d she ever do to you?”",
+      "character": "Ralph Cifaretto",
+      "season": 4,
+      "episode": 9,
+      "tags": [
+        "compliments",
+        "animals",
+        "pets"
+      ]
     }
   ]
 }
