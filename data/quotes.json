@@ -1,0 +1,145 @@
+{
+  "quotes": [
+    {
+      "id": 1,
+      "text": "Those who want respect, give respect.",
+      "character": "Tony Soprano",
+      "season": 1,
+      "episode": 13,
+      "episode_title": "I Dream of Jeannie Cusamano"
+    },
+    {
+      "id": 2,
+      "text": "All due respect, you got no idea what it's like to be Number One. Every decision you make affects every facet of every other thing.",
+      "character": "Tony Soprano",
+      "season": 1,
+      "episode": 1,
+      "episode_title": "Pilot"
+    },
+    {
+      "id": 3,
+      "text": "A wrong decision is better than indecision.",
+      "character": "Tony Soprano"
+    },
+    {
+      "id": 4,
+      "text": "Every day is a gift, but does it have to be a pair of socks?",
+      "character": "Tony Soprano"
+    },
+    {
+      "id": 5,
+      "text": "You're only as good as your last envelope.",
+      "character": "Tony Soprano"
+    },
+    {
+      "id": 6,
+      "text": "I'm like King Midas in reverse. Everything I touch turns to shit.",
+      "character": "Tony Soprano"
+    },
+    {
+      "id": 7,
+      "text": "You probably don't even hear it when it happens, right? Just all of a sudden... you're not there.",
+      "character": "Bobby Baccalieri",
+      "season": 6,
+      "episode": 13,
+      "episode_title": "Soprano Home Movies"
+    },
+    {
+      "id": 8,
+      "text": "Just when I thought I was out... they pull me back in.",
+      "character": "Silvio Dante",
+      "context": "Al Pacino impression"
+    },
+    {
+      "id": 9,
+      "text": "Even a broken clock is right twice a day.",
+      "character": "Tony Soprano"
+    },
+    {
+      "id": 10,
+      "text": "The sad truth is that most evil is done by people who never make up their minds to be good or evil.",
+      "character": "Dr. Jennifer Melfi"
+    },
+    {
+      "id": 11,
+      "text": "It's good to be in something from the ground floor. I came too late for that and I know. But lately, I'm getting the feeling that I came in at the end. The best is over.",
+      "character": "Tony Soprano",
+      "season": 1,
+      "episode": 1,
+      "episode_title": "Pilot"
+    },
+    {
+      "id": 12,
+      "text": "I find I have to be the sad clown: laughing on the outside, crying on the inside.",
+      "character": "Tony Soprano"
+    },
+    {
+      "id": 13,
+      "text": "This is the most self-destructive man I have ever encountered.",
+      "character": "Dr. Jennifer Melfi"
+    },
+    {
+      "id": 14,
+      "text": "We're soldiers. Soldiers don't go to hell. It's war. Soldiers, they kill other soldiers. We're in a situation where everyone involved knows the stakes.",
+      "character": "Paulie Gualtieri"
+    },
+    {
+      "id": 15,
+      "text": "You know, they say psychiatry and religion are two different roads to the same place.",
+      "character": "Tony Soprano"
+    },
+    {
+      "id": 16,
+      "text": "My father was in it. My uncle was in it. Maybe I was too lazy to think for myself.",
+      "character": "Tony Soprano"
+    },
+    {
+      "id": 17,
+      "text": "People only see what they want to see.",
+      "character": "Carmela Soprano"
+    },
+    {
+      "id": 18,
+      "text": "Big ears and a small mouth — that's a man's best asset.",
+      "character": "Junior Soprano"
+    },
+    {
+      "id": 19,
+      "text": "You got any idea what my life would be worth if people found out I was seeing a psychiatrist?",
+      "character": "Tony Soprano",
+      "season": 1,
+      "episode": 1,
+      "episode_title": "Pilot"
+    },
+    {
+      "id": 20,
+      "text": "I don't know where I'm gonna be in six months. I don't know where the world's gonna be. What do you want from me?",
+      "character": "Tony Soprano"
+    },
+    {
+      "id": 21,
+      "text": "Sometimes I feel like I'm in a box. A small box. Can't breathe.",
+      "character": "Tony Soprano"
+    },
+    {
+      "id": 22,
+      "text": "There are two endings for a guy like me — dead or in the can. Big percent of my friends are one or the other.",
+      "character": "Tony Soprano"
+    },
+    {
+      "id": 23,
+      "text": "I'm a fat fuckin' crook from New Jersey.",
+      "character": "Tony Soprano"
+    },
+    {
+      "id": 24,
+      "text": "You know, I work to keep this family together and I feel like nobody ever considers my needs.",
+      "character": "Tony Soprano"
+    },
+    {
+      "id": 25,
+      "text": "You got a brain the size of a pineapple. I'm gonna use it for decoration.",
+      "character": "Paulie Gualtieri"
+    }
+  ]
+}
