@@ -49,6 +49,7 @@ export default function CharacterFilter({ allCharacters, selected, onToggle, onC
 
   return (
     <div className="mt-3">
+      <p className="text-[#444444] text-[10px] tracking-[0.2em] uppercase mb-2">Filter by character</p>
       <div className="flex flex-wrap gap-2 items-center">
         {visible.map(char => (
           <Pill

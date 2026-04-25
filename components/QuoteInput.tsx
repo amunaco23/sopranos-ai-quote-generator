@@ -5,21 +5,28 @@ import { useState, useCallback, KeyboardEvent } from 'react';
 interface Props {
   onSubmit: (message: string) => void;
   disabled: boolean;
+  hasCharacterFilter: boolean;
 }
 
-export default function QuoteInput({ onSubmit, disabled }: Props) {
+export default function QuoteInput({ onSubmit, disabled, hasCharacterFilter }: Props) {
   const [value, setValue] = useState('');
   const [shake, setShake] = useState(false);
 
   const handleSubmit = useCallback(() => {
-    if (!value.trim()) {
-      setShake(true);
-      setTimeout(() => setShake(false), 500);
+    const trimmed = value.trim();
+    if (!trimmed) {
+      if (hasCharacterFilter) {
+        // Empty input + character selected → random quotes from that character
+        onSubmit('');
+      } else {
+        setShake(true);
+        setTimeout(() => setShake(false), 500);
+      }
       return;
     }
-    onSubmit(value.trim());
+    onSubmit(trimmed);
     setValue('');
-  }, [value, onSubmit]);
+  }, [value, onSubmit, hasCharacterFilter]);
 
   const handleKeyDown = (e: KeyboardEvent<HTMLTextAreaElement>) => {
     if (e.key === 'Enter' && !e.shiftKey) {

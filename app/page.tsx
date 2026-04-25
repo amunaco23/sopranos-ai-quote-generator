@@ -40,8 +40,12 @@ export default function Home() {
 
   const handleClearCharacters = useCallback(() => {
     setSelectedCharacters([]);
+    setQuotes([]);
+    setHasSubmitted(false);
+    setError(null);
   }, []);
 
+  // Called when Enter is pressed. message may be empty string if input was blank.
   const handleSubmit = useCallback(async (message: string) => {
     setLoading(true);
     setError(null);
@@ -81,76 +85,27 @@ export default function Home() {
     }
   }, [selectedCharacters]);
 
-  // Trigger random quotes when a character is selected with no input
-  const handleRandomFromCharacter = useCallback(async (characters: string[]) => {
-    if (characters.length === 0) return;
-    setLoading(true);
-    setError(null);
-    setQuotes([]);
-    setCharacterMismatch(false);
-    setHasSubmitted(true);
-
-    try {
-      const res = await fetch('/api/quote', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ message: '', characters }),
-      });
-      if (res.ok) {
-        const data = await res.json();
-        setQuotes(data.quotes ?? []);
-      }
-    } catch {
-      // silent fail for random quotes
-    } finally {
-      setLoading(false);
-    }
-  }, []);
-
-  const handleToggleWithRandom = useCallback((character: string) => {
-    setSelectedCharacters(prev => {
-      const next = prev.includes(character)
-        ? prev.filter(c => c !== character)
-        : prev.length < 3 ? [...prev, character] : prev;
-
-      // If no text in the box, fire random quotes immediately
-      if (next.length > 0) {
-        handleRandomFromCharacter(next);
-      } else {
-        setQuotes([]);
-        setHasSubmitted(false);
-      }
-
-      return next;
-    });
-  }, [handleRandomFromCharacter]);
-
-  const handleClearWithReset = useCallback(() => {
-    setSelectedCharacters([]);
-    setQuotes([]);
-    setHasSubmitted(false);
-    setError(null);
-  }, []);
-
   return (
     <main className="min-h-screen bg-black text-white flex flex-col items-center px-4 pb-16">
-      {/* Content block — slides from vertically centered to top on first submit */}
       <div
         className="w-full max-w-[640px] transition-all duration-500 ease-out"
         style={{ marginTop: hasSubmitted ? '3rem' : '28vh' }}
       >
         <Logo />
 
-        <QuoteInput onSubmit={handleSubmit} disabled={loading} />
+        <QuoteInput
+          onSubmit={handleSubmit}
+          disabled={loading}
+          hasCharacterFilter={selectedCharacters.length > 0}
+        />
 
         <CharacterFilter
           allCharacters={ALL_CHARACTERS}
           selected={selectedCharacters}
-          onToggle={handleToggleWithRandom}
-          onClear={handleClearWithReset}
+          onToggle={handleToggleCharacter}
+          onClear={handleClearCharacters}
         />
 
-        {/* Results area */}
         <div className="mt-6">
           {loading && <LoadingState />}
 
