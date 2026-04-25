@@ -6,4 +6,5 @@ export interface Quote {
   episode?: number;
   episode_title?: string;
   context?: string;
+  tags?: string[];
 }

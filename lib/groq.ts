@@ -3,22 +3,26 @@ import { Quote } from './types';
 
 const groq = new Groq({ apiKey: process.env.GROQ_API_KEY });
 
-const SYSTEM_PROMPT = `You are the Sopranos Quote Matcher. You will receive a user's message and a numbered list of Sopranos quotes. Your job:
+const SYSTEM_PROMPT = `You are the Sopranos Quote Matcher. You will receive a user's message and a numbered list of Sopranos quotes. Each quote may include tags that describe its themes.
 
+Your job:
 1. Read the user's message and understand the emotion, topic, or situation behind it.
-2. Pick the 2–3 quotes from the list that best match the user's message. Prioritize:
-   - Emotional resonance (the quote captures how the user feels or what they're dealing with)
-   - Topical relevance (the quote is about the same subject)
-   - Humor or irony (if the user's tone is light, match with something funny)
+2. Pick the 2–3 quotes that best match. Use this priority order:
+   - Tags match the user's topic or emotion (strongest signal — weight this heavily)
+   - Emotional resonance (the quote captures how the user feels)
+   - Topical relevance (the quote is literally about the same subject)
+   - Humor or irony (if the user's tone is light, lean funny)
 3. Return ONLY a JSON array of the quote IDs, ranked best match first. Example: [14, 7, 42]
-4. Do NOT modify, paraphrase, or add commentary to any quote.
-5. Do NOT return anything other than the JSON array.
-6. If nothing is a strong match, pick the 2–3 that are closest. Always return 2–3 quotes.`;
+4. Do NOT return anything other than the JSON array.
+5. Always return exactly 2–3 quotes.`;
+
+function formatQuote(q: Quote): string {
+  const tags = q.tags && q.tags.length > 0 ? ` [tags: ${q.tags.join(', ')}]` : '';
+  return `${q.id}. "${q.text}" — ${q.character}${tags}`;
+}
 
 export async function matchQuotes(userMessage: string, quotes: Quote[], attempt = 0): Promise<number[]> {
-  const quoteList = quotes
-    .map(q => `${q.id}. "${q.text}" — ${q.character}`)
-    .join('\n');
+  const quoteList = quotes.map(formatQuote).join('\n');
 
   const response = await groq.chat.completions.create({
     model: 'llama-3.3-70b-versatile',

@@ -1,0 +1,30 @@
+name: Update Quotes
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'data/quotes.csv'
+
+jobs:
+  convert:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - run: npm ci
+
+      - run: npm run convert-csv -- data/quotes.csv
+
+      - name: Commit updated quotes.json
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'chore: regenerate quotes.json from CSV'
+          file_pattern: data/quotes.json

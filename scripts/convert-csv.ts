@@ -41,7 +41,6 @@ const ALIASES: Record<string, string> = {
 };
 
 function parseEpisode(raw: string): { season?: number; episode?: number } {
-  // Handles formats like "S2 E6", "S3 E10", "S6E1", etc.
   const match = raw.match(/S(\d+)\s*E(\d+)/i);
   if (!match) return {};
   return { season: parseInt(match[1], 10), episode: parseInt(match[2], 10) };
@@ -54,19 +53,21 @@ let id = 1;
 const quotes = lines.slice(1).flatMap(line => {
   const values = parseCsvLine(line);
 
-  const quote: Record<string, string | number> = {};
+  const quote: Record<string, string | number | string[]> = {};
   headers.forEach((header, idx) => {
     const val = values[idx]?.trim().replace(/^"|"$/g, '');
     if (!val) return;
 
     if (header === 'episode') {
-      // "S2 E6" → split into season + episode fields
       const parsed = parseEpisode(val);
       if (parsed.season) quote['season'] = parsed.season;
       if (parsed.episode) quote['episode'] = parsed.episode;
     } else if (header === 'season') {
       const n = parseInt(val, 10);
       if (!isNaN(n)) quote['season'] = n;
+    } else if (header === 'tags') {
+      // "food, humor, respect" → ["food", "humor", "respect"]
+      quote['tags'] = val.split(',').map(t => t.trim().toLowerCase()).filter(Boolean);
     } else {
       quote[header] = val;
     }
