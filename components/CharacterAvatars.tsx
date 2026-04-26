@@ -77,24 +77,27 @@ function Avatar({
   onClick: () => void;
 }) {
   const imgSrc = CHARACTER_IMAGES[name];
-  const btnRef = useRef<HTMLButtonElement>(null);
+  const wrapperRef = useRef<HTMLDivElement>(null);
   const [anchorRect, setAnchorRect] = useState<DOMRect | null>(null);
 
   const handleMouseEnter = () => {
-    if (btnRef.current) setAnchorRect(btnRef.current.getBoundingClientRect());
+    if (wrapperRef.current) setAnchorRect(wrapperRef.current.getBoundingClientRect());
   };
   const handleMouseLeave = () => setAnchorRect(null);
 
   return (
     <>
-      <button
-        ref={btnRef}
-        onClick={onClick}
+      {/*
+        Ring lives on this outer div (no filter) so CSS filter on the inner
+        button cannot clip the box-shadow. The outer div also handles the
+        lift transform and depth shadow.
+      */}
+      <div
+        ref={wrapperRef}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
         className={[
-          'rounded-full flex-shrink-0 overflow-hidden transition-all duration-250',
-          'focus:outline-none',
+          'rounded-full flex-shrink-0 transition-all duration-250',
           active
             ? 'ring-2 ring-[#C41E1E] ring-offset-1 ring-offset-[#1C1C1C]'
             : 'ring-1 ring-white/10 hover:ring-white/30',
@@ -108,6 +111,11 @@ function Avatar({
           transform: active ? 'translateY(-1px)' : 'translateY(0)',
         }}
       >
+        {/* Button handles click, hover tracking, and circular crop only */}
+        <button
+          onClick={onClick}
+          className="w-full h-full rounded-full overflow-hidden focus:outline-none block"
+        >
         {imgSrc ? (
           <Image
             src={imgSrc}
@@ -126,7 +134,8 @@ function Avatar({
             {getInitials(name)}
           </div>
         )}
-      </button>
+        </button>
+      </div>
 
       {anchorRect && <AvatarTooltip name={name} anchorRect={anchorRect} />}
     </>
@@ -167,10 +176,8 @@ export default function CharacterAvatars({ allCharacters, selected, onSelect }: 
     onSelect(selected === char ? null : char);
   };
 
-  const stackChars =
-    selected && !pinnedChars.includes(selected)
-      ? [selected, ...pinnedChars]
-      : pinnedChars;
+  // Always keep pinned order — no jumping to front
+  const stackChars = pinnedChars;
 
   if (expanded || closing) {
     const sorted = [...allCharacters].sort((a, b) => {
@@ -240,7 +247,7 @@ export default function CharacterAvatars({ allCharacters, selected, onSelect }: 
   // AFM-151: pl-0.5 gives the first avatar's active ring room on the left
   // AFM-153: explicit flex + items-center on +N wrapper prevents vertical drift
   return (
-    <div className="flex items-center pl-0.5">
+    <div className="flex items-center pl-1">
       {stackChars.map((char, i) => (
         <div
           key={char}
