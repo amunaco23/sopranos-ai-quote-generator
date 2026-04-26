@@ -26,6 +26,25 @@ function CopyIcon() {
   );
 }
 
+function CopyCheck() {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="18"
+      height="18"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="#C41E1E"
+      strokeWidth="2.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      style={{ animation: 'checkIn 0.2s ease-out forwards' }}
+    >
+      <polyline points="20 6 9 17 4 12" />
+    </svg>
+  );
+}
+
 export default function QuoteCard({ quote }: Props) {
   const [copied, setCopied] = useState(false);
 
@@ -47,7 +66,7 @@ export default function QuoteCard({ quote }: Props) {
 
   return (
     <div className="bg-[#1A1A1A] border border-[#272727] rounded-xl p-5 flex items-center gap-3">
-      {/* Text block takes all available width */}
+      {/* Text block */}
       <div className="flex-1 min-w-0">
         <p className="text-white text-base leading-relaxed">
           &ldquo;{quote.text}&rdquo;
@@ -58,17 +77,13 @@ export default function QuoteCard({ quote }: Props) {
         )}
       </div>
 
-      {/* Copy button — centered against the full card height */}
+      {/* Copy button — centered against full card height */}
       <button
         onClick={handleCopy}
         className="flex-shrink-0 self-center text-[#444444] hover:text-white transition-colors min-w-[44px] min-h-[44px] flex items-center justify-center"
         aria-label="Copy quote"
       >
-        {copied ? (
-          <span className="text-xs text-[#C41E1E] font-medium">Copied!</span>
-        ) : (
-          <CopyIcon />
-        )}
+        {copied ? <CopyCheck /> : <CopyIcon />}
       </button>
     </div>
   );

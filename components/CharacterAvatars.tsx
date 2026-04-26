@@ -4,11 +4,31 @@ import { useState, useRef, useEffect } from 'react';
 import { createPortal } from 'react-dom';
 import Image from 'next/image';
 
-// Characters with uploaded photos
+// All character photos
 const CHARACTER_IMAGES: Record<string, string> = {
   'Tony Soprano': '/Tony.png',
   'Christopher Moltisanti': '/Chrissy.png',
   'Uncle Junior': '/Uncle Junior.png',
+  'Ralph Cifaretto': '/Ralphie.png',
+  'Dr. Jennifer Melfi': '/Dr. Melfi.png',
+  'Paulie Gualtieri': '/Paulie.png',
+  'Carmine Lupertazzi': '/Carmine.png',
+  'Silvio Dante': '/Silvio.png',
+  'Phil Leotardo': '/Phil.png',
+  'Johnny Sack': '/Johnny Sack.png',
+  'Vito Spatafore': '/Vito.png',
+  'Livia Soprano': '/Livia Soprano.png',
+  'Furio Giunta': '/Furio.png',
+  'Artie Bucco': '/Artie.png',
+  'AJ Soprano': '/AJ.png',
+  'Tony Blundetto': '/Tony B.png',
+  'Patsy Parisi': '/Patsy.png',
+  'Hesh Rabkin': '/Hesh.png',
+  'Big Pussy Bonpensiero': '/Big Pussy.png',
+  'Adriana La Cerva': '/Aidriana.png',
+  'Richie Aprile': '/Richie.png',
+  'Bobby Bacala': '/Bobby.png',
+  'Feech La Manna': '/Feech.png',
 };
 
 const AVATAR_SIZE = 36;
@@ -24,9 +44,8 @@ function getInitials(name: string): string {
     .toUpperCase();
 }
 
-// Portal tooltip — renders into document.body so no scroll container can clip it
 function AvatarTooltip({ name, anchorRect }: { name: string; anchorRect: DOMRect }) {
-  const GAP = 6; // px between tooltip bottom and avatar top
+  const GAP = 6;
   return createPortal(
     <div
       style={{
@@ -59,9 +78,7 @@ function Avatar({
   const [anchorRect, setAnchorRect] = useState<DOMRect | null>(null);
 
   const handleMouseEnter = () => {
-    if (btnRef.current) {
-      setAnchorRect(btnRef.current.getBoundingClientRect());
-    }
+    if (btnRef.current) setAnchorRect(btnRef.current.getBoundingClientRect());
   };
   const handleMouseLeave = () => setAnchorRect(null);
 
@@ -124,7 +141,6 @@ export default function CharacterAvatars({ allCharacters, selected, onSelect }: 
   const [closing, setClosing] = useState(false);
   const scrollRef = useRef<HTMLDivElement>(null);
 
-  // Pin scroll to the left whenever the expanded row opens
   useEffect(() => {
     if (expanded && scrollRef.current) {
       scrollRef.current.scrollLeft = 0;
@@ -148,7 +164,6 @@ export default function CharacterAvatars({ allCharacters, selected, onSelect }: 
     onSelect(selected === char ? null : char);
   };
 
-  // In stacked view, if selected is not pinned, push it to front
   const stackChars =
     selected && !pinnedChars.includes(selected)
       ? [selected, ...pinnedChars]
@@ -162,33 +177,45 @@ export default function CharacterAvatars({ allCharacters, selected, onSelect }: 
     });
 
     return (
-      <div
-        ref={scrollRef}
-        className="flex items-center gap-1.5 overflow-x-auto scrollbar-none py-0.5 flex-1 pr-2"
-      >
-        {sorted.map((char, i) => (
+      // AFM-152: wrapper isolates the fade overlay from the collapse button
+      <div className="flex items-center gap-1.5 flex-1 min-w-0">
+        <div className="relative flex-1 min-w-0">
+          {/* Scrollable avatar row */}
           <div
-            key={char}
-            style={{
-              animation: closing
-                ? `avatarCollapseOut 0.16s ease-in forwards`
-                : `avatarExpandIn 0.16s ease-out forwards`,
-              animationDelay: closing
-                ? `${(sorted.length - 1 - i) * 10}ms`
-                : `${i * 10}ms`,
-              opacity: 0,
-              flexShrink: 0,
-            }}
+            ref={scrollRef}
+            className="flex items-center gap-1.5 overflow-x-auto scrollbar-none py-0.5"
           >
-            <Avatar
-              name={char}
-              active={selected === char}
-              onClick={() => handleSelect(char)}
-            />
+            {sorted.map((char, i) => (
+              <div
+                key={char}
+                style={{
+                  animation: closing
+                    ? `avatarCollapseOut 0.16s ease-in forwards`
+                    : `avatarExpandIn 0.16s ease-out forwards`,
+                  animationDelay: closing
+                    ? `${(sorted.length - 1 - i) * 10}ms`
+                    : `${i * 10}ms`,
+                  opacity: 0,
+                  flexShrink: 0,
+                }}
+              >
+                <Avatar
+                  name={char}
+                  active={selected === char}
+                  onClick={() => handleSelect(char)}
+                />
+              </div>
+            ))}
           </div>
-        ))}
 
-        {/* Collapse button */}
+          {/* AFM-152: right-edge fade gradient */}
+          <div
+            className="pointer-events-none absolute right-0 top-0 h-full w-10"
+            style={{ background: 'linear-gradient(to left, #1C1C1C, transparent)' }}
+          />
+        </div>
+
+        {/* Collapse button — outside the faded scroll area */}
         <button
           onClick={handleClose}
           className="flex-shrink-0 w-9 h-9 rounded-full bg-[#2a2a2a] text-[#666] text-xs flex items-center justify-center hover:text-white transition-colors ring-1 ring-white/10"
@@ -207,8 +234,10 @@ export default function CharacterAvatars({ allCharacters, selected, onSelect }: 
   }
 
   // Stacked view
+  // AFM-151: pl-0.5 gives the first avatar's active ring room on the left
+  // AFM-153: explicit flex + items-center on +N wrapper prevents vertical drift
   return (
-    <div className="flex items-center">
+    <div className="flex items-center pl-0.5">
       {stackChars.map((char, i) => (
         <div
           key={char}
@@ -223,8 +252,17 @@ export default function CharacterAvatars({ allCharacters, selected, onSelect }: 
         </div>
       ))}
 
-      {/* Overflow / expand button */}
-      <div style={{ marginLeft: -10, zIndex: 0, position: 'relative' }}>
+      {/* +N expand button — AFM-153: flex wrapper keeps it vertically aligned */}
+      <div
+        style={{
+          marginLeft: -10,
+          zIndex: 0,
+          position: 'relative',
+          flexShrink: 0,
+          display: 'flex',
+          alignItems: 'center',
+        }}
+      >
         <button
           onClick={() => setExpanded(true)}
           className="flex items-center justify-center rounded-full bg-[#2a2a2a] text-[#888] text-[11px] font-medium ring-1 ring-white/10 hover:text-white transition-colors"

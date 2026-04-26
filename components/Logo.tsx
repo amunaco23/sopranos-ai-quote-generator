@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function Logo() {
   return (
-    <div className="flex items-end justify-center gap-2 mb-10">
+    <div className="flex items-end justify-center gap-1 mb-10">
       <Image
         src="/sopranos-logo.png"
         alt="The Sopranos"

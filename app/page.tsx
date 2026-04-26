@@ -17,11 +17,12 @@ const EXCLUDED_FROM_FILTER = new Set([
   'Raymond Curto',
   'Meadow Soprano',
   'Rosalie Aprile',
+  'Bakery worker',
+  'Da Lux',
 ]);
 
 const allQuotes = quotesData.quotes as Quote[];
 
-// Count quotes per character for sort order
 const quoteCounts = allQuotes.reduce<Record<string, number>>((acc, q) => {
   acc[q.character] = (acc[q.character] ?? 0) + 1;
   return acc;
@@ -39,10 +40,12 @@ const ALL_CHARACTERS = [
 export default function Home() {
   const [quotes, setQuotes] = useState<Quote[]>([]);
   const [loading, setLoading] = useState(false);
+  const [loadingMore, setLoadingMore] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [characterMismatch, setCharacterMismatch] = useState(false);
   const [rateLimitInfo, setRateLimitInfo] = useState<{ message: string; retryAfter: number } | null>(null);
   const [hasSubmitted, setHasSubmitted] = useState(false);
+  const [lastBody, setLastBody] = useState<object | null>(null);
 
   const callApi = useCallback(async (body: object) => {
     setLoading(true);
@@ -50,6 +53,7 @@ export default function Home() {
     setQuotes([]);
     setCharacterMismatch(false);
     setHasSubmitted(true);
+    setLastBody(body);
 
     try {
       const res = await fetch('/api/quote', {
@@ -82,6 +86,28 @@ export default function Home() {
       setLoading(false);
     }
   }, []);
+
+  const handleShowMore = useCallback(async () => {
+    if (!lastBody || loadingMore) return;
+    setLoadingMore(true);
+    try {
+      const excludeIds = quotes.map(q => q.id).filter(Boolean);
+      const res = await fetch('/api/quote', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ ...lastBody, excludeIds }),
+      });
+      if (!res.ok) return;
+      const data = await res.json();
+      if (data.quotes?.length) {
+        setQuotes(prev => [...prev, ...data.quotes]);
+      }
+    } catch {
+      // silently fail
+    } finally {
+      setLoadingMore(false);
+    }
+  }, [lastBody, quotes, loadingMore]);
 
   const handleSubmit = useCallback((message: string, character: string | null) => {
     callApi({ message, character });
@@ -121,11 +147,24 @@ export default function Home() {
           )}
 
           {!loading && quotes.length > 0 && (
-            <div className="space-y-3">
-              {quotes.map((quote, i) => (
-                <QuoteCard key={quote.id ?? i} quote={quote} />
-              ))}
-            </div>
+            <>
+              <div className="space-y-3">
+                {quotes.map((quote, i) => (
+                  <QuoteCard key={quote.id ?? i} quote={quote} />
+                ))}
+              </div>
+
+              {/* Show More */}
+              <div className="flex justify-center mt-4">
+                <button
+                  onClick={handleShowMore}
+                  disabled={loadingMore}
+                  className="text-[#555] text-sm hover:text-white transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
+                >
+                  {loadingMore ? 'Finding more...' : 'Show more'}
+                </button>
+              </div>
+            </>
           )}
         </div>
       </div>

@@ -21,6 +21,39 @@ function SubmitSpinner() {
   );
 }
 
+// Dismissible onboarding hint — hidden forever after "Got it"
+function OnboardingHint() {
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    if (!localStorage.getItem('hint-dismissed')) {
+      setVisible(true);
+    }
+  }, []);
+
+  const dismiss = () => {
+    localStorage.setItem('hint-dismissed', '1');
+    setVisible(false);
+  };
+
+  if (!visible) return null;
+
+  return (
+    <div className="flex items-center justify-between gap-3 mb-3 px-4 py-2.5 rounded-xl bg-[#1C1C1C] border border-white/5">
+      <p className="text-sm text-[#666] leading-snug">
+        <span className="text-[#999]">Paste anything.</span>{' '}
+        Drop in a topic, mood, situation, or sentence — we'll find the quote.
+      </p>
+      <button
+        onClick={dismiss}
+        className="flex-shrink-0 text-xs text-[#444] hover:text-white transition-colors px-2 py-1 rounded-md hover:bg-white/5"
+      >
+        Got it
+      </button>
+    </div>
+  );
+}
+
 interface Props {
   onSubmit: (message: string, character: string | null) => void;
   onSurpriseMe: (character: string | null) => void;
@@ -34,7 +67,6 @@ export default function QuoteInput({ onSubmit, onSurpriseMe, disabled, allCharac
   const [selectedCharacter, setSelectedCharacter] = useState<string | null>(null);
   const textareaRef = useRef<HTMLTextAreaElement>(null);
 
-  // Auto-focus on desktop only — don't pop the keyboard on mobile
   useEffect(() => {
     if (typeof window !== 'undefined' && window.innerWidth >= 768) {
       textareaRef.current?.focus();
@@ -46,7 +78,6 @@ export default function QuoteInput({ onSubmit, onSurpriseMe, disabled, allCharac
 
     if (!trimmed) {
       if (selectedCharacter) {
-        // Empty input + character selected → random from that character
         onSurpriseMe(selectedCharacter);
       } else {
         setShake(true);
@@ -68,6 +99,9 @@ export default function QuoteInput({ onSubmit, onSurpriseMe, disabled, allCharac
 
   return (
     <div className="w-full">
+      {/* Onboarding hint */}
+      <OnboardingHint />
+
       {/* Input card */}
       <div
         className={[
@@ -115,7 +149,7 @@ export default function QuoteInput({ onSubmit, onSurpriseMe, disabled, allCharac
           disabled={disabled}
           className="flex items-center gap-2 px-5 py-2 rounded-full bg-[#1C1C1C] text-[#777] text-sm hover:text-white hover:bg-[#242424] transition-all disabled:opacity-40 disabled:cursor-not-allowed"
         >
-          <span className="text-base leading-none">✦</span>
+          <span className="text-xs" style={{ lineHeight: 1, transform: 'translateY(-1px)', display: 'inline-block' }}>✦</span>
           Surprise Me
         </button>
       </div>

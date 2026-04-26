@@ -33,7 +33,7 @@ export async function POST(request: NextRequest) {
     );
   }
 
-  let body: { message?: unknown; character?: unknown; surpriseMe?: unknown };
+  let body: { message?: unknown; character?: unknown; surpriseMe?: unknown; excludeIds?: unknown };
   try {
     body = await request.json();
   } catch {
@@ -44,8 +44,11 @@ export async function POST(request: NextRequest) {
   const surpriseMe = body.surpriseMe === true;
   const message = typeof body.message === 'string' ? body.message.trim() : '';
   const hasMessage = message.length > 0;
+  const excludeIds = Array.isArray(body.excludeIds) ? (body.excludeIds as number[]) : [];
 
-  const allQuotes = quotesData.quotes as Quote[];
+  const allQuotes = (quotesData.quotes as Quote[]).filter(
+    q => excludeIds.length === 0 || !excludeIds.includes(q.id)
+  );
 
   // Surprise Me — random quote(s), optionally filtered by character
   if (surpriseMe || (!hasMessage && character)) {
