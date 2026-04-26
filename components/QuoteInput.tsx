@@ -1,8 +1,25 @@
 'use client';
 
 import { useState, useCallback, useEffect, useRef, KeyboardEvent } from 'react';
-import Image from 'next/image';
 import CharacterAvatars from './CharacterAvatars';
+
+function SubmitArrow() {
+  return (
+    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="20" cy="20" r="20" fill="white" />
+      <path d="M13 20h14M21.5 13.5L28 20l-6.5 6.5" stroke="#0D0D0D" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  );
+}
+
+function SubmitSpinner() {
+  return (
+    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" className="animate-spin">
+      <circle cx="20" cy="20" r="17" stroke="#333333" strokeWidth="2.5" />
+      <path d="M20 3a17 17 0 0 1 17 17" stroke="white" strokeWidth="2.5" strokeLinecap="round" />
+    </svg>
+  );
+}
 
 interface Props {
   onSubmit: (message: string, character: string | null) => void;
@@ -84,15 +101,9 @@ export default function QuoteInput({ onSubmit, onSurpriseMe, disabled, allCharac
             onClick={handleSubmit}
             disabled={disabled}
             aria-label="Submit"
-            className="flex-shrink-0 ml-3 disabled:opacity-40 disabled:cursor-not-allowed transition-opacity active:scale-95"
+            className="flex-shrink-0 ml-3 disabled:cursor-not-allowed transition-opacity active:scale-95"
           >
-            <Image
-              src="/Submit Icon.png"
-              alt="Submit"
-              width={40}
-              height={40}
-              className="w-10 h-10"
-            />
+            {disabled ? <SubmitSpinner /> : <SubmitArrow />}
           </button>
         </div>
       </div>
