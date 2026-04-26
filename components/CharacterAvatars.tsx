@@ -139,7 +139,7 @@ export default function CharacterAvatars({ allCharacters, selected, onSelect }: 
     }, 260);
   };
 
-  const pinnedChars = ['Tony Soprano', 'Christopher Moltisanti', 'Junior Soprano'].filter(p =>
+  const pinnedChars = ['Tony Soprano', 'Christopher Moltisanti', 'Uncle Junior'].filter(p =>
     allCharacters.includes(p)
   );
   const otherChars = allCharacters.filter(c => !pinnedChars.includes(c));
