@@ -19,6 +19,7 @@ const EXCLUDED_FROM_FILTER = new Set([
   'Rosalie Aprile',
   'Bakery worker',
   'Da Lux',
+  'Bob Wegler',
 ]);
 
 const allQuotes = quotesData.quotes as Quote[];

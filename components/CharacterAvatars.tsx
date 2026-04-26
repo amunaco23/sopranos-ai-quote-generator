@@ -29,6 +29,9 @@ const CHARACTER_IMAGES: Record<string, string> = {
   'Richie Aprile': '/Richie.png',
   'Bobby Bacala': '/Bobby.png',
   'Feech La Manna': '/Feech.png',
+  'Carmela Soprano': '/Carmela.png',
+  'Eugene Pontecorvo': '/Eugene.png',
+  'Mikey Palmice': '/Mikey.png',
 };
 
 const AVATAR_SIZE = 36;
