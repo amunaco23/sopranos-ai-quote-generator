@@ -2114,10 +2114,16 @@
     },
     {
       "id": 191,
-      "text": "What is this",
-      "character": "a handsome contest?",
+      "text": "What is this, a handsome contest?",
+      "character": "Ralph Cifaretto",
+      "season": 3,
+      "episode": 6,
       "tags": [
-        "s3 e6"
+        "vanity",
+        "flirting",
+        "humor",
+        "arrogance",
+        "charm"
       ]
     },
     {
@@ -2136,20 +2142,6 @@
     },
     {
       "id": 193,
-      "text": "This is for flavor.",
-      "character": "Ralph Cifaretto",
-      "season": 3,
-      "episode": 9,
-      "tags": [
-        "food",
-        "cooking",
-        "advice",
-        "domesticity",
-        "italian culture"
-      ]
-    },
-    {
-      "id": 194,
       "text": "I represent a group of concerned citizens who are very upset about this protest you're spearheading",
       "character": "no puns intended.",
       "tags": [
@@ -2157,7 +2149,7 @@
       ]
     },
     {
-      "id": 195,
+      "id": 194,
       "text": "Who's he think's keeping that fat bitch in Devil Dogs anyway?",
       "character": "Ralph Cifaretto",
       "season": 4,
@@ -2171,7 +2163,7 @@
       ]
     },
     {
-      "id": 196,
+      "id": 195,
       "text": "Cause if you don't pay me back I ain't gonna be able to hurt you.",
       "character": "Ralph Cifaretto",
       "season": 4,
@@ -2185,15 +2177,7 @@
       ]
     },
     {
-      "id": 197,
-      "text": "Watch out for the goat",
-      "character": "it butts.",
-      "tags": [
-        "s4 e5"
-      ]
-    },
-    {
-      "id": 198,
+      "id": 196,
       "text": "All this over some dead hooah?",
       "character": "Ralph Cifaretto",
       "season": 3,
@@ -2207,7 +2191,7 @@
       ]
     },
     {
-      "id": 199,
+      "id": 197,
       "text": "Fuck him and his turkey. I oughta shove a drumstick up his ass.",
       "character": "Ralph Cifaretto",
       "season": 3,
@@ -2221,7 +2205,7 @@
       ]
     },
     {
-      "id": 200,
+      "id": 198,
       "text": "What? You think I'm afraid of that fat fuck?",
       "character": "Ralph Cifaretto",
       "season": 3,
@@ -2235,7 +2219,7 @@
       ]
     },
     {
-      "id": 201,
+      "id": 199,
       "text": "Don't get fucking filthy about it.",
       "character": "Ralph Cifaretto",
       "season": 3,
@@ -2249,7 +2233,7 @@
       ]
     },
     {
-      "id": 202,
+      "id": 200,
       "text": "I have come to reclaim Rome for my people.",
       "character": "Ralph Cifaretto",
       "season": 3,
@@ -2263,7 +2247,7 @@
       ]
     },
     {
-      "id": 203,
+      "id": 201,
       "text": "Tomorrow I can be on time",
       "character": "but you'll be stupid forever.",
       "tags": [
@@ -2271,7 +2255,7 @@
       ]
     },
     {
-      "id": 204,
+      "id": 202,
       "text": "A real lack of standards",
       "character": "your generation.",
       "tags": [
@@ -2279,7 +2263,7 @@
       ]
     },
     {
-      "id": 205,
+      "id": 203,
       "text": "No",
       "character": "watch out for the goat",
       "tags": [
@@ -2287,7 +2271,7 @@
       ]
     },
     {
-      "id": 206,
+      "id": 204,
       "text": "You yap worse than six barbers.",
       "character": "Uncle Junior",
       "season": 1,
@@ -2301,7 +2285,7 @@
       ]
     },
     {
-      "id": 207,
+      "id": 205,
       "text": "So what? No fuckin ziti now?",
       "character": "AJ Soprano",
       "season": 1,
@@ -2315,7 +2299,7 @@
       ]
     },
     {
-      "id": 208,
+      "id": 206,
       "text": "You look like a Puerto Rican whore.",
       "character": "Phil Leotardo",
       "season": 6,
@@ -2330,7 +2314,7 @@
       ]
     },
     {
-      "id": 209,
+      "id": 207,
       "text": "WHAT IS THIS",
       "character": "THE FUCKIN' UN NOW?!",
       "tags": [
@@ -2338,7 +2322,7 @@
       ]
     },
     {
-      "id": 210,
+      "id": 208,
       "text": "I'm the motherfuckin fuckin one who calls the shots.",
       "character": "Tony Soprano",
       "season": 2,
@@ -2352,7 +2336,7 @@
       ]
     },
     {
-      "id": 211,
+      "id": 209,
       "text": "You got a bee on your hat.",
       "character": "Furio Giunta",
       "season": 3,
@@ -2366,7 +2350,7 @@
       ]
     },
     {
-      "id": 212,
+      "id": 210,
       "text": "Take it easy",
       "character": "we're not making a Western here.",
       "tags": [
@@ -2374,7 +2358,7 @@
       ]
     },
     {
-      "id": 213,
+      "id": 211,
       "text": "No scraps in my scrapbook.",
       "character": "Phil Leotardo",
       "season": 6,
@@ -2388,7 +2372,7 @@
       ]
     },
     {
-      "id": 214,
+      "id": 212,
       "text": "You have a problem besides those fucking pants?",
       "character": "Paulie Gualtieri",
       "season": 3,
@@ -2402,7 +2386,7 @@
       ]
     },
     {
-      "id": 215,
+      "id": 213,
       "text": "Sharp as a cue ball.",
       "character": "Uncle Junior",
       "season": 3,
@@ -2416,7 +2400,7 @@
       ]
     },
     {
-      "id": 216,
+      "id": 214,
       "text": "I'm with the Vipers!",
       "character": "Christopher Moltisanti",
       "season": 6,
@@ -2430,7 +2414,7 @@
       ]
     },
     {
-      "id": 217,
+      "id": 215,
       "text": "He's got tremendous moxie for his size.",
       "character": "Uncle Junior",
       "season": 1,
@@ -2444,7 +2428,7 @@
       ]
     },
     {
-      "id": 218,
+      "id": 216,
       "text": "You're supposed to push Webistics!",
       "character": "Christopher Moltisanti",
       "season": 2,
@@ -2460,7 +2444,7 @@
       ]
     },
     {
-      "id": 219,
+      "id": 217,
       "text": "It's all a big nothing. What makes you so special?",
       "character": "Livia Soprano",
       "season": 2,
@@ -2474,7 +2458,7 @@
       ]
     },
     {
-      "id": 220,
+      "id": 218,
       "text": "Timeline got fucked up.",
       "character": "Silvio Dante",
       "season": 3,
@@ -2490,7 +2474,7 @@
       ]
     },
     {
-      "id": 221,
+      "id": 219,
       "text": "Fuck the tomatoes",
       "character": "I'll take the scarole.",
       "tags": [
@@ -2498,7 +2482,7 @@
       ]
     },
     {
-      "id": 222,
+      "id": 220,
       "text": "All due respect",
       "character": "you got no fucking idea what it's like to be number one. Every decision you make affects every facet of every other fucking thing. It's too much to deal with almost. And in the end",
       "tags": [
@@ -2506,7 +2490,7 @@
       ]
     },
     {
-      "id": 223,
+      "id": 221,
       "text": "You call or go anywhere near him or his family",
       "character": "they'll be scraping your nipples off these fine leather seats. And here's the point to remember: my face will be the last one you see",
       "tags": [
@@ -2514,7 +2498,7 @@
       ]
     },
     {
-      "id": 224,
+      "id": 222,
       "text": "I put the grief behind me. Let me hear you say it.",
       "character": "Tony Soprano",
       "season": 2,
@@ -2528,7 +2512,7 @@
       ]
     },
     {
-      "id": 225,
+      "id": 223,
       "text": "You ever feel like nothing good was ever gonna happen to you? Yeah. And nothing did. So what? I'm alive. I'm surviving.",
       "character": "Christopher Moltisanti / Paulie Gualtieri",
       "season": 1,
@@ -2542,7 +2526,7 @@
       ]
     },
     {
-      "id": 226,
+      "id": 224,
       "text": "I'm like King Midas in reverse. Everything I touch turns to shit.",
       "character": "Tony Soprano",
       "season": 1,
@@ -2556,7 +2540,7 @@
       ]
     },
     {
-      "id": 227,
+      "id": 225,
       "text": "I don't even know why I come here. Got nothing else to do",
       "character": "I guess.",
       "tags": [
@@ -2564,7 +2548,7 @@
       ]
     },
     {
-      "id": 228,
+      "id": 226,
       "text": "Discontinue the lithium.",
       "character": "Dr. Jennifer Melfi",
       "season": 1,
@@ -2578,7 +2562,7 @@
       ]
     },
     {
-      "id": 229,
+      "id": 227,
       "text": "I'm sorry your son is no longer with us",
       "character": "but don't use mine as a guinea pig for your ideas on parenting.",
       "tags": [
@@ -2586,7 +2570,7 @@
       ]
     },
     {
-      "id": 230,
+      "id": 228,
       "text": "Why do you think I'm talking to you like this?",
       "character": "Rosalie Aprile",
       "season": 6,
@@ -2600,7 +2584,7 @@
       ]
     },
     {
-      "id": 231,
+      "id": 229,
       "text": "Fucking nosy! Eat your manicott!",
       "character": "Uncle Junior",
       "season": 6,
@@ -2614,7 +2598,7 @@
       ]
     },
     {
-      "id": 232,
+      "id": 230,
       "text": "Don't you love me?",
       "character": "Tony Soprano",
       "season": 5,
@@ -2628,7 +2612,7 @@
       ]
     },
     {
-      "id": 233,
+      "id": 231,
       "text": "I gave that fuck pieces of my soul",
       "character": "Adriana. You know what he said to me? He said I should have a fucking drink.",
       "tags": [
@@ -2636,7 +2620,7 @@
       ]
     },
     {
-      "id": 234,
+      "id": 232,
       "text": "That's the guy",
       "character": "Adriana. My uncle Tony. The guy I'm going to hell for.",
       "tags": [
@@ -2644,7 +2628,7 @@
       ]
     },
     {
-      "id": 235,
+      "id": 233,
       "text": "You're not listening. I'm not charging you because I won't take blood money. And you can't either. One thing you can never say: that you haven't been told.",
       "character": "Dr. Krakower",
       "season": 3,
@@ -2658,7 +2642,7 @@
       ]
     },
     {
-      "id": 236,
+      "id": 234,
       "text": "My father told me never get old. I should have listened to him.",
       "character": "Uncle Junior",
       "season": 4,
@@ -2672,7 +2656,7 @@
       ]
     },
     {
-      "id": 237,
+      "id": 235,
       "text": "You're looking at them.",
       "character": "Tony Soprano",
       "season": 1,
@@ -2686,7 +2670,7 @@
       ]
     },
     {
-      "id": 238,
+      "id": 236,
       "text": "How could you fucking do this to us?",
       "character": "Christopher Moltisanti",
       "season": 4,
@@ -2700,7 +2684,7 @@
       ]
     },
     {
-      "id": 239,
+      "id": 237,
       "text": "You're crowding me.",
       "character": "Tony Blundetto",
       "season": 5,
@@ -2714,7 +2698,7 @@
       ]
     },
     {
-      "id": 240,
+      "id": 238,
       "text": "Let's be honest about the great Dickie Moltisanti",
       "character": "my dad",
       "tags": [
@@ -2722,7 +2706,7 @@
       ]
     },
     {
-      "id": 241,
+      "id": 239,
       "text": "I ordered some for the table.",
       "character": "Tony Soprano",
       "season": 6,
@@ -2736,7 +2720,7 @@
       ]
     },
     {
-      "id": 242,
+      "id": 240,
       "text": "We worry so much. Sometimes it feels like that's all we do",
       "character": "but in the end it just gets washed away. All of it just gets washed away.",
       "tags": [
@@ -2744,7 +2728,7 @@
       ]
     },
     {
-      "id": 243,
+      "id": 241,
       "text": "Sometimes",
       "character": "we're all hypocrites.",
       "tags": [
@@ -2752,7 +2736,7 @@
       ]
     },
     {
-      "id": 244,
+      "id": 242,
       "text": "No more of this",
       "character": "Butchie. No more.",
       "tags": [
@@ -2760,7 +2744,7 @@
       ]
     },
     {
-      "id": 245,
+      "id": 243,
       "text": "Yeah",
       "character": "again with the money. It's settled",
       "tags": [
@@ -2768,7 +2752,7 @@
       ]
     },
     {
-      "id": 246,
+      "id": 244,
       "text": "That sugarless motherfucker is the last drink you're ever gonna have.",
       "character": "Tony Soprano",
       "season": 2,
@@ -2782,7 +2766,7 @@
       ]
     },
     {
-      "id": 247,
+      "id": 245,
       "text": "Next time you come in",
       "character": "you come heavy or not at all.",
       "tags": [
@@ -2790,7 +2774,7 @@
       ]
     },
     {
-      "id": 248,
+      "id": 246,
       "text": "It's in his blood",
       "character": "this miserable fucking existence. My rotten",
       "tags": [
@@ -2798,7 +2782,7 @@
       ]
     },
     {
-      "id": 249,
+      "id": 247,
       "text": "Sometimes you tell a lie so long",
       "character": "you don't know when to stop. You don't know when it's safe.",
       "tags": [
@@ -2806,7 +2790,7 @@
       ]
     },
     {
-      "id": 250,
+      "id": 248,
       "text": "Sometimes I feel like I've come in at the end. The best is over.",
       "character": "Tony Soprano",
       "season": 1,
@@ -2820,7 +2804,7 @@
       ]
     },
     {
-      "id": 251,
+      "id": 249,
       "text": "You don't understand. We can't send him to military school. How are we gonna save this kid?",
       "character": "Tony Soprano",
       "season": 3,
@@ -2834,7 +2818,7 @@
       ]
     },
     {
-      "id": 252,
+      "id": 250,
       "text": "There's no geographical solution to an emotional problem.",
       "character": "Dr. Jennifer Melfi",
       "season": 4,
@@ -2848,7 +2832,7 @@
       ]
     },
     {
-      "id": 253,
+      "id": 251,
       "text": "More is lost by indecision than wrong decision.",
       "character": "Tony Soprano",
       "season": 4,
@@ -2862,7 +2846,7 @@
       ]
     },
     {
-      "id": 254,
+      "id": 252,
       "text": "The only reason you have anything is because of my fucking sweat. You knew every step of the way where the money comes from. You walk around that fucking mansion with your $500 shoes and your diamond rings and you act like butter wouldn't melt in your mouth. You're entitled to shit.",
       "character": "Tony Soprano",
       "season": 4,
@@ -2876,7 +2860,7 @@
       ]
     },
     {
-      "id": 255,
+      "id": 253,
       "text": "Don't put me to the test.",
       "character": "Tony Soprano",
       "season": 2,
@@ -2890,7 +2874,7 @@
       ]
     },
     {
-      "id": 256,
+      "id": 254,
       "text": "It's none of your fucking business which side of the bed I wake up on.",
       "character": "Tony Soprano",
       "season": 5,
@@ -2904,7 +2888,7 @@
       ]
     },
     {
-      "id": 257,
+      "id": 255,
       "text": "You don't shit where you eat. And you really don't shit where I eat.",
       "character": "Tony Soprano",
       "season": 4,
@@ -2918,7 +2902,7 @@
       ]
     },
     {
-      "id": 258,
+      "id": 256,
       "text": "If the proper response is not forthcoming in a businesslike time frame",
       "character": "my next move will not be further conversation.",
       "tags": [
@@ -2926,7 +2910,7 @@
       ]
     },
     {
-      "id": 259,
+      "id": 257,
       "text": "Somebody's talking too much",
       "character": "and it's costing me money.",
       "tags": [
@@ -2934,7 +2918,7 @@
       ]
     },
     {
-      "id": 260,
+      "id": 258,
       "text": "We're soldiers. Soldiers don't go to hell.",
       "character": "Tony Soprano",
       "season": 2,
@@ -2948,7 +2932,7 @@
       ]
     },
     {
-      "id": 261,
+      "id": 259,
       "text": "What kind of person can I be",
       "character": "where his own mother wants him dead?",
       "tags": [
@@ -2956,7 +2940,7 @@
       ]
     },
     {
-      "id": 262,
+      "id": 260,
       "text": "They needed us to build their cities and dig their subways",
       "character": "and make them richer. The Carnegies and the Rockefellers",
       "tags": [
