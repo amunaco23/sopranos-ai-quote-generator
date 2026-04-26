@@ -2315,10 +2315,17 @@
     },
     {
       "id": 207,
-      "text": "WHAT IS THIS",
-      "character": "THE FUCKIN' UN NOW?!",
+      "text": "WHAT IS THIS, THE FUCKIN' UN NOW?!",
+      "character": "Johnny Sack",
+      "season": 5,
+      "episode": 13,
       "tags": [
-        "s5 e13"
+        "anger",
+        "negotiation",
+        "disagreement",
+        "mob politics",
+        "frustration",
+        "authority"
       ]
     },
     {
@@ -2475,26 +2482,44 @@
     },
     {
       "id": 219,
-      "text": "Fuck the tomatoes",
-      "character": "I'll take the scarole.",
+      "text": "Fuck the tomatoes, I'll take the scarole.",
+      "character": "Feech La Manna",
+      "season": 5,
+      "episode": 4,
       "tags": [
-        "s5 e4"
+        "money",
+        "greed",
+        "old-school",
+        "food",
+        "priorities"
       ]
     },
     {
       "id": 220,
-      "text": "All due respect",
-      "character": "you got no fucking idea what it's like to be number one. Every decision you make affects every facet of every other fucking thing. It's too much to deal with almost. And in the end",
+      "text": "All due respect, you got no fucking idea what it's like to be number one. Every decision you make affects every facet of every other fucking thing. It's too much to deal with almost. And in the end, you're completely alone with it all.",
+      "character": "Tony Soprano",
+      "season": 5,
+      "episode": 13,
       "tags": [
-        "tony soprano"
+        "leadership",
+        "loneliness",
+        "pressure",
+        "authority",
+        "responsibility"
       ]
     },
     {
       "id": 221,
-      "text": "You call or go anywhere near him or his family",
-      "character": "they'll be scraping your nipples off these fine leather seats. And here's the point to remember: my face will be the last one you see",
+      "text": "You call or go anywhere near him or his family, they'll be scraping your nipples off these fine leather seats. And here's the point to remember: my face will be the last one you see, not Tony's. We understand each other? It won't be cinematic.",
+      "character": "Patsy Parisi",
+      "season": 3,
+      "episode": 11,
       "tags": [
-        "patsy parisi"
+        "threat",
+        "intimidation",
+        "revenge",
+        "fear",
+        "warning"
       ]
     },
     {
@@ -2513,8 +2538,8 @@
     },
     {
       "id": 223,
-      "text": "You ever feel like nothing good was ever gonna happen to you? Yeah. And nothing did. So what? I'm alive. I'm surviving.",
-      "character": "Christopher Moltisanti / Paulie Gualtieri",
+      "text": "You ever feel like nothing good was ever gonna happen to you?",
+      "character": "Christopher Moltisanti",
       "season": 1,
       "episode": 8,
       "tags": [
@@ -2721,34 +2746,52 @@
     },
     {
       "id": 240,
-      "text": "We worry so much. Sometimes it feels like that's all we do",
-      "character": "but in the end it just gets washed away. All of it just gets washed away.",
+      "text": "We worry so much. Sometimes it feels like that's all we do, but in the end it just gets washed away. All of it just gets washed away.",
+      "character": "Carmela Soprano",
+      "season": 6,
+      "episode": 11,
       "tags": [
-        "s6 e11"
+        "worry",
+        "mortality",
+        "perspective",
+        "family",
+        "impermanence"
       ]
     },
     {
       "id": 241,
-      "text": "Sometimes",
-      "character": "we're all hypocrites.",
+      "text": "Sometimes, we're all hypocrites.",
+      "character": "Meadow Soprano",
+      "season": 6,
+      "episode": 7,
       "tags": [
-        "s6 e7"
+        "hypocrisy",
+        "morality",
+        "family",
+        "self-awareness",
+        "judgment"
       ]
     },
     {
       "id": 242,
-      "text": "No more of this",
-      "character": "Butchie. No more.",
+      "text": "No more of this, Butchie. No more.",
+      "character": "Phil Leotardo",
+      "season": 6,
+      "episode": 19,
       "tags": [
-        "s6 e19"
+        "revenge",
+        "exhaustion",
+        "violence",
+        "finality",
+        "mob war"
       ]
     },
     {
       "id": 243,
-      "text": "Yeah",
-      "character": "again with the money. It's settled",
+      "text": "Yeah, again with the money. It's settled",
+      "character": "John. So either name a price or get the fuck over it.",
       "tags": [
-        "carmine lupertazzi"
+        "s4 e4"
       ]
     },
     {
@@ -2767,26 +2810,44 @@
     },
     {
       "id": 245,
-      "text": "Next time you come in",
-      "character": "you come heavy or not at all.",
+      "text": "Next time you come in, you come heavy or not at all.",
+      "character": "Uncle Junior",
+      "season": 1,
+      "episode": 13,
       "tags": [
-        "s1 e13"
+        "warning",
+        "power",
+        "respect",
+        "threat",
+        "mob protocol"
       ]
     },
     {
       "id": 246,
-      "text": "It's in his blood",
-      "character": "this miserable fucking existence. My rotten",
+      "text": "It's in his blood, this miserable fucking existence. My rotten, fucking putrid genes have infected my kid's soul. That's my gift to my son.",
+      "character": "Tony Soprano",
+      "season": 6,
+      "episode": 17,
       "tags": [
-        "tony soprano"
+        "depression",
+        "fatherhood",
+        "guilt",
+        "genetics",
+        "despair"
       ]
     },
     {
       "id": 247,
-      "text": "Sometimes you tell a lie so long",
-      "character": "you don't know when to stop. You don't know when it's safe.",
+      "text": "Sometimes you tell a lie so long, you don't know when to stop. You don't know when it's safe.",
+      "character": "Vito Spatafore",
+      "season": 6,
+      "episode": 10,
       "tags": [
-        "s6 e10"
+        "identity",
+        "lies",
+        "fear",
+        "survival",
+        "self-deception"
       ]
     },
     {
@@ -2911,10 +2972,16 @@
     },
     {
       "id": 257,
-      "text": "Somebody's talking too much",
-      "character": "and it's costing me money.",
+      "text": "Somebody's talking too much, and it's costing me money.",
+      "character": "Johnny Sack",
+      "season": 4,
+      "episode": 4,
       "tags": [
-        "s4 e4"
+        "gossip",
+        "money",
+        "suspicion",
+        "anger",
+        "betrayal"
       ]
     },
     {
@@ -2933,10 +3000,16 @@
     },
     {
       "id": 259,
-      "text": "What kind of person can I be",
-      "character": "where his own mother wants him dead?",
+      "text": "What kind of person can I be, where his own mother wants him dead?",
+      "character": "Tony Soprano",
+      "season": 1,
+      "episode": 12,
       "tags": [
-        "s1 e12"
+        "family",
+        "betrayal",
+        "depression",
+        "motherhood",
+        "despair"
       ]
     },
     {
