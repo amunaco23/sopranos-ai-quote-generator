@@ -3,7 +3,6 @@
 import { useState, useCallback } from 'react';
 import QuoteInput from '@/components/QuoteInput';
 import QuoteCard from '@/components/QuoteCard';
-import LoadingState from '@/components/LoadingState';
 import RateLimitToast from '@/components/RateLimitToast';
 import Logo from '@/components/Logo';
 import { Quote } from '@/lib/types';
@@ -109,8 +108,6 @@ export default function Home() {
 
         {/* Results */}
         <div className="mt-6">
-          {loading && <LoadingState />}
-
           {!loading && error && (
             <div className="p-4 rounded-xl bg-[#1A1A1A] border border-[#272727] text-[#666] text-center text-sm">
               {error}
