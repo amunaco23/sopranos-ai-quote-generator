@@ -255,25 +255,14 @@ export default function CharacterAvatars({ allCharacters, selected, onSelect }: 
         </div>
       ))}
 
-      {/* +N expand button — AFM-153: flex wrapper keeps it vertically aligned */}
-      <div
-        style={{
-          marginLeft: -10,
-          zIndex: 0,
-          position: 'relative',
-          flexShrink: 0,
-          display: 'flex',
-          alignItems: 'center',
-        }}
+      {/* +N expand button — no wrapper div, styles applied directly to avoid height drift */}
+      <button
+        onClick={() => setExpanded(true)}
+        className="flex items-center justify-center rounded-full bg-[#2a2a2a] text-[#888] text-[11px] font-medium ring-1 ring-white/10 hover:text-white transition-colors flex-shrink-0"
+        style={{ width: AVATAR_SIZE, height: AVATAR_SIZE, marginLeft: -10, zIndex: 0, position: 'relative' }}
       >
-        <button
-          onClick={() => setExpanded(true)}
-          className="flex items-center justify-center rounded-full bg-[#2a2a2a] text-[#888] text-[11px] font-medium ring-1 ring-white/10 hover:text-white transition-colors"
-          style={{ width: AVATAR_SIZE, height: AVATAR_SIZE }}
-        >
-          +{otherChars.length}
-        </button>
-      </div>
+        +{otherChars.length}
+      </button>
     </div>
   );
 }
