@@ -2002,10 +2002,16 @@
     },
     {
       "id": 183,
-      "text": "Hi",
-      "character": "this is Detective Mike Hunt",
+      "text": "Hi, this is Detective Mike Hunt, Beaver Falls, Pennsylvania police department. You have a son Peter Paul?",
+      "character": "Ralph Cifaretto",
+      "season": 4,
+      "episode": 9,
       "tags": [
-        "pennsylvania police department. you have a son peter paul?"
+        "prank call",
+        "cruelty",
+        "humiliation",
+        "deception",
+        "vulgarity"
       ]
     },
     {
@@ -2018,10 +2024,16 @@
     },
     {
       "id": 185,
-      "text": "Ma'am",
-      "character": "I wish that was all",
+      "text": "Ma'am, I wish that was all, but I'm afraid we had to have emergency surgery performed upon arrival at headquarters, after discovery of a small rodent in the rectal passage.",
+      "character": "Ralph Cifaretto",
+      "season": 4,
+      "episode": 9,
       "tags": [
-        "after discovery of a small rodent in the rectal passage."
+        "prank call",
+        "humiliation",
+        "absurdity",
+        "cruelty",
+        "vulgarity"
       ]
     },
     {
