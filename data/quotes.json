@@ -1856,6 +1856,20 @@
         "animals",
         "pets"
       ]
+    },
+    {
+      "id": 173,
+      "text": "It's like the fuckin' regularness of everyday life is too hard for me",
+      "character": "Christopher Moltisanti",
+      "season": 6,
+      "episode": 9,
+      "tags": [
+        "depression",
+        "addiction",
+        "boredom",
+        "existential dread",
+        "ordinary life"
+      ]
     }
   ]
 }
