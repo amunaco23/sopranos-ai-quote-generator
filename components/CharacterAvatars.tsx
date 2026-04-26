@@ -39,20 +39,28 @@ function Avatar({
       onClick={onClick}
       title={name}
       className={[
-        'rounded-full flex-shrink-0 overflow-hidden transition-all duration-200',
+        'rounded-full flex-shrink-0 overflow-hidden transition-all duration-250',
         'focus:outline-none',
         active
           ? 'ring-2 ring-[#C41E1E] ring-offset-1 ring-offset-[#1C1C1C]'
           : 'ring-1 ring-white/10 hover:ring-white/30',
       ].join(' ')}
-      style={{ width: AVATAR_SIZE, height: AVATAR_SIZE }}
+      style={{
+        width: AVATAR_SIZE,
+        height: AVATAR_SIZE,
+        // filter: drop-shadow works even with overflow:hidden (unlike box-shadow)
+        filter: active
+          ? 'drop-shadow(0 4px 10px rgba(0,0,0,0.7)) drop-shadow(0 0 6px rgba(196,30,30,0.25))'
+          : 'drop-shadow(0 2px 5px rgba(0,0,0,0.5))',
+        transform: active ? 'translateY(-1px)' : 'translateY(0)',
+      }}
     >
       {imgSrc ? (
         <Image
           src={imgSrc}
           alt={name}
-          width={AVATAR_SIZE}
-          height={AVATAR_SIZE}
+          width={AVATAR_SIZE * 2}
+          height={AVATAR_SIZE * 2}
           className="w-full h-full object-cover"
         />
       ) : (
@@ -132,7 +140,8 @@ export default function CharacterAvatars({ allCharacters, selected, onSelect }: 
           className="transition-all duration-300"
           style={{
             marginLeft: i === 0 ? 0 : -10,
-            zIndex: stackChars.length - i,
+            // Selected (position 0) always sits on top
+            zIndex: selected === char ? 10 : stackChars.length - i,
             position: 'relative',
           }}
         >
