@@ -750,7 +750,8 @@
       "season": 6,
       "episode": 14,
       "tags": [
-        "comedy"
+        "comedy",
+        "one liner"
       ]
     },
     {
@@ -1768,26 +1769,13 @@
     },
     {
       "id": 165,
-      "text": "“Tomorrow I can be on time, but you’ll be stupid forever.”",
-      "character": "Ralph Cifaretto",
-      "season": 3,
-      "episode": 10,
-      "tags": [
-        "comebacks",
-        "one liners",
-        "insults",
-        "diss"
-      ]
-    },
-    {
-      "id": 166,
       "text": "“Why didn’t you just leave some out? I love cheese at my feet!”",
       "character": "Silvio Dante",
       "season": 2,
       "episode": 6
     },
     {
-      "id": 167,
+      "id": 166,
       "text": "“I’ll have a Fresca.”",
       "character": "Ralph Cifaretto",
       "season": 3,
@@ -1800,7 +1788,7 @@
       ]
     },
     {
-      "id": 168,
+      "id": 167,
       "text": "“And I know it’s tough on ya, I’m the guy that’s dating your mom.”",
       "character": "Ralph Cifaretto",
       "season": 3,
@@ -1811,7 +1799,7 @@
       ]
     },
     {
-      "id": 169,
+      "id": 168,
       "text": "“You know, I don’t understand you, Anthony. We got lucky.”",
       "character": "Ralph Cifaretto",
       "season": 4,
@@ -1823,7 +1811,7 @@
       ]
     },
     {
-      "id": 170,
+      "id": 169,
       "text": "“It was a fin’ horse! What are you, a vegetarian? You eat beef and sausage by the fin’ carload!”",
       "character": "Ralph Cifaretto",
       "season": 4,
@@ -1836,7 +1824,7 @@
       ]
     },
     {
-      "id": 171,
+      "id": 170,
       "text": "“No, I did not! But so what?!”",
       "character": "Ralph Cifaretto",
       "season": 4,
@@ -1846,7 +1834,7 @@
       ]
     },
     {
-      "id": 172,
+      "id": 171,
       "text": "“She was a beautiful, innocent creature. What’d she ever do to you?”",
       "character": "Ralph Cifaretto",
       "season": 4,
@@ -1858,7 +1846,7 @@
       ]
     },
     {
-      "id": 173,
+      "id": 172,
       "text": "It's like the fuckin' regularness of everyday life is too hard for me",
       "character": "Christopher Moltisanti",
       "season": 1,
@@ -1869,6 +1857,1085 @@
         "boredom",
         "existential dread",
         "ordinary life"
+      ]
+    },
+    {
+      "id": 173,
+      "text": "What's next - he get's to fuck her for a million!?!",
+      "character": "Johnny Sack",
+      "season": 4,
+      "episode": 4,
+      "tags": [
+        "anger",
+        "insult",
+        "honor",
+        "disrespect",
+        "revenge"
+      ]
+    },
+    {
+      "id": 174,
+      "text": "But I've been good to you",
+      "character": "and you pay me back",
+      "tags": [
+        "artie bucco"
+      ]
+    },
+    {
+      "id": 175,
+      "text": "It won't be cinematic.",
+      "character": "Patsy Parisi",
+      "season": 3,
+      "episode": 12,
+      "tags": [
+        "threat",
+        "intimidation",
+        "revenge",
+        "fear",
+        "warning"
+      ]
+    },
+    {
+      "id": 176,
+      "text": "Correct — that quote is Ralph Cifaretto",
+      "character": "not Vito. It’s from Season 4"
+    },
+    {
+      "id": 177,
+      "text": "You want to know what that crazy broad wanted to do to me? She wanted to stick a dildo up my ass and pretend to be pimping me out. I told her GET THE FUCK OUTTA HERE!!! That whole family is sick!",
+      "character": "Ralph Cifaretto",
+      "season": 4,
+      "episode": 4,
+      "tags": [
+        "sexual humiliation",
+        "disgust",
+        "family dysfunction",
+        "denial",
+        "vulgarity"
+      ]
+    },
+    {
+      "id": 178,
+      "text": "We found him in a public men's room in Lafayette Park. I don't know how to put this delicately. He was sucking a cub scouts dick",
+      "character": "Ralph Cifaretto",
+      "season": 4,
+      "episode": 9,
+      "tags": [
+        "prank call",
+        "revenge",
+        "humiliation",
+        "vulgarity",
+        "cruelty"
+      ]
+    },
+    {
+      "id": 179,
+      "text": "I hear Ginny Sack is having a 90-pound mole taken off her ass",
+      "character": "Ralph Cifaretto",
+      "season": 4,
+      "episode": 2,
+      "tags": [
+        "insult",
+        "body shaming",
+        "fat",
+        "disrespect",
+        "mob humor",
+        "conflict"
+      ]
+    },
+    {
+      "id": 180,
+      "text": "THEY DIDN'T HAVE FLAT TOPS IN ANCIENT ROME!",
+      "character": "Ralph Cifaretto",
+      "season": 3,
+      "episode": 6,
+      "tags": [
+        "movie criticism",
+        "absurdity",
+        "ancient rome",
+        "masculinity",
+        "comedy"
+      ]
+    },
+    {
+      "id": 181,
+      "text": "Why was I born handsome instead of rich?",
+      "character": "Ralph Cifaretto",
+      "season": 3,
+      "episode": 6,
+      "tags": [
+        "vanity",
+        "money",
+        "insecurity",
+        "humor",
+        "self-image"
+      ]
+    },
+    {
+      "id": 182,
+      "text": "I'm earnin' with three hands here and it's still not good enough for this cocksucker.",
+      "character": "Ralph Cifaretto",
+      "season": 3,
+      "episode": 8,
+      "tags": [
+        "resentment",
+        "earning",
+        "disrespect",
+        "mob hierarchy",
+        "frustration"
+      ]
+    },
+    {
+      "id": 183,
+      "text": "If you brought along a pair of dirty chef whites my friend here will suck out the stains for ya",
+      "character": "Ralph Cifaretto",
+      "season": 4,
+      "episode": 6,
+      "tags": [
+        "insult",
+        "restaurant humor",
+        "humiliation",
+        "vulgarity",
+        "mockery"
+      ]
+    },
+    {
+      "id": 184,
+      "text": "Hi",
+      "character": "this is Detective Mike Hunt",
+      "tags": [
+        "pennsylvania police department. you have a son peter paul?"
+      ]
+    },
+    {
+      "id": 185,
+      "text": "A gerbil",
+      "character": "ma'am.",
+      "tags": [
+        "s4 e9"
+      ]
+    },
+    {
+      "id": 186,
+      "text": "Ma'am",
+      "character": "I wish that was all",
+      "tags": [
+        "after discovery of a small rodent in the rectal passage."
+      ]
+    },
+    {
+      "id": 187,
+      "text": "A. She was a hooah. B. She hit me.",
+      "character": "Ralph Cifaretto",
+      "season": 3,
+      "episode": 8,
+      "tags": [
+        "denial",
+        "cruelty",
+        "misogyny",
+        "excuse-making",
+        "violence"
+      ]
+    },
+    {
+      "id": 188,
+      "text": "And that wasn't my kid she was carrying.",
+      "character": "Ralph Cifaretto",
+      "season": 3,
+      "episode": 8,
+      "tags": [
+        "denial",
+        "cruelty",
+        "pregnancy",
+        "blame",
+        "violence"
+      ]
+    },
+    {
+      "id": 189,
+      "text": "I was doing a lot of coke at the time.",
+      "character": "Ralph Cifaretto",
+      "season": 3,
+      "episode": 8,
+      "tags": [
+        "excuse-making",
+        "addiction",
+        "denial",
+        "violence",
+        "apology"
+      ]
+    },
+    {
+      "id": 190,
+      "text": "What are you",
+      "character": "a vegetarian? You eat beef and sausage by the fucking carload.",
+      "tags": [
+        "s4 e9"
+      ]
+    },
+    {
+      "id": 191,
+      "text": "It's my fault she's a klutz?",
+      "character": "Ralph Cifaretto",
+      "season": 3,
+      "episode": 6,
+      "tags": [
+        "denial",
+        "blame",
+        "cruelty",
+        "violence",
+        "deflection"
+      ]
+    },
+    {
+      "id": 192,
+      "text": "What is this",
+      "character": "a handsome contest?",
+      "tags": [
+        "s3 e6"
+      ]
+    },
+    {
+      "id": 193,
+      "text": "That way the macaroni absorbs the gravy instead of just coats it.",
+      "character": "Ralph Cifaretto",
+      "season": 3,
+      "episode": 9,
+      "tags": [
+        "food",
+        "cooking",
+        "advice",
+        "domesticity",
+        "italian culture"
+      ]
+    },
+    {
+      "id": 194,
+      "text": "This is for flavor.",
+      "character": "Ralph Cifaretto",
+      "season": 3,
+      "episode": 9,
+      "tags": [
+        "food",
+        "cooking",
+        "advice",
+        "domesticity",
+        "italian culture"
+      ]
+    },
+    {
+      "id": 195,
+      "text": "I represent a group of concerned citizens who are very upset about this protest you're spearheading",
+      "character": "no puns intended.",
+      "tags": [
+        "s4 e3"
+      ]
+    },
+    {
+      "id": 196,
+      "text": "Who's he think's keeping that fat bitch in Devil Dogs anyway?",
+      "character": "Ralph Cifaretto",
+      "season": 4,
+      "episode": 4,
+      "tags": [
+        "resentment",
+        "disrespect",
+        "money",
+        "body shaming",
+        "conflict"
+      ]
+    },
+    {
+      "id": 197,
+      "text": "Cause if you don't pay me back I ain't gonna be able to hurt you.",
+      "character": "Ralph Cifaretto",
+      "season": 4,
+      "episode": 6,
+      "tags": [
+        "debt",
+        "threat",
+        "violence",
+        "intimidation",
+        "money"
+      ]
+    },
+    {
+      "id": 198,
+      "text": "Watch out for the goat",
+      "character": "it butts.",
+      "tags": [
+        "s4 e5"
+      ]
+    },
+    {
+      "id": 199,
+      "text": "All this over some dead hooah?",
+      "character": "Ralph Cifaretto",
+      "season": 3,
+      "episode": 8,
+      "tags": [
+        "cruelty",
+        "denial",
+        "misogyny",
+        "violence",
+        "resentment"
+      ]
+    },
+    {
+      "id": 200,
+      "text": "Fuck him and his turkey. I oughta shove a drumstick up his ass.",
+      "character": "Ralph Cifaretto",
+      "season": 3,
+      "episode": 8,
+      "tags": [
+        "anger",
+        "disrespect",
+        "thanksgiving",
+        "rebellion",
+        "insult"
+      ]
+    },
+    {
+      "id": 201,
+      "text": "What? You think I'm afraid of that fat fuck?",
+      "character": "Ralph Cifaretto",
+      "season": 3,
+      "episode": 8,
+      "tags": [
+        "anger",
+        "defiance",
+        "disrespect",
+        "arrogance",
+        "conflict"
+      ]
+    },
+    {
+      "id": 202,
+      "text": "Don't get fucking filthy about it.",
+      "character": "Ralph Cifaretto",
+      "season": 3,
+      "episode": 8,
+      "tags": [
+        "sex",
+        "discomfort",
+        "humor",
+        "boundaries",
+        "vulgarity"
+      ]
+    },
+    {
+      "id": 203,
+      "text": "I have come to reclaim Rome for my people.",
+      "character": "Ralph Cifaretto",
+      "season": 3,
+      "episode": 6,
+      "tags": [
+        "gladiator",
+        "fantasy",
+        "arrogance",
+        "roman history",
+        "comedy"
+      ]
+    },
+    {
+      "id": 204,
+      "text": "Tomorrow I can be on time",
+      "character": "but you'll be stupid forever.",
+      "tags": [
+        "s3 e13"
+      ]
+    },
+    {
+      "id": 205,
+      "text": "A real lack of standards",
+      "character": "your generation.",
+      "tags": [
+        "s4 e2"
+      ]
+    },
+    {
+      "id": 206,
+      "text": "No",
+      "character": "watch out for the goat",
+      "tags": [
+        "ralph cifaretto"
+      ]
+    },
+    {
+      "id": 207,
+      "text": "You yap worse than six barbers.",
+      "character": "Uncle Junior",
+      "season": 1,
+      "episode": 9,
+      "tags": [
+        "annoyance",
+        "insult",
+        "impatience",
+        "humor",
+        "criticism"
+      ]
+    },
+    {
+      "id": 208,
+      "text": "So what? No fuckin ziti now?",
+      "character": "AJ Soprano",
+      "season": 1,
+      "episode": 1,
+      "tags": [
+        "family dinner",
+        "disappointment",
+        "food",
+        "comedy",
+        "teenage attitude"
+      ]
+    },
+    {
+      "id": 209,
+      "text": "You look like a Puerto Rican whore.",
+      "character": "Phil Leotardo",
+      "season": 6,
+      "episode": 16,
+      "tags": [
+        "shame",
+        "family conflict",
+        "masculinity",
+        "cruelty",
+        "judgment",
+        "disgust"
+      ]
+    },
+    {
+      "id": 210,
+      "text": "WHAT IS THIS",
+      "character": "THE FUCKIN' UN NOW?!",
+      "tags": [
+        "s5 e13"
+      ]
+    },
+    {
+      "id": 211,
+      "text": "I'm the motherfuckin fuckin one who calls the shots.",
+      "character": "Tony Soprano",
+      "season": 2,
+      "episode": 3,
+      "tags": [
+        "authority",
+        "dominance",
+        "leadership",
+        "respect",
+        "intimidation"
+      ]
+    },
+    {
+      "id": 212,
+      "text": "You got a bee on your hat.",
+      "character": "Furio Giunta",
+      "season": 3,
+      "episode": 7,
+      "tags": [
+        "golf",
+        "intimidation",
+        "comedy",
+        "menace",
+        "absurdity"
+      ]
+    },
+    {
+      "id": 213,
+      "text": "Take it easy",
+      "character": "we're not making a Western here.",
+      "tags": [
+        "s1 e8"
+      ]
+    },
+    {
+      "id": 214,
+      "text": "No scraps in my scrapbook.",
+      "character": "Phil Leotardo",
+      "season": 6,
+      "episode": 20,
+      "tags": [
+        "revenge",
+        "finality",
+        "pride",
+        "ruthlessness",
+        "mob politics"
+      ]
+    },
+    {
+      "id": 215,
+      "text": "You have a problem besides those fucking pants?",
+      "character": "Paulie Gualtieri",
+      "season": 3,
+      "episode": 5,
+      "tags": [
+        "insult",
+        "intimidation",
+        "fashion",
+        "annoyance",
+        "threat"
+      ]
+    },
+    {
+      "id": 216,
+      "text": "Sharp as a cue ball.",
+      "character": "Uncle Junior",
+      "season": 3,
+      "episode": 8,
+      "tags": [
+        "insult",
+        "stupidity",
+        "sarcasm",
+        "judgment",
+        "mockery"
+      ]
+    },
+    {
+      "id": 217,
+      "text": "I'm with the Vipers!",
+      "character": "Christopher Moltisanti",
+      "season": 6,
+      "episode": 9,
+      "tags": [
+        "panic",
+        "robbery",
+        "biker gang",
+        "comedy",
+        "adrenaline"
+      ]
+    },
+    {
+      "id": 218,
+      "text": "He's got tremendous moxie for his size.",
+      "character": "Uncle Junior",
+      "season": 1,
+      "episode": 2,
+      "tags": [
+        "respect",
+        "toughness",
+        "leadership",
+        "size",
+        "mob judgment"
+      ]
+    },
+    {
+      "id": 219,
+      "text": "You're supposed to push Webistics!",
+      "character": "Christopher Moltisanti",
+      "season": 2,
+      "episode": 7,
+      "tags": [
+        "stock scam",
+        "pressure",
+        "intimidation",
+        "crime",
+        "business",
+        "stocks",
+        "market"
+      ]
+    },
+    {
+      "id": 220,
+      "text": "It's all a big nothing. What makes you so special?",
+      "character": "Livia Soprano",
+      "season": 2,
+      "episode": 12,
+      "tags": [
+        "nihilism",
+        "depression",
+        "cruelty",
+        "family",
+        "despair"
+      ]
+    },
+    {
+      "id": 221,
+      "text": "Timeline got fucked up.",
+      "character": "Silvio Dante",
+      "season": 3,
+      "episode": 8,
+      "tags": [
+        "excuse",
+        "violence",
+        "mob cleanup",
+        "deflection",
+        "absurdity",
+        "time",
+        "late"
+      ]
+    },
+    {
+      "id": 222,
+      "text": "Fuck the tomatoes",
+      "character": "I'll take the scarole.",
+      "tags": [
+        "s5 e4"
+      ]
+    },
+    {
+      "id": 223,
+      "text": "All due respect",
+      "character": "you got no fucking idea what it's like to be number one. Every decision you make affects every facet of every other fucking thing. It's too much to deal with almost. And in the end",
+      "tags": [
+        "tony soprano"
+      ]
+    },
+    {
+      "id": 224,
+      "text": "You call or go anywhere near him or his family",
+      "character": "they'll be scraping your nipples off these fine leather seats. And here's the point to remember: my face will be the last one you see",
+      "tags": [
+        "patsy parisi"
+      ]
+    },
+    {
+      "id": 225,
+      "text": "I put the grief behind me. Let me hear you say it.",
+      "character": "Tony Soprano",
+      "season": 2,
+      "episode": 9,
+      "tags": [
+        "grief",
+        "control",
+        "intimidation",
+        "loyalty",
+        "suppression"
+      ]
+    },
+    {
+      "id": 226,
+      "text": "You ever feel like nothing good was ever gonna happen to you? Yeah. And nothing did. So what? I'm alive. I'm surviving.",
+      "character": "Christopher Moltisanti / Paulie Gualtieri",
+      "season": 1,
+      "episode": 8,
+      "tags": [
+        "depression",
+        "survival",
+        "hopelessness",
+        "acceptance",
+        "resilience"
+      ]
+    },
+    {
+      "id": 227,
+      "text": "I'm like King Midas in reverse. Everything I touch turns to shit.",
+      "character": "Tony Soprano",
+      "season": 1,
+      "episode": 12,
+      "tags": [
+        "depression",
+        "failure",
+        "self-loathing",
+        "despair",
+        "guilt"
+      ]
+    },
+    {
+      "id": 228,
+      "text": "I don't even know why I come here. Got nothing else to do",
+      "character": "I guess.",
+      "tags": [
+        "s1 e12"
+      ]
+    },
+    {
+      "id": 229,
+      "text": "Discontinue the lithium.",
+      "character": "Dr. Jennifer Melfi",
+      "season": 1,
+      "episode": 12,
+      "tags": [
+        "therapy",
+        "medication",
+        "instability",
+        "depression",
+        "diagnosis"
+      ]
+    },
+    {
+      "id": 230,
+      "text": "I'm sorry your son is no longer with us",
+      "character": "but don't use mine as a guinea pig for your ideas on parenting.",
+      "tags": [
+        "s6 e2"
+      ]
+    },
+    {
+      "id": 231,
+      "text": "Why do you think I'm talking to you like this?",
+      "character": "Rosalie Aprile",
+      "season": 6,
+      "episode": 2,
+      "tags": [
+        "grief",
+        "parenting",
+        "tough love",
+        "friendship",
+        "honesty"
+      ]
+    },
+    {
+      "id": 232,
+      "text": "Fucking nosy! Eat your manicott!",
+      "character": "Uncle Junior",
+      "season": 6,
+      "episode": 2,
+      "tags": [
+        "irritation",
+        "family",
+        "secrecy",
+        "anger",
+        "food"
+      ]
+    },
+    {
+      "id": 233,
+      "text": "Don't you love me?",
+      "character": "Tony Soprano",
+      "season": 5,
+      "episode": 3,
+      "tags": [
+        "family",
+        "vulnerability",
+        "aging",
+        "dementia",
+        "love"
+      ]
+    },
+    {
+      "id": 234,
+      "text": "I gave that fuck pieces of my soul",
+      "character": "Adriana. You know what he said to me? He said I should have a fucking drink.",
+      "tags": [
+        "s5 e12"
+      ]
+    },
+    {
+      "id": 235,
+      "text": "That's the guy",
+      "character": "Adriana. My uncle Tony. The guy I'm going to hell for.",
+      "tags": [
+        "s5 e12"
+      ]
+    },
+    {
+      "id": 236,
+      "text": "You're not listening. I'm not charging you because I won't take blood money. And you can't either. One thing you can never say: that you haven't been told.",
+      "character": "Dr. Krakower",
+      "season": 3,
+      "episode": 7,
+      "tags": [
+        "morality",
+        "warning",
+        "blood money",
+        "accountability",
+        "truth"
+      ]
+    },
+    {
+      "id": 237,
+      "text": "My father told me never get old. I should have listened to him.",
+      "character": "Uncle Junior",
+      "season": 4,
+      "episode": 1,
+      "tags": [
+        "aging",
+        "regret",
+        "mortality",
+        "bitterness",
+        "decline"
+      ]
+    },
+    {
+      "id": 238,
+      "text": "You're looking at them.",
+      "character": "Tony Soprano",
+      "season": 1,
+      "episode": 3,
+      "tags": [
+        "identity",
+        "italian pride",
+        "power",
+        "history",
+        "intimidation"
+      ]
+    },
+    {
+      "id": 239,
+      "text": "How could you fucking do this to us?",
+      "character": "Christopher Moltisanti",
+      "season": 4,
+      "episode": 10,
+      "tags": [
+        "betrayal",
+        "addiction",
+        "rage",
+        "relationship",
+        "grief"
+      ]
+    },
+    {
+      "id": 240,
+      "text": "You're crowding me.",
+      "character": "Tony Blundetto",
+      "season": 5,
+      "episode": 12,
+      "tags": [
+        "pressure",
+        "trauma",
+        "warning",
+        "resentment",
+        "volatility"
+      ]
+    },
+    {
+      "id": 241,
+      "text": "Let's be honest about the great Dickie Moltisanti",
+      "character": "my dad",
+      "tags": [
+        "christopher moltisanti"
+      ]
+    },
+    {
+      "id": 242,
+      "text": "I ordered some for the table.",
+      "character": "Tony Soprano",
+      "season": 6,
+      "episode": 21,
+      "tags": [
+        "food",
+        "family",
+        "finality",
+        "normalcy",
+        "tension"
+      ]
+    },
+    {
+      "id": 243,
+      "text": "We worry so much. Sometimes it feels like that's all we do",
+      "character": "but in the end it just gets washed away. All of it just gets washed away.",
+      "tags": [
+        "s6 e11"
+      ]
+    },
+    {
+      "id": 244,
+      "text": "Sometimes",
+      "character": "we're all hypocrites.",
+      "tags": [
+        "s6 e7"
+      ]
+    },
+    {
+      "id": 245,
+      "text": "No more of this",
+      "character": "Butchie. No more.",
+      "tags": [
+        "s6 e19"
+      ]
+    },
+    {
+      "id": 246,
+      "text": "Yeah",
+      "character": "again with the money. It's settled",
+      "tags": [
+        "carmine lupertazzi"
+      ]
+    },
+    {
+      "id": 247,
+      "text": "That sugarless motherfucker is the last drink you're ever gonna have.",
+      "character": "Tony Soprano",
+      "season": 2,
+      "episode": 9,
+      "tags": [
+        "revenge",
+        "execution",
+        "betrayal",
+        "violence",
+        "finality"
+      ]
+    },
+    {
+      "id": 248,
+      "text": "Next time you come in",
+      "character": "you come heavy or not at all.",
+      "tags": [
+        "s1 e13"
+      ]
+    },
+    {
+      "id": 249,
+      "text": "It's in his blood",
+      "character": "this miserable fucking existence. My rotten",
+      "tags": [
+        "tony soprano"
+      ]
+    },
+    {
+      "id": 250,
+      "text": "Sometimes you tell a lie so long",
+      "character": "you don't know when to stop. You don't know when it's safe.",
+      "tags": [
+        "s6 e10"
+      ]
+    },
+    {
+      "id": 251,
+      "text": "Sometimes I feel like I've come in at the end. The best is over.",
+      "character": "Tony Soprano",
+      "season": 1,
+      "episode": 1,
+      "tags": [
+        "decline",
+        "nostalgia",
+        "depression",
+        "modern life",
+        "disillusionment"
+      ]
+    },
+    {
+      "id": 252,
+      "text": "You don't understand. We can't send him to military school. How are we gonna save this kid?",
+      "character": "Tony Soprano",
+      "season": 3,
+      "episode": 13,
+      "tags": [
+        "parenting",
+        "fear",
+        "vulnerability",
+        "family",
+        "panic"
+      ]
+    },
+    {
+      "id": 253,
+      "text": "There's no geographical solution to an emotional problem.",
+      "character": "Dr. Jennifer Melfi",
+      "season": 4,
+      "episode": 13,
+      "tags": [
+        "therapy",
+        "avoidance",
+        "emotional pain",
+        "self-deception",
+        "truth"
+      ]
+    },
+    {
+      "id": 254,
+      "text": "More is lost by indecision than wrong decision.",
+      "character": "Tony Soprano",
+      "season": 4,
+      "episode": 13,
+      "tags": [
+        "decision-making",
+        "leadership",
+        "risk",
+        "action",
+        "advice"
+      ]
+    },
+    {
+      "id": 255,
+      "text": "The only reason you have anything is because of my fucking sweat. You knew every step of the way where the money comes from. You walk around that fucking mansion with your $500 shoes and your diamond rings and you act like butter wouldn't melt in your mouth. You're entitled to shit.",
+      "character": "Tony Soprano",
+      "season": 4,
+      "episode": 13,
+      "tags": [
+        "marriage",
+        "money",
+        "hypocrisy",
+        "resentment",
+        "confrontation"
+      ]
+    },
+    {
+      "id": 256,
+      "text": "Don't put me to the test.",
+      "character": "Tony Soprano",
+      "season": 2,
+      "episode": 10,
+      "tags": [
+        "warning",
+        "authority",
+        "intimidation",
+        "control",
+        "threat"
+      ]
+    },
+    {
+      "id": 257,
+      "text": "It's none of your fucking business which side of the bed I wake up on.",
+      "character": "Tony Soprano",
+      "season": 5,
+      "episode": 1,
+      "tags": [
+        "privacy",
+        "anger",
+        "defensiveness",
+        "authority",
+        "boundaries"
+      ]
+    },
+    {
+      "id": 258,
+      "text": "You don't shit where you eat. And you really don't shit where I eat.",
+      "character": "Tony Soprano",
+      "season": 4,
+      "episode": 10,
+      "tags": [
+        "boundaries",
+        "business",
+        "warning",
+        "respect",
+        "control"
+      ]
+    },
+    {
+      "id": 259,
+      "text": "If the proper response is not forthcoming in a businesslike time frame",
+      "character": "my next move will not be further conversation.",
+      "tags": [
+        "s5 e13"
+      ]
+    },
+    {
+      "id": 260,
+      "text": "Somebody's talking too much",
+      "character": "and it's costing me money.",
+      "tags": [
+        "s4 e4"
+      ]
+    },
+    {
+      "id": 261,
+      "text": "We're soldiers. Soldiers don't go to hell.",
+      "character": "Tony Soprano",
+      "season": 2,
+      "episode": 9,
+      "tags": [
+        "morality",
+        "rationalization",
+        "violence",
+        "guilt",
+        "denial"
+      ]
+    },
+    {
+      "id": 262,
+      "text": "What kind of person can I be",
+      "character": "where his own mother wants him dead?",
+      "tags": [
+        "s1 e12"
+      ]
+    },
+    {
+      "id": 263,
+      "text": "They needed us to build their cities and dig their subways",
+      "character": "and make them richer. The Carnegies and the Rockefellers",
+      "tags": [
+        "and family"
       ]
     }
   ]
