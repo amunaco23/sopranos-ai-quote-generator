@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useRef, useEffect } from 'react';
+import { createPortal } from 'react-dom';
 import Image from 'next/image';
 
 // Characters with uploaded photos
@@ -23,6 +24,27 @@ function getInitials(name: string): string {
     .toUpperCase();
 }
 
+// Portal tooltip — renders into document.body so no scroll container can clip it
+function AvatarTooltip({ name, anchorRect }: { name: string; anchorRect: DOMRect }) {
+  const GAP = 6; // px between tooltip bottom and avatar top
+  return createPortal(
+    <div
+      style={{
+        position: 'fixed',
+        left: anchorRect.left + anchorRect.width / 2,
+        top: anchorRect.top - GAP,
+        transform: 'translate(-50%, -100%)',
+        zIndex: 9999,
+        pointerEvents: 'none',
+      }}
+      className="px-2 py-0.5 rounded-md bg-[#111] text-white text-[10px] leading-4 whitespace-nowrap border border-white/10 shadow-lg"
+    >
+      {name}
+    </div>,
+    document.body
+  );
+}
+
 function Avatar({
   name,
   active,
@@ -33,47 +55,61 @@ function Avatar({
   onClick: () => void;
 }) {
   const imgSrc = CHARACTER_IMAGES[name];
+  const btnRef = useRef<HTMLButtonElement>(null);
+  const [anchorRect, setAnchorRect] = useState<DOMRect | null>(null);
+
+  const handleMouseEnter = () => {
+    if (btnRef.current) {
+      setAnchorRect(btnRef.current.getBoundingClientRect());
+    }
+  };
+  const handleMouseLeave = () => setAnchorRect(null);
 
   return (
-    <button
-      onClick={onClick}
-      title={name}
-      className={[
-        'rounded-full flex-shrink-0 overflow-hidden transition-all duration-250',
-        'focus:outline-none',
-        active
-          ? 'ring-2 ring-[#C41E1E] ring-offset-1 ring-offset-[#1C1C1C]'
-          : 'ring-1 ring-white/10 hover:ring-white/30',
-      ].join(' ')}
-      style={{
-        width: AVATAR_SIZE,
-        height: AVATAR_SIZE,
-        // filter: drop-shadow works even with overflow:hidden (unlike box-shadow)
-        filter: active
-          ? 'drop-shadow(0 4px 10px rgba(0,0,0,0.7)) drop-shadow(0 0 6px rgba(196,30,30,0.25))'
-          : 'drop-shadow(0 2px 5px rgba(0,0,0,0.5))',
-        transform: active ? 'translateY(-1px)' : 'translateY(0)',
-      }}
-    >
-      {imgSrc ? (
-        <Image
-          src={imgSrc}
-          alt={name}
-          width={AVATAR_SIZE * 2}
-          height={AVATAR_SIZE * 2}
-          className="w-full h-full object-cover"
-        />
-      ) : (
-        <div
-          className={[
-            'w-full h-full flex items-center justify-center text-[11px] font-semibold',
-            active ? 'bg-[#C41E1E] text-white' : 'bg-[#2a2a2a] text-[#777777]',
-          ].join(' ')}
-        >
-          {getInitials(name)}
-        </div>
-      )}
-    </button>
+    <>
+      <button
+        ref={btnRef}
+        onClick={onClick}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+        className={[
+          'rounded-full flex-shrink-0 overflow-hidden transition-all duration-250',
+          'focus:outline-none',
+          active
+            ? 'ring-2 ring-[#C41E1E] ring-offset-1 ring-offset-[#1C1C1C]'
+            : 'ring-1 ring-white/10 hover:ring-white/30',
+        ].join(' ')}
+        style={{
+          width: AVATAR_SIZE,
+          height: AVATAR_SIZE,
+          filter: active
+            ? 'drop-shadow(0 4px 10px rgba(0,0,0,0.7)) drop-shadow(0 0 6px rgba(196,30,30,0.25))'
+            : 'drop-shadow(0 2px 5px rgba(0,0,0,0.5))',
+          transform: active ? 'translateY(-1px)' : 'translateY(0)',
+        }}
+      >
+        {imgSrc ? (
+          <Image
+            src={imgSrc}
+            alt={name}
+            width={AVATAR_SIZE * 2}
+            height={AVATAR_SIZE * 2}
+            className="w-full h-full object-cover"
+          />
+        ) : (
+          <div
+            className={[
+              'w-full h-full flex items-center justify-center text-[11px] font-semibold',
+              active ? 'bg-[#C41E1E] text-white' : 'bg-[#2a2a2a] text-[#777777]',
+            ].join(' ')}
+          >
+            {getInitials(name)}
+          </div>
+        )}
+      </button>
+
+      {anchorRect && <AvatarTooltip name={name} anchorRect={anchorRect} />}
+    </>
   );
 }
 
@@ -88,7 +124,7 @@ export default function CharacterAvatars({ allCharacters, selected, onSelect }: 
   const [closing, setClosing] = useState(false);
   const scrollRef = useRef<HTMLDivElement>(null);
 
-  // Pin scroll to the left whenever the expanded row mounts or re-renders
+  // Pin scroll to the left whenever the expanded row opens
   useEffect(() => {
     if (expanded && scrollRef.current) {
       scrollRef.current.scrollLeft = 0;
@@ -119,7 +155,6 @@ export default function CharacterAvatars({ allCharacters, selected, onSelect }: 
       : pinnedChars;
 
   if (expanded || closing) {
-    // Horizontal scrollable row of all characters, selected first
     const sorted = [...allCharacters].sort((a, b) => {
       if (a === selected) return -1;
       if (b === selected) return 1;
@@ -152,6 +187,7 @@ export default function CharacterAvatars({ allCharacters, selected, onSelect }: 
             />
           </div>
         ))}
+
         {/* Collapse button */}
         <button
           onClick={handleClose}
@@ -163,7 +199,6 @@ export default function CharacterAvatars({ allCharacters, selected, onSelect }: 
             animationDelay: closing ? '0ms' : `${sorted.length * 10}ms`,
             opacity: 0,
           }}
-          title="Collapse"
         >
           ✕
         </button>
@@ -180,7 +215,6 @@ export default function CharacterAvatars({ allCharacters, selected, onSelect }: 
           className="transition-all duration-300"
           style={{
             marginLeft: i === 0 ? 0 : -10,
-            // Selected (position 0) always sits on top
             zIndex: selected === char ? 10 : stackChars.length - i,
             position: 'relative',
           }}
@@ -195,7 +229,6 @@ export default function CharacterAvatars({ allCharacters, selected, onSelect }: 
           onClick={() => setExpanded(true)}
           className="flex items-center justify-center rounded-full bg-[#2a2a2a] text-[#888] text-[11px] font-medium ring-1 ring-white/10 hover:text-white transition-colors"
           style={{ width: AVATAR_SIZE, height: AVATAR_SIZE }}
-          title={`${otherChars.length} more characters`}
         >
           +{otherChars.length}
         </button>
