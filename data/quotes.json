@@ -901,17 +901,6 @@
     },
     {
       "id": 86,
-      "text": "Poison ivy? He wants to know if it still itches.",
-      "character": "Psychic",
-      "season": 2,
-      "episode": 9,
-      "tags": [
-        "nature",
-        "animals"
-      ]
-    },
-    {
-      "id": 87,
       "text": "Pours you a drink with one hand. Judges you with the other if you take it.",
       "character": "Christopher Moltisanti",
       "tags": [
@@ -920,7 +909,7 @@
       ]
     },
     {
-      "id": 88,
+      "id": 87,
       "text": "Probably upstairs.",
       "character": "Tony Soprano",
       "season": 6,
@@ -930,7 +919,7 @@
       ]
     },
     {
-      "id": 89,
+      "id": 88,
       "text": "Puss… I loved that cocksucker like a brother. And he fucked me in the ass.",
       "character": "Paulie Gualtieri",
       "season": 3,
@@ -942,7 +931,7 @@
       ]
     },
     {
-      "id": 90,
+      "id": 89,
       "text": "Rage, Anthony, is a big loud flaming distraction, from feelings that are even more frightening.",
       "character": "Dr. Jennifer Melfi",
       "season": 2,
@@ -953,7 +942,7 @@
       ]
     },
     {
-      "id": 91,
+      "id": 90,
       "text": "Remember when is the lowest form of conversation.",
       "character": "Tony Soprano",
       "season": 6,
@@ -964,7 +953,7 @@
       ]
     },
     {
-      "id": 92,
+      "id": 91,
       "text": "So if you love me, stir my eggs.",
       "character": "Christopher Moltisanti",
       "season": 4,
@@ -975,7 +964,7 @@
       ]
     },
     {
-      "id": 93,
+      "id": 92,
       "text": "Some day soon, you’re gonna have families of your own. And if you’re lucky, you’ll remember the little moments — like this — that were good.",
       "character": "Tony Soprano",
       "season": 1,
@@ -985,7 +974,7 @@
       ]
     },
     {
-      "id": 94,
+      "id": 93,
       "text": "Some people take pleasure in the simple doing of things.",
       "character": "Dr. Jennifer Melfi",
       "tags": [
@@ -994,7 +983,7 @@
       ]
     },
     {
-      "id": 95,
+      "id": 94,
       "text": "Sometimes it’s important to give people the illusion of being in control.",
       "character": "Tony Soprano",
       "season": 5,
@@ -1007,7 +996,7 @@
       ]
     },
     {
-      "id": 96,
+      "id": 95,
       "text": "Sometimes we’re all hypocrites.",
       "character": "Meadow Soprano",
       "tags": [
@@ -1016,7 +1005,7 @@
       ]
     },
     {
-      "id": 97,
+      "id": 96,
       "text": "Sometimes what happens here is like taking a shit.",
       "character": "Tony Soprano",
       "season": 5,
@@ -1027,7 +1016,7 @@
       ]
     },
     {
-      "id": 98,
+      "id": 97,
       "text": "Sucks to be you. There’s more where that came from!",
       "character": "A.J. / Tony Soprano",
       "season": 1,
@@ -1037,7 +1026,7 @@
       ]
     },
     {
-      "id": 99,
+      "id": 98,
       "text": "Sun Tzu, you fucking ass-kiss!",
       "character": "Silvio Dante",
       "season": 3,
@@ -1050,7 +1039,7 @@
       ]
     },
     {
-      "id": 100,
+      "id": 99,
       "text": "Swingers! He can suck my dick! It swings, too!",
       "character": "Christopher Moltisanti",
       "season": 2,
@@ -1062,7 +1051,7 @@
       ]
     },
     {
-      "id": 101,
+      "id": 100,
       "text": "Teddy Roosevelt once gave an entire speech with a bullet lodged in his chest. Some things are just a matter of duty.",
       "character": "Junior Soprano",
       "season": 3,
@@ -1076,7 +1065,7 @@
       ]
     },
     {
-      "id": 102,
+      "id": 101,
       "text": "Ten years you thought about Janice? There are men in the can better-looking than my sister.",
       "character": "Tony Soprano",
       "season": 2,
@@ -1086,7 +1075,7 @@
       ]
     },
     {
-      "id": 103,
+      "id": 102,
       "text": "The belt was his favorite child development tool.",
       "character": "Tony Soprano",
       "tags": [
@@ -1094,7 +1083,7 @@
       ]
     },
     {
-      "id": 104,
+      "id": 103,
       "text": "The center cannot hold. The falcon cannot hear the falconer. What the fuck are you talking about?",
       "character": "Jennifer Melfi / Tony Soprano",
       "season": 5,
@@ -1107,7 +1096,7 @@
       ]
     },
     {
-      "id": 105,
+      "id": 104,
       "text": "The fuck I did. I grabbed a pillow but it was — just to keep my hands occupied.",
       "character": "Tony Soprano",
       "season": 6,
@@ -1119,7 +1108,7 @@
       ]
     },
     {
-      "id": 106,
+      "id": 105,
       "text": "The only thing I ever found in the street was my first wife.",
       "character": "Eugene Pontecorvo",
       "tags": [
@@ -1128,7 +1117,7 @@
       ]
     },
     {
-      "id": 107,
+      "id": 106,
       "text": "The phone keeps ringing, and then they hang up.",
       "character": "Junior Soprano",
       "season": 6,
@@ -1138,7 +1127,7 @@
       ]
     },
     {
-      "id": 108,
+      "id": 107,
       "text": "The sacred and the propane.",
       "character": "Little Carmine Lupertazzi",
       "season": 6,
@@ -1149,7 +1138,7 @@
       ]
     },
     {
-      "id": 109,
+      "id": 108,
       "text": "The Soprano family has always been a little pushy. Family? They're a glorified crew!",
       "character": "Little Carmine / Carmine Lupertazzi",
       "season": 4,
@@ -1161,7 +1150,7 @@
       ]
     },
     {
-      "id": 110,
+      "id": 109,
       "text": "There are no scraps in my scrapbook.",
       "character": "Phil Leotardo",
       "season": 6,
@@ -1172,7 +1161,7 @@
       ]
     },
     {
-      "id": 111,
+      "id": 110,
       "text": "There's an image.",
       "character": "Phil Leotardo",
       "season": 6,
@@ -1183,7 +1172,7 @@
       ]
     },
     {
-      "id": 112,
+      "id": 111,
       "text": "There’s no geographical solution to an emotional problem.",
       "character": "Tony Soprano",
       "season": 2,
@@ -1195,7 +1184,7 @@
       ]
     },
     {
-      "id": 113,
+      "id": 112,
       "text": "They’re dropping like fucking flies. It’s all that charcoal-broiled meat you people ate. Nobody told us till the 80s!",
       "character": "Junior / Tony Soprano",
       "season": 3,
@@ -1205,7 +1194,7 @@
       ]
     },
     {
-      "id": 114,
+      "id": 113,
       "text": "Those who want respect, give respect.",
       "character": "Tony Soprano",
       "season": 2,
@@ -1216,7 +1205,7 @@
       ]
     },
     {
-      "id": 115,
+      "id": 114,
       "text": "Tony Soprano, Original G. Yeah, whatever.",
       "character": "Da Lux / Tony Soprano",
       "season": 6,
@@ -1227,7 +1216,7 @@
       ]
     },
     {
-      "id": 116,
+      "id": 115,
       "text": "Trees, ducks. What the fuck are you, Ranger Rick?",
       "character": "Tony Soprano",
       "season": 1,
@@ -1241,7 +1230,7 @@
       ]
     },
     {
-      "id": 117,
+      "id": 116,
       "text": "We go way back to when Moses wore short pants.",
       "character": "Junior Soprano",
       "season": 1,
@@ -1252,7 +1241,7 @@
       ]
     },
     {
-      "id": 118,
+      "id": 117,
       "text": "We’re soldiers. Soldiers don’t go to hell.",
       "character": "Tony Soprano",
       "season": 2,
@@ -1266,7 +1255,7 @@
       ]
     },
     {
-      "id": 119,
+      "id": 118,
       "text": "We worry so much sometimes it feels like that’s all we do. But in the end it gets washed away. All of it, just washed away.",
       "character": "Carmela Soprano",
       "season": 6,
@@ -1278,7 +1267,7 @@
       ]
     },
     {
-      "id": 120,
+      "id": 119,
       "text": "Well in the future I ask that you extend to me the same courtesy as a crack addict.",
       "character": "Dr. Jennifer Melfi",
       "season": 4,
@@ -1289,7 +1278,7 @@
       ]
     },
     {
-      "id": 121,
+      "id": 120,
       "text": "What do I find in a pork store? A bunch of guys beating their meat.",
       "character": "Tony Blundetto",
       "season": 5,
@@ -1299,7 +1288,7 @@
       ]
     },
     {
-      "id": 122,
+      "id": 121,
       "text": "What do they eat, tabooli?",
       "character": "Christopher Moltisanti",
       "season": 6,
@@ -1309,7 +1298,7 @@
       ]
     },
     {
-      "id": 123,
+      "id": 122,
       "text": "What do you wanna talk about? Fucking Dick Barone. Well as long as the two of you are happy.",
       "character": "Tony Soprano / Richie Aprile",
       "season": 2,
@@ -1322,7 +1311,7 @@
       ]
     },
     {
-      "id": 124,
+      "id": 123,
       "text": "What kind of person can I be, where his own mother wants him dead?",
       "character": "Tony Soprano",
       "season": 1,
@@ -1333,7 +1322,7 @@
       ]
     },
     {
-      "id": 125,
+      "id": 124,
       "text": "What, your father never cut off anybody’s pinky?",
       "character": "Tony Soprano",
       "season": 3,
@@ -1343,7 +1332,7 @@
       ]
     },
     {
-      "id": 126,
+      "id": 125,
       "text": "Whatever you do, do not engage Silvio in conversation.",
       "character": "Christopher Moltisanti",
       "tags": [
@@ -1351,7 +1340,7 @@
       ]
     },
     {
-      "id": 127,
+      "id": 126,
       "text": "When my time comes, tell me: will I stand up?",
       "character": "Paulie Gualtieri",
       "season": 6,
@@ -1362,7 +1351,7 @@
       ]
     },
     {
-      "id": 128,
+      "id": 127,
       "text": "Where'd they get this bread? The bread museum?",
       "character": "Silvio Dante",
       "season": 6,
@@ -1373,7 +1362,7 @@
       ]
     },
     {
-      "id": 129,
+      "id": 128,
       "text": "Who am I, Mark Fuhrman over here?",
       "character": "Christopher Moltisanti",
       "season": 1,
@@ -1384,7 +1373,7 @@
       ]
     },
     {
-      "id": 130,
+      "id": 129,
       "text": "Who's welfare check you gotta cash to get a burger here?",
       "character": "Christopher Moltisanti",
       "tags": [
@@ -1393,7 +1382,7 @@
       ]
     },
     {
-      "id": 131,
+      "id": 130,
       "text": "Why'd they send you over, I'm lookin for a burger, not converted rice.",
       "character": "Christopher Moltisanti",
       "tags": [
@@ -1402,7 +1391,7 @@
       ]
     },
     {
-      "id": 132,
+      "id": 131,
       "text": "Wonderful, I don't go down enough. That's not what I heard.",
       "character": "Junior Soprano / Carmela Soprano",
       "tags": [
@@ -1410,7 +1399,7 @@
       ]
     },
     {
-      "id": 133,
+      "id": 132,
       "text": "You don’t have to love me, but you will respect me.",
       "character": "Tony Soprano",
       "season": 3,
@@ -1422,7 +1411,7 @@
       ]
     },
     {
-      "id": 134,
+      "id": 133,
       "text": "You don’t understand.",
       "character": "Tony Soprano",
       "season": 3,
@@ -1432,7 +1421,7 @@
       ]
     },
     {
-      "id": 135,
+      "id": 134,
       "text": "You got any idea what my life would be worth if certain people found out I checked into a laughing academy?",
       "character": "Tony Soprano",
       "season": 1,
@@ -1443,7 +1432,7 @@
       ]
     },
     {
-      "id": 136,
+      "id": 135,
       "text": "You got any thoughts? What else do I have left?",
       "character": "Tony Soprano / Junior Soprano",
       "season": 3,
@@ -1453,7 +1442,7 @@
       ]
     },
     {
-      "id": 137,
+      "id": 136,
       "text": "You gotta bee onna your hat.",
       "character": "Furio Giunta",
       "season": 2,
@@ -1466,7 +1455,7 @@
       ]
     },
     {
-      "id": 138,
+      "id": 137,
       "text": "You hear that, T? I asked if he remembers his first blowjob. He says ya, so I says how long did it take the guy to cum? Hehehe.",
       "character": "Paulie Gualtieri",
       "season": 2,
@@ -1478,7 +1467,7 @@
       ]
     },
     {
-      "id": 139,
+      "id": 138,
       "text": "You’ll never leave your wife. She might leave you, but you’ll never leave her.",
       "character": "Dr. Jennifer Melfi",
       "season": 3,
@@ -1488,7 +1477,7 @@
       ]
     },
     {
-      "id": 140,
+      "id": 139,
       "text": "You motherfucker! You shot me in my foot! It happens.",
       "character": "Bakery worker / Christopher Moltisanti",
       "season": 1,
@@ -1498,7 +1487,7 @@
       ]
     },
     {
-      "id": 141,
+      "id": 140,
       "text": "You’re both very angry. Yeah, you must’ve been at the top of your fucking class.",
       "character": "Jennifer Melfi / Tony Soprano",
       "season": 3,
@@ -1509,7 +1498,7 @@
       ]
     },
     {
-      "id": 142,
+      "id": 141,
       "text": "You’re five fucking time-zones behind your own ass.",
       "character": "Silvio Dante",
       "season": 1,
@@ -1520,7 +1509,7 @@
       ]
     },
     {
-      "id": 143,
+      "id": 142,
       "text": "You're flexinnnng",
       "character": "Richie Aprile",
       "tags": [
@@ -1528,7 +1517,7 @@
       ]
     },
     {
-      "id": 144,
+      "id": 143,
       "text": "You’re looking at them, asshole.",
       "character": "Tony Soprano",
       "tags": [
@@ -1537,7 +1526,7 @@
       ]
     },
     {
-      "id": 145,
+      "id": 144,
       "text": "You’re not gonna believe this. He killed 16 Czechoslovakians. Guy was an interior decorator. His house looked like shit.",
       "character": "Paulie / Christopher",
       "season": 3,
@@ -1550,7 +1539,7 @@
       ]
     },
     {
-      "id": 146,
+      "id": 145,
       "text": "You say sign, I sign. You tell me to take a crap on the deck of the Queen Mary, an hour later they’re hosing it down with disinfectant.",
       "character": "Junior Soprano",
       "season": 3,
@@ -1560,7 +1549,7 @@
       ]
     },
     {
-      "id": 147,
+      "id": 146,
       "text": "You see I never could please my mother.",
       "character": "Tony Soprano",
       "season": 6,
@@ -1570,7 +1559,7 @@
       ]
     },
     {
-      "id": 148,
+      "id": 147,
       "text": "You shoulda called your sponsor before you bought that jacket.",
       "character": "Raymond Curto",
       "season": 6,
@@ -1580,7 +1569,7 @@
       ]
     },
     {
-      "id": 149,
+      "id": 148,
       "text": "You steer the ship the best way you know. Sometimes it’s smooth. Sometimes you hit the rocks. In the meantime, you find your pleasures where you can.",
       "character": "Junior Soprano",
       "season": 3,
@@ -1593,7 +1582,7 @@
       ]
     },
     {
-      "id": 150,
+      "id": 149,
       "text": "You strong-armed me, using the only weapon you have: your pussy.",
       "character": "Bob Wegler",
       "season": 5,
@@ -1606,7 +1595,7 @@
       ]
     },
     {
-      "id": 151,
+      "id": 150,
       "text": "You want compromise? Twenty years in the can, I wanted manicott. I compromised. I ate grilled cheese off the radiator instead.",
       "character": "Phil Leotardo",
       "season": 6,
@@ -1618,7 +1607,7 @@
       ]
     },
     {
-      "id": 152,
+      "id": 151,
       "text": "Your kids, though… it’s like when they’re little, and they get sick. You’d give anything in the world to trade places with them, so they don’t have to suffer!",
       "character": "Tony Soprano",
       "season": 6,
@@ -1631,7 +1620,7 @@
       ]
     },
     {
-      "id": 153,
+      "id": 152,
       "text": "Your thoughts have an Eastern flavor to them. I’ve lived in Jersey my whole life.",
       "character": "Jennifer Melfi / Tony Soprano",
       "season": 3,
@@ -1642,7 +1631,7 @@
       ]
     },
     {
-      "id": 154,
+      "id": 153,
       "text": "You know, Quasimodo predicted all this",
       "character": "Bobby Bacala",
       "season": 4,
@@ -1653,7 +1642,7 @@
       ]
     },
     {
-      "id": 155,
+      "id": 154,
       "text": "Stupida fucking game",
       "character": "Furio Giunta",
       "season": 3,
@@ -1663,7 +1652,7 @@
       ]
     },
     {
-      "id": 156,
+      "id": 155,
       "text": "Your brother, Billy, whatever happened there...",
       "character": "Carmine Lupertazzi Jr.",
       "tags": [
@@ -1672,7 +1661,7 @@
       ]
     },
     {
-      "id": 157,
+      "id": 156,
       "text": "The fundamental question is, will I be as effective as a boss like my dad was? And I will be, even more so? But until I am, it's going to be hard to verify that I think I'll be more effective.",
       "character": "Carmine Lupertazzi Jr.",
       "season": 5,
@@ -1684,7 +1673,7 @@
       ]
     },
     {
-      "id": 158,
+      "id": 157,
       "text": "It wasn't about being boss. It was about being happy.",
       "character": "Carmine Lupertazzi Jr.",
       "season": 6,
@@ -1696,7 +1685,7 @@
       ]
     },
     {
-      "id": 159,
+      "id": 158,
       "text": "I am reminded of Louis the whatever's finance minister...he built this chateau — Nicole and I saw it when we went to Paris — it even outshone Versailles, where the king lived. In the end, Louis clapped him in irons.",
       "character": "Carmine Lupertazzi Jr.",
       "season": 4,
@@ -1706,7 +1695,7 @@
       ]
     },
     {
-      "id": 160,
+      "id": 159,
       "text": "He's an old-fashioned guy, Pop, very allegorical",
       "character": "Carmine Lupertazzi Jr.",
       "season": 4,
@@ -1719,7 +1708,7 @@
       ]
     },
     {
-      "id": 161,
+      "id": 160,
       "text": "He's a bit of a poseur, you ask me.",
       "character": "Carmine Lupertazzi Jr.",
       "season": 4,
@@ -1731,7 +1720,7 @@
       ]
     },
     {
-      "id": 162,
+      "id": 161,
       "text": "Much like a child, a film has many parents, that is to say, many individuals who act like parents...or that by a version, the film is their baby. I, as an executive producer, am one of those individuals.",
       "character": "Carmine Lupertazzi Jr.",
       "season": 6,
@@ -1742,7 +1731,7 @@
       ]
     },
     {
-      "id": 163,
+      "id": 162,
       "text": "If there's one thing my father taught me, it's this: A pint of blood costs more than a gallon of gold.",
       "character": "Carmine Lupertazzi Jr.",
       "season": 6,
@@ -1755,7 +1744,7 @@
       ]
     },
     {
-      "id": 164,
+      "id": 163,
       "text": "“A. She was a hoowah. B. She hit me.”",
       "character": "Ralph Cifaretto",
       "season": 3,
@@ -1768,14 +1757,14 @@
       ]
     },
     {
-      "id": 165,
+      "id": 164,
       "text": "“Why didn’t you just leave some out? I love cheese at my feet!”",
       "character": "Silvio Dante",
       "season": 2,
       "episode": 6
     },
     {
-      "id": 166,
+      "id": 165,
       "text": "“I’ll have a Fresca.”",
       "character": "Ralph Cifaretto",
       "season": 3,
@@ -1788,7 +1777,7 @@
       ]
     },
     {
-      "id": 167,
+      "id": 166,
       "text": "“And I know it’s tough on ya, I’m the guy that’s dating your mom.”",
       "character": "Ralph Cifaretto",
       "season": 3,
@@ -1799,7 +1788,7 @@
       ]
     },
     {
-      "id": 168,
+      "id": 167,
       "text": "“You know, I don’t understand you, Anthony. We got lucky.”",
       "character": "Ralph Cifaretto",
       "season": 4,
@@ -1811,7 +1800,7 @@
       ]
     },
     {
-      "id": 169,
+      "id": 168,
       "text": "“It was a fin’ horse! What are you, a vegetarian? You eat beef and sausage by the fin’ carload!”",
       "character": "Ralph Cifaretto",
       "season": 4,
@@ -1824,7 +1813,7 @@
       ]
     },
     {
-      "id": 170,
+      "id": 169,
       "text": "“No, I did not! But so what?!”",
       "character": "Ralph Cifaretto",
       "season": 4,
@@ -1834,7 +1823,7 @@
       ]
     },
     {
-      "id": 171,
+      "id": 170,
       "text": "“She was a beautiful, innocent creature. What’d she ever do to you?”",
       "character": "Ralph Cifaretto",
       "season": 4,
@@ -1846,7 +1835,7 @@
       ]
     },
     {
-      "id": 172,
+      "id": 171,
       "text": "It's like the fuckin' regularness of everyday life is too hard for me",
       "character": "Christopher Moltisanti",
       "season": 1,
@@ -1860,7 +1849,7 @@
       ]
     },
     {
-      "id": 173,
+      "id": 172,
       "text": "What's next - he get's to fuck her for a million!?!",
       "character": "Johnny Sack",
       "season": 4,
@@ -1874,7 +1863,7 @@
       ]
     },
     {
-      "id": 174,
+      "id": 173,
       "text": "But I've been good to you, and you pay me back, with non-stop ass rape!",
       "character": "Artie Bucco",
       "season": 6,
@@ -1888,7 +1877,7 @@
       ]
     },
     {
-      "id": 175,
+      "id": 174,
       "text": "It won't be cinematic.",
       "character": "Patsy Parisi",
       "season": 3,
@@ -1902,7 +1891,7 @@
       ]
     },
     {
-      "id": 176,
+      "id": 175,
       "text": "You want to know what that crazy broad wanted to do to me? She wanted to stick a dildo up my ass and pretend to be pimping me out. I told her GET THE FUCK OUTTA HERE!!! That whole family is sick!",
       "character": "Ralph Cifaretto",
       "season": 4,
@@ -1916,7 +1905,7 @@
       ]
     },
     {
-      "id": 177,
+      "id": 176,
       "text": "We found him in a public men's room in Lafayette Park. I don't know how to put this delicately. He was sucking a cub scouts dick",
       "character": "Ralph Cifaretto",
       "season": 4,
@@ -1930,7 +1919,7 @@
       ]
     },
     {
-      "id": 178,
+      "id": 177,
       "text": "I hear Ginny Sack is having a 90-pound mole taken off her ass",
       "character": "Ralph Cifaretto",
       "season": 4,
@@ -1945,7 +1934,7 @@
       ]
     },
     {
-      "id": 179,
+      "id": 178,
       "text": "THEY DIDN'T HAVE FLAT TOPS IN ANCIENT ROME!",
       "character": "Ralph Cifaretto",
       "season": 3,
@@ -1959,7 +1948,7 @@
       ]
     },
     {
-      "id": 180,
+      "id": 179,
       "text": "Why was I born handsome instead of rich?",
       "character": "Ralph Cifaretto",
       "season": 3,
@@ -1973,7 +1962,7 @@
       ]
     },
     {
-      "id": 181,
+      "id": 180,
       "text": "I'm earnin' with three hands here and it's still not good enough for this cocksucker.",
       "character": "Ralph Cifaretto",
       "season": 3,
@@ -1987,7 +1976,7 @@
       ]
     },
     {
-      "id": 182,
+      "id": 181,
       "text": "If you brought along a pair of dirty chef whites my friend here will suck out the stains for ya",
       "character": "Ralph Cifaretto",
       "season": 4,
@@ -2001,7 +1990,7 @@
       ]
     },
     {
-      "id": 183,
+      "id": 182,
       "text": "Hi, this is Detective Mike Hunt, Beaver Falls, Pennsylvania police department. You have a son Peter Paul?",
       "character": "Ralph Cifaretto",
       "season": 4,
@@ -2015,7 +2004,7 @@
       ]
     },
     {
-      "id": 184,
+      "id": 183,
       "text": "A gerbil, ma'am.",
       "character": "Ralph Cifaretto",
       "season": 4,
@@ -2029,7 +2018,7 @@
       ]
     },
     {
-      "id": 185,
+      "id": 184,
       "text": "Ma'am, I wish that was all, but I'm afraid we had to have emergency surgery performed upon arrival at headquarters, after discovery of a small rodent in the rectal passage.",
       "character": "Ralph Cifaretto",
       "season": 4,
@@ -2043,7 +2032,7 @@
       ]
     },
     {
-      "id": 186,
+      "id": 185,
       "text": "A. She was a hooah. B. She hit me.",
       "character": "Ralph Cifaretto",
       "season": 3,
@@ -2057,7 +2046,7 @@
       ]
     },
     {
-      "id": 187,
+      "id": 186,
       "text": "And that wasn't my kid she was carrying.",
       "character": "Ralph Cifaretto",
       "season": 3,
@@ -2071,7 +2060,7 @@
       ]
     },
     {
-      "id": 188,
+      "id": 187,
       "text": "I was doing a lot of coke at the time.",
       "character": "Ralph Cifaretto",
       "season": 3,
@@ -2085,7 +2074,7 @@
       ]
     },
     {
-      "id": 189,
+      "id": 188,
       "text": "What are you, a vegetarian? You eat beef and sausage by the fucking carload.",
       "character": "Ralph Cifaretto",
       "season": 4,
@@ -2099,7 +2088,7 @@
       ]
     },
     {
-      "id": 190,
+      "id": 189,
       "text": "It's my fault she's a klutz?",
       "character": "Ralph Cifaretto",
       "season": 3,
@@ -2113,7 +2102,7 @@
       ]
     },
     {
-      "id": 191,
+      "id": 190,
       "text": "What is this, a handsome contest?",
       "character": "Ralph Cifaretto",
       "season": 3,
@@ -2127,7 +2116,7 @@
       ]
     },
     {
-      "id": 192,
+      "id": 191,
       "text": "That way the macaroni absorbs the gravy instead of just coats it.",
       "character": "Ralph Cifaretto",
       "season": 3,
@@ -2141,7 +2130,7 @@
       ]
     },
     {
-      "id": 193,
+      "id": 192,
       "text": "I represent a group of concerned citizens who are very upset about this protest you're spearheading, no puns intended.",
       "character": "Ralph Cifaretto",
       "season": 4,
@@ -2155,7 +2144,7 @@
       ]
     },
     {
-      "id": 194,
+      "id": 193,
       "text": "Who's he think's keeping that fat bitch in Devil Dogs anyway?",
       "character": "Ralph Cifaretto",
       "season": 4,
@@ -2169,7 +2158,7 @@
       ]
     },
     {
-      "id": 195,
+      "id": 194,
       "text": "Cause if you don't pay me back I ain't gonna be able to hurt you.",
       "character": "Ralph Cifaretto",
       "season": 4,
@@ -2183,7 +2172,7 @@
       ]
     },
     {
-      "id": 196,
+      "id": 195,
       "text": "All this over some dead hooah?",
       "character": "Ralph Cifaretto",
       "season": 3,
@@ -2197,7 +2186,7 @@
       ]
     },
     {
-      "id": 197,
+      "id": 196,
       "text": "Fuck him and his turkey. I oughta shove a drumstick up his ass.",
       "character": "Ralph Cifaretto",
       "season": 3,
@@ -2211,7 +2200,7 @@
       ]
     },
     {
-      "id": 198,
+      "id": 197,
       "text": "What? You think I'm afraid of that fat fuck?",
       "character": "Ralph Cifaretto",
       "season": 3,
@@ -2225,7 +2214,7 @@
       ]
     },
     {
-      "id": 199,
+      "id": 198,
       "text": "Don't get fucking filthy about it.",
       "character": "Ralph Cifaretto",
       "season": 3,
@@ -2239,7 +2228,7 @@
       ]
     },
     {
-      "id": 200,
+      "id": 199,
       "text": "I have come to reclaim Rome for my people.",
       "character": "Ralph Cifaretto",
       "season": 3,
@@ -2253,7 +2242,7 @@
       ]
     },
     {
-      "id": 201,
+      "id": 200,
       "text": "Tomorrow I can be on time, but you'll be stupid forever.",
       "character": "Ralph Cifaretto",
       "season": 3,
@@ -2267,23 +2256,21 @@
       ]
     },
     {
+      "id": 201,
+      "text": "A real lack of standards, your generation.",
+      "character": "Ralph Cifaretto",
+      "season": 4,
+      "episode": 2,
+      "tags": [
+        "judgment",
+        "insult",
+        "generational criticism",
+        "hypocrisy",
+        "disrespect"
+      ]
+    },
+    {
       "id": 202,
-      "text": "A real lack of standards",
-      "character": "your generation.",
-      "tags": [
-        "s4 e2"
-      ]
-    },
-    {
-      "id": 203,
-      "text": "No",
-      "character": "watch out for the goat",
-      "tags": [
-        "ralph cifaretto"
-      ]
-    },
-    {
-      "id": 204,
       "text": "You yap worse than six barbers.",
       "character": "Uncle Junior",
       "season": 1,
@@ -2297,7 +2284,7 @@
       ]
     },
     {
-      "id": 205,
+      "id": 203,
       "text": "So what? No fuckin ziti now?",
       "character": "AJ Soprano",
       "season": 1,
@@ -2311,7 +2298,7 @@
       ]
     },
     {
-      "id": 206,
+      "id": 204,
       "text": "You look like a Puerto Rican whore.",
       "character": "Phil Leotardo",
       "season": 6,
@@ -2326,7 +2313,7 @@
       ]
     },
     {
-      "id": 207,
+      "id": 205,
       "text": "WHAT IS THIS, THE FUCKIN' UN NOW?!",
       "character": "Johnny Sack",
       "season": 5,
@@ -2341,7 +2328,7 @@
       ]
     },
     {
-      "id": 208,
+      "id": 206,
       "text": "I'm the motherfuckin fuckin one who calls the shots.",
       "character": "Tony Soprano",
       "season": 2,
@@ -2355,7 +2342,7 @@
       ]
     },
     {
-      "id": 209,
+      "id": 207,
       "text": "You got a bee on your hat.",
       "character": "Furio Giunta",
       "season": 3,
@@ -2369,15 +2356,21 @@
       ]
     },
     {
-      "id": 210,
-      "text": "Take it easy",
-      "character": "we're not making a Western here.",
+      "id": 208,
+      "text": "Take it easy, we're not making a Western here.",
+      "character": "Uncle Junior",
+      "season": 1,
+      "episode": 8,
       "tags": [
-        "s1 e8"
+        "caution",
+        "violence",
+        "restraint",
+        "mob strategy",
+        "humor"
       ]
     },
     {
-      "id": 211,
+      "id": 209,
       "text": "No scraps in my scrapbook.",
       "character": "Phil Leotardo",
       "season": 6,
@@ -2391,7 +2384,7 @@
       ]
     },
     {
-      "id": 212,
+      "id": 210,
       "text": "You have a problem besides those fucking pants?",
       "character": "Paulie Gualtieri",
       "season": 3,
@@ -2405,7 +2398,7 @@
       ]
     },
     {
-      "id": 213,
+      "id": 211,
       "text": "Sharp as a cue ball.",
       "character": "Uncle Junior",
       "season": 3,
@@ -2419,7 +2412,7 @@
       ]
     },
     {
-      "id": 214,
+      "id": 212,
       "text": "I'm with the Vipers!",
       "character": "Christopher Moltisanti",
       "season": 6,
@@ -2433,7 +2426,7 @@
       ]
     },
     {
-      "id": 215,
+      "id": 213,
       "text": "He's got tremendous moxie for his size.",
       "character": "Uncle Junior",
       "season": 1,
@@ -2447,7 +2440,7 @@
       ]
     },
     {
-      "id": 216,
+      "id": 214,
       "text": "You're supposed to push Webistics!",
       "character": "Christopher Moltisanti",
       "season": 2,
@@ -2463,7 +2456,7 @@
       ]
     },
     {
-      "id": 217,
+      "id": 215,
       "text": "It's all a big nothing. What makes you so special?",
       "character": "Livia Soprano",
       "season": 2,
@@ -2477,7 +2470,7 @@
       ]
     },
     {
-      "id": 218,
+      "id": 216,
       "text": "Timeline got fucked up.",
       "character": "Silvio Dante",
       "season": 3,
@@ -2493,7 +2486,7 @@
       ]
     },
     {
-      "id": 219,
+      "id": 217,
       "text": "Fuck the tomatoes, I'll take the scarole.",
       "character": "Feech La Manna",
       "season": 5,
@@ -2507,7 +2500,7 @@
       ]
     },
     {
-      "id": 220,
+      "id": 218,
       "text": "All due respect, you got no fucking idea what it's like to be number one. Every decision you make affects every facet of every other fucking thing. It's too much to deal with almost. And in the end, you're completely alone with it all.",
       "character": "Tony Soprano",
       "season": 5,
@@ -2521,7 +2514,7 @@
       ]
     },
     {
-      "id": 221,
+      "id": 219,
       "text": "You call or go anywhere near him or his family, they'll be scraping your nipples off these fine leather seats. And here's the point to remember: my face will be the last one you see, not Tony's. We understand each other? It won't be cinematic.",
       "character": "Patsy Parisi",
       "season": 3,
@@ -2535,7 +2528,7 @@
       ]
     },
     {
-      "id": 222,
+      "id": 220,
       "text": "I put the grief behind me. Let me hear you say it.",
       "character": "Tony Soprano",
       "season": 2,
@@ -2549,7 +2542,7 @@
       ]
     },
     {
-      "id": 223,
+      "id": 221,
       "text": "You ever feel like nothing good was ever gonna happen to you?",
       "character": "Christopher Moltisanti",
       "season": 1,
@@ -2563,7 +2556,7 @@
       ]
     },
     {
-      "id": 224,
+      "id": 222,
       "text": "I'm like King Midas in reverse. Everything I touch turns to shit.",
       "character": "Tony Soprano",
       "season": 1,
@@ -2577,15 +2570,21 @@
       ]
     },
     {
-      "id": 225,
-      "text": "I don't even know why I come here. Got nothing else to do",
-      "character": "I guess.",
+      "id": 223,
+      "text": "I don't even know why I come here. Got nothing else to do, I guess.",
+      "character": "Tony Soprano",
+      "season": 1,
+      "episode": 12,
       "tags": [
-        "s1 e12"
+        "depression",
+        "therapy",
+        "emptiness",
+        "boredom",
+        "despair"
       ]
     },
     {
-      "id": 226,
+      "id": 224,
       "text": "Discontinue the lithium.",
       "character": "Dr. Jennifer Melfi",
       "season": 1,
@@ -2599,15 +2598,7 @@
       ]
     },
     {
-      "id": 227,
-      "text": "I'm sorry your son is no longer with us",
-      "character": "but don't use mine as a guinea pig for your ideas on parenting.",
-      "tags": [
-        "s6 e2"
-      ]
-    },
-    {
-      "id": 228,
+      "id": 225,
       "text": "Why do you think I'm talking to you like this?",
       "character": "Rosalie Aprile",
       "season": 6,
@@ -2621,7 +2612,7 @@
       ]
     },
     {
-      "id": 229,
+      "id": 226,
       "text": "Fucking nosy! Eat your manicott!",
       "character": "Uncle Junior",
       "season": 6,
@@ -2635,7 +2626,7 @@
       ]
     },
     {
-      "id": 230,
+      "id": 227,
       "text": "Don't you love me?",
       "character": "Tony Soprano",
       "season": 5,
@@ -2649,23 +2640,35 @@
       ]
     },
     {
-      "id": 231,
-      "text": "I gave that fuck pieces of my soul",
-      "character": "Adriana. You know what he said to me? He said I should have a fucking drink.",
+      "id": 228,
+      "text": "I gave that fuck pieces of my soul, Adriana. You know what he said to me? He said I should have a fucking drink.",
+      "character": "Christopher Moltisanti",
+      "season": 5,
+      "episode": 12,
       "tags": [
-        "s5 e12"
+        "betrayal",
+        "addiction",
+        "loyalty",
+        "pain",
+        "disillusionment"
       ]
     },
     {
-      "id": 232,
-      "text": "That's the guy",
-      "character": "Adriana. My uncle Tony. The guy I'm going to hell for.",
+      "id": 229,
+      "text": "That's the guy, Adriana. My uncle Tony. The guy I'm going to hell for.",
+      "character": "Christopher Moltisanti",
+      "season": 5,
+      "episode": 12,
       "tags": [
-        "s5 e12"
+        "loyalty",
+        "damnation",
+        "guilt",
+        "family",
+        "betrayal"
       ]
     },
     {
-      "id": 233,
+      "id": 230,
       "text": "You're not listening. I'm not charging you because I won't take blood money. And you can't either. One thing you can never say: that you haven't been told.",
       "character": "Dr. Krakower",
       "season": 3,
@@ -2679,7 +2682,7 @@
       ]
     },
     {
-      "id": 234,
+      "id": 231,
       "text": "My father told me never get old. I should have listened to him.",
       "character": "Uncle Junior",
       "season": 4,
@@ -2693,7 +2696,7 @@
       ]
     },
     {
-      "id": 235,
+      "id": 232,
       "text": "You're looking at them.",
       "character": "Tony Soprano",
       "season": 1,
@@ -2707,7 +2710,7 @@
       ]
     },
     {
-      "id": 236,
+      "id": 233,
       "text": "How could you fucking do this to us?",
       "character": "Christopher Moltisanti",
       "season": 4,
@@ -2721,7 +2724,7 @@
       ]
     },
     {
-      "id": 237,
+      "id": 234,
       "text": "You're crowding me.",
       "character": "Tony Blundetto",
       "season": 5,
@@ -2735,15 +2738,21 @@
       ]
     },
     {
-      "id": 238,
-      "text": "Let's be honest about the great Dickie Moltisanti",
-      "character": "my dad",
+      "id": 235,
+      "text": "Let's be honest about the great Dickie Moltisanti, my dad, your hero. He wasn't much more than a fucking junkie.",
+      "character": "Christopher Moltisanti",
+      "season": 5,
+      "episode": 7,
       "tags": [
-        "christopher moltisanti"
+        "family myth",
+        "disillusionment",
+        "addiction",
+        "truth",
+        "resentment"
       ]
     },
     {
-      "id": 239,
+      "id": 236,
       "text": "I ordered some for the table.",
       "character": "Tony Soprano",
       "season": 6,
@@ -2757,7 +2766,7 @@
       ]
     },
     {
-      "id": 240,
+      "id": 237,
       "text": "We worry so much. Sometimes it feels like that's all we do, but in the end it just gets washed away. All of it just gets washed away.",
       "character": "Carmela Soprano",
       "season": 6,
@@ -2771,7 +2780,7 @@
       ]
     },
     {
-      "id": 241,
+      "id": 238,
       "text": "Sometimes, we're all hypocrites.",
       "character": "Meadow Soprano",
       "season": 6,
@@ -2785,7 +2794,7 @@
       ]
     },
     {
-      "id": 242,
+      "id": 239,
       "text": "No more of this, Butchie. No more.",
       "character": "Phil Leotardo",
       "season": 6,
@@ -2799,7 +2808,7 @@
       ]
     },
     {
-      "id": 243,
+      "id": 240,
       "text": "Yeah, again with the money. It's settled, John. So either name a price or get the fuck over it.",
       "character": "Carmine Lupertazzi",
       "season": 4,
@@ -2813,7 +2822,7 @@
       ]
     },
     {
-      "id": 244,
+      "id": 241,
       "text": "That sugarless motherfucker is the last drink you're ever gonna have.",
       "character": "Tony Soprano",
       "season": 2,
@@ -2827,7 +2836,7 @@
       ]
     },
     {
-      "id": 245,
+      "id": 242,
       "text": "Next time you come in, you come heavy or not at all.",
       "character": "Uncle Junior",
       "season": 1,
@@ -2841,7 +2850,7 @@
       ]
     },
     {
-      "id": 246,
+      "id": 243,
       "text": "It's in his blood, this miserable fucking existence. My rotten, fucking putrid genes have infected my kid's soul. That's my gift to my son.",
       "character": "Tony Soprano",
       "season": 6,
@@ -2855,7 +2864,7 @@
       ]
     },
     {
-      "id": 247,
+      "id": 244,
       "text": "Sometimes you tell a lie so long, you don't know when to stop. You don't know when it's safe.",
       "character": "Vito Spatafore",
       "season": 6,
@@ -2869,7 +2878,7 @@
       ]
     },
     {
-      "id": 248,
+      "id": 245,
       "text": "Sometimes I feel like I've come in at the end. The best is over.",
       "character": "Tony Soprano",
       "season": 1,
@@ -2883,7 +2892,7 @@
       ]
     },
     {
-      "id": 249,
+      "id": 246,
       "text": "You don't understand. We can't send him to military school. How are we gonna save this kid?",
       "character": "Tony Soprano",
       "season": 3,
@@ -2897,7 +2906,7 @@
       ]
     },
     {
-      "id": 250,
+      "id": 247,
       "text": "There's no geographical solution to an emotional problem.",
       "character": "Dr. Jennifer Melfi",
       "season": 4,
@@ -2911,7 +2920,7 @@
       ]
     },
     {
-      "id": 251,
+      "id": 248,
       "text": "More is lost by indecision than wrong decision.",
       "character": "Tony Soprano",
       "season": 4,
@@ -2925,7 +2934,7 @@
       ]
     },
     {
-      "id": 252,
+      "id": 249,
       "text": "The only reason you have anything is because of my fucking sweat. You knew every step of the way where the money comes from. You walk around that fucking mansion with your $500 shoes and your diamond rings and you act like butter wouldn't melt in your mouth. You're entitled to shit.",
       "character": "Tony Soprano",
       "season": 4,
@@ -2939,7 +2948,7 @@
       ]
     },
     {
-      "id": 253,
+      "id": 250,
       "text": "Don't put me to the test.",
       "character": "Tony Soprano",
       "season": 2,
@@ -2953,7 +2962,7 @@
       ]
     },
     {
-      "id": 254,
+      "id": 251,
       "text": "It's none of your fucking business which side of the bed I wake up on.",
       "character": "Tony Soprano",
       "season": 5,
@@ -2967,7 +2976,7 @@
       ]
     },
     {
-      "id": 255,
+      "id": 252,
       "text": "You don't shit where you eat. And you really don't shit where I eat.",
       "character": "Tony Soprano",
       "season": 4,
@@ -2981,15 +2990,21 @@
       ]
     },
     {
-      "id": 256,
-      "text": "If the proper response is not forthcoming in a businesslike time frame",
-      "character": "my next move will not be further conversation.",
+      "id": 253,
+      "text": "If the proper response is not forthcoming in a businesslike time frame, my next move will not be further conversation.",
+      "character": "Johnny Sack",
+      "season": 5,
+      "episode": 13,
       "tags": [
-        "s5 e13"
+        "threat",
+        "diplomacy",
+        "mob politics",
+        "pressure",
+        "finality"
       ]
     },
     {
-      "id": 257,
+      "id": 254,
       "text": "Somebody's talking too much, and it's costing me money.",
       "character": "Johnny Sack",
       "season": 4,
@@ -3003,7 +3018,7 @@
       ]
     },
     {
-      "id": 258,
+      "id": 255,
       "text": "We're soldiers. Soldiers don't go to hell.",
       "character": "Tony Soprano",
       "season": 2,
@@ -3017,7 +3032,7 @@
       ]
     },
     {
-      "id": 259,
+      "id": 256,
       "text": "What kind of person can I be, where his own mother wants him dead?",
       "character": "Tony Soprano",
       "season": 1,
@@ -3031,7 +3046,7 @@
       ]
     },
     {
-      "id": 260,
+      "id": 257,
       "text": "They needed us to build their cities and dig their subways, and make them richer. The Carnegies and the Rockefellers, they needed worker bees and there we were. But some of us didn't want to swarm around their hive and lose who we were. We wanted to stay Italian and preserve the things that meant something to us. Honor, and family, and loyalty. And some of us wanted a piece of the action.",
       "character": "Tony Soprano",
       "season": 4,
