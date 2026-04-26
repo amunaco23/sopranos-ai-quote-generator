@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import Image from 'next/image';
 
 // Characters with uploaded photos
@@ -86,13 +86,21 @@ interface Props {
 export default function CharacterAvatars({ allCharacters, selected, onSelect }: Props) {
   const [expanded, setExpanded] = useState(false);
   const [closing, setClosing] = useState(false);
+  const scrollRef = useRef<HTMLDivElement>(null);
+
+  // Pin scroll to the left whenever the expanded row mounts or re-renders
+  useEffect(() => {
+    if (expanded && scrollRef.current) {
+      scrollRef.current.scrollLeft = 0;
+    }
+  }, [expanded]);
 
   const handleClose = () => {
     setClosing(true);
     setTimeout(() => {
       setClosing(false);
       setExpanded(false);
-    }, 320);
+    }, 260);
   };
 
   const pinnedChars = ['Tony Soprano', 'Christopher Moltisanti', 'Junior Soprano'].filter(p =>
@@ -119,17 +127,20 @@ export default function CharacterAvatars({ allCharacters, selected, onSelect }: 
     });
 
     return (
-      <div className="flex items-center gap-1.5 overflow-x-auto scrollbar-none py-0.5 flex-1 pr-2">
+      <div
+        ref={scrollRef}
+        className="flex items-center gap-1.5 overflow-x-auto scrollbar-none py-0.5 flex-1 pr-2"
+      >
         {sorted.map((char, i) => (
           <div
             key={char}
             style={{
               animation: closing
-                ? `avatarCollapseOut 0.22s ease-in forwards`
-                : `avatarExpandIn 0.28s ease-out forwards`,
+                ? `avatarCollapseOut 0.16s ease-in forwards`
+                : `avatarExpandIn 0.16s ease-out forwards`,
               animationDelay: closing
-                ? `${(sorted.length - 1 - i) * 18}ms`
-                : `${i * 18}ms`,
+                ? `${(sorted.length - 1 - i) * 10}ms`
+                : `${i * 10}ms`,
               opacity: 0,
               flexShrink: 0,
             }}
@@ -147,9 +158,9 @@ export default function CharacterAvatars({ allCharacters, selected, onSelect }: 
           className="flex-shrink-0 w-9 h-9 rounded-full bg-[#2a2a2a] text-[#666] text-xs flex items-center justify-center hover:text-white transition-colors ring-1 ring-white/10"
           style={{
             animation: closing
-              ? `avatarCollapseOut 0.22s ease-in forwards`
-              : `avatarExpandIn 0.28s ease-out forwards`,
-            animationDelay: closing ? '0ms' : `${sorted.length * 18}ms`,
+              ? `avatarCollapseOut 0.16s ease-in forwards`
+              : `avatarExpandIn 0.16s ease-out forwards`,
+            animationDelay: closing ? '0ms' : `${sorted.length * 10}ms`,
             opacity: 0,
           }}
           title="Collapse"
