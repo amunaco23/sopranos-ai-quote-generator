@@ -47,7 +47,7 @@ export async function POST(request: NextRequest) {
   const excludeIds = Array.isArray(body.excludeIds) ? (body.excludeIds as number[]) : [];
 
   const allQuotes = (quotesData.quotes as Quote[]).filter(
-    q => excludeIds.length === 0 || !excludeIds.includes(q.id)
+    q => excludeIds.length === 0 || q.id === undefined || !excludeIds.includes(q.id)
   );
 
   // Surprise Me — random quote(s), optionally filtered by character
