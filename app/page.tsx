@@ -9,15 +9,32 @@ import Logo from '@/components/Logo';
 import { Quote } from '@/lib/types';
 import quotesData from '@/data/quotes.json';
 
-const PINNED = ['Tony Soprano', 'Christopher Moltisanti', 'Junior Soprano'];
+const PINNED = ['Tony Soprano', 'Christopher Moltisanti', 'Uncle Junior'];
+
+const EXCLUDED_FROM_FILTER = new Set([
+  'Dr. Krakower',
+  'Angie Bompensiero',
+  'Brendan Filone',
+  'Raymond Curto',
+  'Meadow Soprano',
+  'Rosalie Aprile',
+]);
+
+const allQuotes = quotesData.quotes as Quote[];
+
+// Count quotes per character for sort order
+const quoteCounts = allQuotes.reduce<Record<string, number>>((acc, q) => {
+  acc[q.character] = (acc[q.character] ?? 0) + 1;
+  return acc;
+}, {});
 
 const ALL_CHARACTERS = [
   ...PINNED,
   ...[...new Set(
-    (quotesData.quotes as Quote[])
+    allQuotes
       .map(q => q.character)
-      .filter(c => !c.includes('/') && !PINNED.includes(c))
-  )].sort(),
+      .filter(c => !PINNED.includes(c) && !EXCLUDED_FROM_FILTER.has(c))
+  )].sort((a, b) => (quoteCounts[b] ?? 0) - (quoteCounts[a] ?? 0)),
 ];
 
 export default function Home() {
