@@ -8,5 +8,14 @@
 
 html,
 body {
-  background-color: #000000;
+  background-color: #0D0D0D;
+}
+
+/* Hide scrollbar but keep scroll functionality */
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
 }

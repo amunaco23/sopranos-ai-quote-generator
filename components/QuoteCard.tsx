@@ -11,8 +11,8 @@ function CopyIcon() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="16"
-      height="16"
+      width="15"
+      height="15"
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
@@ -46,25 +46,28 @@ export default function QuoteCard({ quote }: Props) {
   })();
 
   return (
-    <div className="bg-[#1A1A1A] border border-[#333333] rounded-lg p-5 relative">
-      <button
-        onClick={handleCopy}
-        className="absolute top-4 right-4 text-[#444444] hover:text-white transition-colors min-w-[44px] min-h-[44px] flex items-center justify-center"
-        aria-label="Copy quote"
-      >
-        {copied ? (
-          <span className="text-xs text-[#C41E1E] font-medium">Copied!</span>
-        ) : (
-          <CopyIcon />
-        )}
-      </button>
+    <div className="bg-[#1A1A1A] border border-[#272727] rounded-xl p-5">
+      {/* Quote + copy button in a flex row, copy centered vertically */}
+      <div className="flex items-center gap-3">
+        <p className="text-white text-base leading-relaxed flex-1">
+          &ldquo;{quote.text}&rdquo;
+        </p>
+        <button
+          onClick={handleCopy}
+          className="flex-shrink-0 self-center text-[#444444] hover:text-white transition-colors min-w-[44px] min-h-[44px] flex items-center justify-center"
+          aria-label="Copy quote"
+        >
+          {copied ? (
+            <span className="text-xs text-[#C41E1E] font-medium">Copied!</span>
+          ) : (
+            <CopyIcon />
+          )}
+        </button>
+      </div>
 
-      <p className="text-white text-lg leading-relaxed pr-12">
-        &ldquo;{quote.text}&rdquo;
-      </p>
-      <p className="text-[#A0A0A0] text-sm mt-3">{attribution}</p>
+      <p className="text-[#666666] text-xs mt-3">{attribution}</p>
       {quote.context && (
-        <p className="text-[#555555] text-xs mt-1">{quote.context}</p>
+        <p className="text-[#444444] text-xs mt-1">{quote.context}</p>
       )}
     </div>
   );

@@ -2,18 +2,23 @@ import Image from 'next/image';
 
 export default function Logo() {
   return (
-    <div className="flex flex-col items-center mb-8">
+    <div className="flex items-end justify-center gap-2 mb-10">
       <Image
         src="/sopranos-logo.png"
         alt="The Sopranos"
-        width={420}
-        height={120}
+        width={400}
+        height={110}
         priority
-        className="w-auto h-[80px] md:h-[100px]"
+        className="w-auto h-[72px] md:h-[88px]"
       />
-      <p className="text-[#555555] text-[10px] tracking-[0.35em] uppercase mt-2">
-        AI Quote Generator
-      </p>
+      <Image
+        src="/AI Icon.png"
+        alt="AI"
+        width={52}
+        height={52}
+        priority
+        className="w-auto h-[34px] md:h-[42px] mb-1"
+      />
     </div>
   );
 }

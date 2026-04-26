@@ -6,11 +6,10 @@ import QuoteCard from '@/components/QuoteCard';
 import LoadingState from '@/components/LoadingState';
 import RateLimitToast from '@/components/RateLimitToast';
 import Logo from '@/components/Logo';
-import CharacterFilter from '@/components/CharacterFilter';
 import { Quote } from '@/lib/types';
 import quotesData from '@/data/quotes.json';
 
-const PINNED = ['Tony Soprano', 'Junior Soprano', 'Christopher Moltisanti'];
+const PINNED = ['Tony Soprano', 'Christopher Moltisanti', 'Junior Soprano'];
 
 const ALL_CHARACTERS = [
   ...PINNED,
@@ -27,26 +26,9 @@ export default function Home() {
   const [error, setError] = useState<string | null>(null);
   const [characterMismatch, setCharacterMismatch] = useState(false);
   const [rateLimitInfo, setRateLimitInfo] = useState<{ message: string; retryAfter: number } | null>(null);
-  const [selectedCharacters, setSelectedCharacters] = useState<string[]>([]);
   const [hasSubmitted, setHasSubmitted] = useState(false);
 
-  const handleToggleCharacter = useCallback((character: string) => {
-    setSelectedCharacters(prev => {
-      if (prev.includes(character)) return prev.filter(c => c !== character);
-      if (prev.length >= 3) return prev;
-      return [...prev, character];
-    });
-  }, []);
-
-  const handleClearCharacters = useCallback(() => {
-    setSelectedCharacters([]);
-    setQuotes([]);
-    setHasSubmitted(false);
-    setError(null);
-  }, []);
-
-  // Called when Enter is pressed. message may be empty string if input was blank.
-  const handleSubmit = useCallback(async (message: string) => {
+  const callApi = useCallback(async (body: object) => {
     setLoading(true);
     setError(null);
     setQuotes([]);
@@ -57,7 +39,7 @@ export default function Home() {
       const res = await fetch('/api/quote', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ message, characters: selectedCharacters }),
+        body: JSON.stringify(body),
       });
 
       if (res.status === 429) {
@@ -71,7 +53,7 @@ export default function Home() {
 
       if (!res.ok) {
         const data = await res.json().catch(() => ({}));
-        setError(data.message || 'Even Tony has bad days. Try again.');
+        setError(data.message || 'Everything turns to shit. Try again.');
         return;
       }
 
@@ -83,46 +65,49 @@ export default function Home() {
     } finally {
       setLoading(false);
     }
-  }, [selectedCharacters]);
+  }, []);
+
+  const handleSubmit = useCallback((message: string, character: string | null) => {
+    callApi({ message, character });
+  }, [callApi]);
+
+  const handleSurpriseMe = useCallback((character: string | null) => {
+    callApi({ surpriseMe: true, character });
+  }, [callApi]);
 
   return (
-    <main className="min-h-screen bg-black text-white flex flex-col items-center px-4 pb-16">
+    <main className="min-h-screen bg-[#0D0D0D] text-white flex flex-col items-center px-4 pb-16">
       <div
         className="w-full max-w-[640px] transition-all duration-500 ease-out"
-        style={{ marginTop: hasSubmitted ? '3rem' : '28vh' }}
+        style={{ marginTop: hasSubmitted ? '3rem' : '26vh' }}
       >
         <Logo />
 
         <QuoteInput
           onSubmit={handleSubmit}
+          onSurpriseMe={handleSurpriseMe}
           disabled={loading}
-          hasCharacterFilter={selectedCharacters.length > 0}
-        />
-
-        <CharacterFilter
           allCharacters={ALL_CHARACTERS}
-          selected={selectedCharacters}
-          onToggle={handleToggleCharacter}
-          onClear={handleClearCharacters}
         />
 
+        {/* Results */}
         <div className="mt-6">
           {loading && <LoadingState />}
 
           {!loading && error && (
-            <div className="p-4 rounded-lg bg-[#1A1A1A] border border-[#333333] text-[#A0A0A0] text-center text-sm">
+            <div className="p-4 rounded-xl bg-[#1A1A1A] border border-[#272727] text-[#666] text-center text-sm">
               {error}
             </div>
           )}
 
           {!loading && characterMismatch && (
-            <p className="text-[#555555] text-xs mb-3">
-              No exact match for the selected character — showing closest results from the crew.
+            <p className="text-[#444] text-xs mb-3">
+              No exact match for that character — showing closest results from the crew.
             </p>
           )}
 
           {!loading && quotes.length > 0 && (
-            <div className="space-y-4">
+            <div className="space-y-3">
               {quotes.map((quote, i) => (
                 <QuoteCard key={quote.id ?? i} quote={quote} />
               ))}

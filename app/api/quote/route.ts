@@ -10,10 +10,8 @@ const RATE_LIMIT_MESSAGES = [
   "Slow down. You'll get your turn in {X} seconds.",
 ];
 
-function filterByCharacters(quotes: Quote[], characters: string[]): Quote[] {
-  return quotes.filter(q =>
-    characters.some(c => q.character.toLowerCase().includes(c.toLowerCase()))
-  );
+function filterByCharacter(quotes: Quote[], character: string): Quote[] {
+  return quotes.filter(q => q.character.toLowerCase().includes(character.toLowerCase()));
 }
 
 function randomPick(quotes: Quote[], n: number): Quote[] {
@@ -35,42 +33,38 @@ export async function POST(request: NextRequest) {
     );
   }
 
-  let body: { message?: unknown; characters?: unknown };
+  let body: { message?: unknown; character?: unknown; surpriseMe?: unknown };
   try {
     body = await request.json();
   } catch {
     return NextResponse.json({ message: 'Invalid request body.' }, { status: 400 });
   }
 
-  const characters =
-    Array.isArray(body.characters) && body.characters.every(c => typeof c === 'string')
-      ? (body.characters as string[])
-      : [];
-
+  const character = typeof body.character === 'string' ? body.character.trim() : null;
+  const surpriseMe = body.surpriseMe === true;
   const message = typeof body.message === 'string' ? body.message.trim() : '';
   const hasMessage = message.length > 0;
-  const hasCharacters = characters.length > 0;
 
   const allQuotes = quotesData.quotes as Quote[];
 
-  // Characters selected, no message → return random quotes from those characters
-  if (!hasMessage && hasCharacters) {
-    const pool = filterByCharacters(allQuotes, characters);
+  // Surprise Me — random quote(s), optionally filtered by character
+  if (surpriseMe || (!hasMessage && character)) {
+    const pool = character ? filterByCharacter(allQuotes, character) : allQuotes;
     if (pool.length === 0) {
       return NextResponse.json(
-        { message: 'No quotes found for the selected characters.' },
+        { message: 'No quotes found for that character.' },
         { status: 404 }
       );
     }
-    return NextResponse.json({ quotes: randomPick(pool, 3) });
+    return NextResponse.json({ quotes: randomPick(pool, 1) });
   }
 
   if (!hasMessage) {
     return NextResponse.json({ message: 'Message is required.' }, { status: 400 });
   }
 
-  // Determine quote pool — character-filtered or full
-  const characterPool = hasCharacters ? filterByCharacters(allQuotes, characters) : allQuotes;
+  // LLM matching — character-filtered pool or full
+  const characterPool = character ? filterByCharacter(allQuotes, character) : allQuotes;
   const useFullFallback = characterPool.length < 3;
   const quotePool = useFullFallback ? allQuotes : characterPool;
 
@@ -80,7 +74,7 @@ export async function POST(request: NextRequest) {
   } catch (err) {
     console.error('Groq error:', err);
     return NextResponse.json(
-      { message: 'Even Tony has bad days. Try again.' },
+      { message: 'Everything turns to shit. Try again.' },
       { status: 500 }
     );
   }
@@ -89,11 +83,10 @@ export async function POST(request: NextRequest) {
     .map(id => quotePool.find(q => q.id === id))
     .filter((q): q is Quote => q !== undefined);
 
-  // Check if any result actually belongs to the selected characters
   const characterMismatch =
-    hasCharacters &&
+    !!character &&
     !useFullFallback &&
-    matched.every(q => !characters.some(c => q.character.toLowerCase().includes(c.toLowerCase())));
+    matched.every(q => !q.character.toLowerCase().includes(character.toLowerCase()));
 
   return NextResponse.json({ quotes: matched, characterMismatch: characterMismatch || undefined });
 }
