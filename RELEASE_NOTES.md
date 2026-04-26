@@ -2,6 +2,19 @@
 
 ---
 
+## v0.5.0 — 2026-04-26
+
+### Quote data cleanup
+
+- Consolidated all character name variants down to 35 unique, clean names across 257 quotes
+- All Junior Soprano / Junior / Junior Soprano variants → **Uncle Junior** (21 quotes)
+- All Carmine Lupertazzi Jr. / Little Carmine / Little Carmine Lupertazzi → **Carmine Lupertazzi** (11 quotes)
+- All slash-format two-person exchange entries → first character only (e.g. `Jennifer Melfi / Tony Soprano` → `Dr. Jennifer Melfi`)
+- Expanded partial names to full names: Carmela → Carmela Soprano, Paulie → Paulie Gualtieri, A.J. → AJ Soprano, Adriana → Adriana La Cerva, Jennifer Melfi → Dr. Jennifer Melfi
+- Stripped stray leading whitespace from speaker names throughout the CSV
+
+---
+
 ## v0.4.0 — 2026-04-26
 
 ### Character filter polish
