@@ -8,7 +8,7 @@ import Image from 'next/image';
 const CHARACTER_IMAGES: Record<string, string> = {
   'Tony Soprano': '/Tony.png',
   'Christopher Moltisanti': '/Chrissy.png',
-  'Junior Soprano': '/Uncle Junior.png',
+  'Uncle Junior': '/Uncle Junior.png',
 };
 
 const AVATAR_SIZE = 36;
