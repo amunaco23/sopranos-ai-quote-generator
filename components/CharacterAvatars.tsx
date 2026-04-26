@@ -85,6 +85,15 @@ interface Props {
 
 export default function CharacterAvatars({ allCharacters, selected, onSelect }: Props) {
   const [expanded, setExpanded] = useState(false);
+  const [closing, setClosing] = useState(false);
+
+  const handleClose = () => {
+    setClosing(true);
+    setTimeout(() => {
+      setClosing(false);
+      setExpanded(false);
+    }, 320);
+  };
 
   const pinnedChars = ['Tony Soprano', 'Christopher Moltisanti', 'Junior Soprano'].filter(p =>
     allCharacters.includes(p)
@@ -101,7 +110,7 @@ export default function CharacterAvatars({ allCharacters, selected, onSelect }: 
       ? [selected, ...pinnedChars]
       : pinnedChars;
 
-  if (expanded) {
+  if (expanded || closing) {
     // Horizontal scrollable row of all characters, selected first
     const sorted = [...allCharacters].sort((a, b) => {
       if (a === selected) return -1;
@@ -111,18 +120,38 @@ export default function CharacterAvatars({ allCharacters, selected, onSelect }: 
 
     return (
       <div className="flex items-center gap-1.5 overflow-x-auto scrollbar-none py-0.5 flex-1 pr-2">
-        {sorted.map(char => (
-          <Avatar
+        {sorted.map((char, i) => (
+          <div
             key={char}
-            name={char}
-            active={selected === char}
-            onClick={() => handleSelect(char)}
-          />
+            style={{
+              animation: closing
+                ? `avatarCollapseOut 0.22s ease-in forwards`
+                : `avatarExpandIn 0.28s ease-out forwards`,
+              animationDelay: closing
+                ? `${(sorted.length - 1 - i) * 18}ms`
+                : `${i * 18}ms`,
+              opacity: 0,
+              flexShrink: 0,
+            }}
+          >
+            <Avatar
+              name={char}
+              active={selected === char}
+              onClick={() => handleSelect(char)}
+            />
+          </div>
         ))}
         {/* Collapse button */}
         <button
-          onClick={() => setExpanded(false)}
+          onClick={handleClose}
           className="flex-shrink-0 w-9 h-9 rounded-full bg-[#2a2a2a] text-[#666] text-xs flex items-center justify-center hover:text-white transition-colors ring-1 ring-white/10"
+          style={{
+            animation: closing
+              ? `avatarCollapseOut 0.22s ease-in forwards`
+              : `avatarExpandIn 0.28s ease-out forwards`,
+            animationDelay: closing ? '0ms' : `${sorted.length * 18}ms`,
+            opacity: 0,
+          }}
           title="Collapse"
         >
           ✕

@@ -19,3 +19,38 @@ body {
 .scrollbar-none::-webkit-scrollbar {
   display: none;
 }
+
+/* Character avatar filter animations */
+@keyframes avatarExpandIn {
+  from {
+    opacity: 0;
+    transform: translateX(-10px) scale(0.82);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+@keyframes avatarCollapseOut {
+  from {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(-10px) scale(0.82);
+  }
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20%       { transform: translateX(-6px); }
+  40%       { transform: translateX(6px); }
+  60%       { transform: translateX(-4px); }
+  80%       { transform: translateX(4px); }
+}
+
+.animate-shake {
+  animation: shake 0.45s ease-in-out;
+}
