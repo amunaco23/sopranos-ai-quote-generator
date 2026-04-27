@@ -110,6 +110,7 @@ export default function QuoteInput({ onSubmit, onSurpriseMe, disabled, allCharac
         ]
           .filter(Boolean)
           .join(' ')}
+        style={{ overflow: 'visible' }}
       >
         <textarea
           ref={textareaRef}

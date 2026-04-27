@@ -20,27 +20,37 @@ body {
   display: none;
 }
 
-/* Character avatar filter animations */
+/* Character avatar filter animations — fan out / fan in with spring feel */
 @keyframes avatarExpandIn {
-  from {
+  0% {
     opacity: 0;
-    transform: translateX(-10px) scale(0.82);
+    transform: translateX(-14px) scale(0.4);
   }
-  to {
+  60% {
+    opacity: 1;
+    transform: translateX(1px) scale(1.06);
+  }
+  100% {
     opacity: 1;
     transform: translateX(0) scale(1);
   }
 }
 
 @keyframes avatarCollapseOut {
-  from {
+  0% {
     opacity: 1;
     transform: translateX(0) scale(1);
   }
-  to {
+  100% {
     opacity: 0;
-    transform: translateX(-10px) scale(0.82);
+    transform: translateX(-14px) scale(0.4);
   }
+}
+
+/* Container fade for the fan area — softens the whole bloom */
+@keyframes fanContainerIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
 
 @keyframes checkIn {

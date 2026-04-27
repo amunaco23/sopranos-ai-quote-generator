@@ -79,11 +79,20 @@ function Avatar({
   const imgSrc = CHARACTER_IMAGES[name];
   const wrapperRef = useRef<HTMLDivElement>(null);
   const [anchorRect, setAnchorRect] = useState<DOMRect | null>(null);
+  const [hovered, setHovered] = useState(false);
 
   const handleMouseEnter = () => {
     if (wrapperRef.current) setAnchorRect(wrapperRef.current.getBoundingClientRect());
+    setHovered(true);
   };
-  const handleMouseLeave = () => setAnchorRect(null);
+  const handleMouseLeave = () => {
+    setAnchorRect(null);
+    setHovered(false);
+  };
+
+  // Compose transform: lift (active) + magnify (hover, dock-style)
+  const lift = hovered ? -3 : active ? -1 : 0;
+  const scale = hovered ? 1.22 : 1;
 
   return (
     <>
@@ -97,7 +106,7 @@ function Avatar({
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
         className={[
-          'rounded-full flex-shrink-0 transition-all duration-250',
+          'rounded-full flex-shrink-0',
           active
             ? 'ring-2 ring-[#C41E1E] ring-offset-1 ring-offset-[#1C1C1C]'
             : 'ring-1 ring-white/10 hover:ring-white/30',
@@ -105,16 +114,24 @@ function Avatar({
         style={{
           width: AVATAR_SIZE,
           height: AVATAR_SIZE,
-          filter: active
-            ? 'drop-shadow(0 4px 10px rgba(0,0,0,0.7)) drop-shadow(0 0 6px rgba(196,30,30,0.25))'
-            : 'drop-shadow(0 2px 5px rgba(0,0,0,0.5))',
-          transform: active ? 'translateY(-1px)' : 'translateY(0)',
+          // NO filter here — filter would clip the box-shadow ring above
+          transform: `translateY(${lift}px) scale(${scale})`,
+          transformOrigin: 'center bottom',
+          transition: 'transform 220ms cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 200ms ease',
+          zIndex: hovered ? 20 : undefined,
+          position: hovered ? 'relative' : undefined,
+          willChange: 'transform',
         }}
       >
-        {/* Button handles click, hover tracking, and circular crop only */}
+        {/* Button gets the filter + overflow:hidden for circular crop — separated from ring */}
         <button
           onClick={onClick}
           className="w-full h-full rounded-full overflow-hidden focus:outline-none block"
+          style={{
+            filter: active
+              ? 'drop-shadow(0 4px 10px rgba(0,0,0,0.7)) drop-shadow(0 0 6px rgba(196,30,30,0.25))'
+              : 'drop-shadow(0 2px 5px rgba(0,0,0,0.5))',
+          }}
         >
         {imgSrc ? (
           <Image
@@ -159,12 +176,19 @@ export default function CharacterAvatars({ allCharacters, selected, onSelect }: 
     }
   }, [expanded]);
 
+  // Single set of values — close is just open played in reverse.
+  const STAGGER_MS = 22;
+  const DURATION_MS = 320;
+  const EASING = 'cubic-bezier(0.34, 1.45, 0.5, 1)';
+
   const handleClose = () => {
     setClosing(true);
+    // Last item to finish = leftmost avatar at delay (n-1)*stagger + duration
+    const maxDelay = Math.max(0, otherChars.length - 1) * STAGGER_MS;
     setTimeout(() => {
       setClosing(false);
       setExpanded(false);
-    }, 260);
+    }, maxDelay + DURATION_MS + 40);
   };
 
   const pinnedChars = ['Tony Soprano', 'Christopher Moltisanti', 'Uncle Junior'].filter(p =>
@@ -179,97 +203,96 @@ export default function CharacterAvatars({ allCharacters, selected, onSelect }: 
   // Always keep pinned order — no jumping to front
   const stackChars = pinnedChars;
 
-  if (expanded || closing) {
-    const sorted = [...allCharacters].sort((a, b) => {
-      if (a === selected) return -1;
-      if (b === selected) return 1;
-      return 0;
-    });
+  const isOpen = expanded || closing;
 
-    return (
-      // AFM-152: wrapper isolates the fade overlay from the collapse button
-      <div className="flex items-center gap-1.5 flex-1 min-w-0">
-        <div className="relative flex-1 min-w-0">
-          {/* Scrollable avatar row */}
-          <div
-            ref={scrollRef}
-            className="flex items-center gap-1.5 overflow-x-auto scrollbar-none py-0.5"
-          >
-            {sorted.map((char, i) => (
-              <div
-                key={char}
-                style={{
-                  animation: closing
-                    ? `avatarCollapseOut 0.16s ease-in forwards`
-                    : `avatarExpandIn 0.16s ease-out forwards`,
-                  animationDelay: closing
-                    ? `${(sorted.length - 1 - i) * 10}ms`
-                    : `${i * 10}ms`,
-                  opacity: 0,
-                  flexShrink: 0,
-                }}
-              >
-                <Avatar
-                  name={char}
-                  active={selected === char}
-                  onClick={() => handleSelect(char)}
-                />
-              </div>
-            ))}
-          </div>
+  // Close = open run in reverse. Same keyframe, same easing, same duration,
+  // same stagger spacing — just animation-direction flipped.
+  const direction = closing ? 'reverse' : 'normal';
 
-          {/* AFM-152: right-edge fade gradient */}
-          <div
-            className="pointer-events-none absolute right-0 top-0 h-full w-10"
-            style={{ background: 'linear-gradient(to left, #1C1C1C, transparent)' }}
-          />
-        </div>
-
-        {/* Collapse button — outside the faded scroll area */}
-        <button
-          onClick={handleClose}
-          className="flex-shrink-0 w-9 h-9 rounded-full bg-[#2a2a2a] text-[#666] text-xs flex items-center justify-center hover:text-white transition-colors ring-1 ring-white/10"
-          style={{
-            animation: closing
-              ? `avatarCollapseOut 0.16s ease-in forwards`
-              : `avatarExpandIn 0.16s ease-out forwards`,
-            animationDelay: closing ? '0ms' : `${sorted.length * 10}ms`,
-            opacity: 0,
-          }}
-        >
-          ✕
-        </button>
-      </div>
-    );
-  }
-
-  // Stacked view
-  // AFM-151: pl-0.5 gives the first avatar's active ring room on the left
-  // AFM-153: explicit flex + items-center on +N wrapper prevents vertical drift
+  // Single layout: pinned never re-mount, never animate, never reposition.
+  // Only the trailing items (additional filters + X) spray in/out.
   return (
-    <div className="flex items-center pl-1">
+    <div className="flex items-center pl-1 flex-1 min-w-0">
+      {/* Pinned stack — identical in both states. No animation, no key/position change. */}
       {stackChars.map((char, i) => (
         <div
           key={char}
-          className="transition-all duration-300"
           style={{
             marginLeft: i === 0 ? 0 : -10,
             zIndex: selected === char ? 10 : stackChars.length - i,
             position: 'relative',
+            flexShrink: 0,
           }}
         >
           <Avatar name={char} active={selected === char} onClick={() => handleSelect(char)} />
         </div>
       ))}
 
-      {/* +N expand button — no wrapper div, styles applied directly to avoid height drift */}
-      <button
-        onClick={() => setExpanded(true)}
-        className="flex items-center justify-center rounded-full bg-[#2a2a2a] text-[#888] text-[11px] font-medium ring-1 ring-white/10 hover:text-white transition-colors flex-shrink-0"
-        style={{ width: AVATAR_SIZE, height: AVATAR_SIZE, marginLeft: -10, zIndex: 0, position: 'relative' }}
-      >
-        +{otherChars.length}
-      </button>
+      {/* Collapsed: +N button sits where the stack ends */}
+      {!isOpen && (
+        <button
+          onClick={() => setExpanded(true)}
+          className="flex items-center justify-center rounded-full bg-[#2a2a2a] text-[#888] text-[11px] font-medium ring-1 ring-white/10 hover:text-white transition-colors flex-shrink-0"
+          style={{ width: AVATAR_SIZE, height: AVATAR_SIZE, marginLeft: -10, zIndex: 0, position: 'relative' }}
+        >
+          +{otherChars.length}
+        </button>
+      )}
+
+      {/* Expanded: scrollable additional filters + X button */}
+      {isOpen && (
+        <>
+          <div className="flex-1 min-w-0 ml-1.5">
+            <div
+              ref={scrollRef}
+              className="flex items-center gap-1.5 overflow-x-auto scrollbar-none py-2 -my-2"
+            >
+              {otherChars.map((char, i) => (
+                <div
+                  key={char}
+                  style={{
+                    animationName: 'avatarExpandIn',
+                    animationDuration: `${DURATION_MS}ms`,
+                    animationTimingFunction: EASING,
+                    animationDirection: direction,
+                    animationFillMode: 'both',
+                    animationDelay: closing
+                      ? `${(otherChars.length - 1 - i) * STAGGER_MS}ms`
+                      : `${i * STAGGER_MS}ms`,
+                    flexShrink: 0,
+                    willChange: 'transform, opacity',
+                  }}
+                >
+                  <Avatar
+                    name={char}
+                    active={selected === char}
+                    onClick={() => handleSelect(char)}
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* X collapse button — appears last on open, leaves first on close */}
+          <button
+            onClick={handleClose}
+            className="flex-shrink-0 ml-1.5 w-9 h-9 rounded-full bg-[#2a2a2a] text-[#666] text-xs flex items-center justify-center hover:text-white transition-colors ring-1 ring-white/10"
+            style={{
+              animationName: 'avatarExpandIn',
+              animationDuration: `${DURATION_MS}ms`,
+              animationTimingFunction: EASING,
+              animationDirection: direction,
+              animationFillMode: 'both',
+              animationDelay: closing
+                ? '0ms'
+                : `${Math.min(otherChars.length, 8) * STAGGER_MS}ms`,
+              willChange: 'transform, opacity',
+            }}
+          >
+            ✕
+          </button>
+        </>
+      )}
     </div>
   );
 }
