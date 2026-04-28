@@ -213,12 +213,15 @@ export default function CharacterAvatars({ allCharacters, selected, onSelect }: 
   // Only the trailing items (additional filters + X) spray in/out.
   return (
     <div className="flex items-center pl-1 flex-1 min-w-0">
-      {/* Pinned stack — identical in both states. No animation, no key/position change. */}
+      {/* Pinned stack — evenly spaced when open, overlapping when closed.
+          Margin transition handles the smooth spacing change. */}
       {stackChars.map((char, i) => (
         <div
           key={char}
           style={{
-            marginLeft: i === 0 ? 0 : -10,
+            // Spread on open, stack back the moment close begins (closing=true)
+            marginLeft: i === 0 ? 0 : (expanded && !closing) ? 6 : -10,
+            transition: 'margin-left 280ms cubic-bezier(0.34, 1.45, 0.5, 1)',
             zIndex: selected === char ? 10 : stackChars.length - i,
             position: 'relative',
             flexShrink: 0,
@@ -242,7 +245,7 @@ export default function CharacterAvatars({ allCharacters, selected, onSelect }: 
       {/* Expanded: scrollable additional filters + X button */}
       {isOpen && (
         <>
-          <div className="flex-1 min-w-0 ml-1.5">
+          <div className="relative flex-1 min-w-0 ml-1.5">
             <div
               ref={scrollRef}
               className="flex items-center gap-1.5 overflow-x-auto scrollbar-none py-2 -my-2"
@@ -271,6 +274,20 @@ export default function CharacterAvatars({ allCharacters, selected, onSelect }: 
                 </div>
               ))}
             </div>
+
+            {/* Right-edge fade — extends beyond the scroll container vertically
+                (top/bottom: -8px) to cover the full avatar circle including
+                the py-2 / -my-2 clearance zone. Fades cleanly into the X. */}
+            <div
+              className="pointer-events-none absolute right-0"
+              style={{
+                top: -8,
+                bottom: -8,
+                width: 56,
+                background:
+                  'linear-gradient(to right, transparent 0%, #1C1C1C 100%)',
+              }}
+            />
           </div>
 
           {/* X collapse button — appears last on open, leaves first on close */}
