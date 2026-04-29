@@ -286,11 +286,12 @@ export default function CharacterAvatars({ allCharacters, selected, onSelect }: 
 
             {/* Left-edge fade — only visible once the user has scrolled right */}
             <div
-              className="pointer-events-none absolute left-0"
+              className="pointer-events-none absolute"
               style={{
                 top: -8,
                 bottom: -8,
-                width: 56,
+                left: -4,
+                width: 60,
                 background: 'linear-gradient(to left, transparent 0%, #1C1C1C 100%)',
                 opacity: scrolled ? 1 : 0,
                 transition: 'opacity 200ms ease',
