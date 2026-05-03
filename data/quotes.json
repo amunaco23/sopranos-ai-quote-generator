@@ -3127,7 +3127,12 @@
     {
       "id": 263,
       "text": "Poor you!",
-      "character": "Livia Soprano"
+      "character": "S1 E1",
+      "tags": [
+        "guilt",
+        "manipulation",
+        "complaint"
+      ]
     },
     {
       "id": 264,
