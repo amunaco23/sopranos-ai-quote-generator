@@ -5,6 +5,7 @@ import QuoteInput from '@/components/QuoteInput';
 import QuoteCard from '@/components/QuoteCard';
 import RateLimitToast from '@/components/RateLimitToast';
 import Logo from '@/components/Logo';
+import SpotlightCharacterMode from '@/components/SpotlightCharacterMode';
 import { Quote } from '@/lib/types';
 import quotesData from '@/data/quotes.json';
 
@@ -47,6 +48,8 @@ export default function Home() {
   const [rateLimitInfo, setRateLimitInfo] = useState<{ message: string; retryAfter: number } | null>(null);
   const [hasSubmitted, setHasSubmitted] = useState(false);
   const [lastBody, setLastBody] = useState<object | null>(null);
+  const [browseMode, setBrowseMode] = useState<'default' | 'grid' | 'spotlight'>('default');
+  const [spotlightCharacter, setSpotlightCharacter] = useState<string | null>(null);
 
   const callApi = useCallback(async (body: object) => {
     setLoading(true);
@@ -118,6 +121,17 @@ export default function Home() {
     callApi({ surpriseMe: true, character });
   }, [callApi]);
 
+  const handleViewAll = useCallback(() => setBrowseMode('grid'), []);
+  const handleSelectCharacter = useCallback((name: string) => {
+    setSpotlightCharacter(name);
+    setBrowseMode('spotlight');
+  }, []);
+  const handleBackToGrid = useCallback(() => {
+    setSpotlightCharacter(null);
+    setBrowseMode('grid');
+  }, []);
+  const handleCloseGrid = useCallback(() => setBrowseMode('default'), []);
+
   return (
     <main className="min-h-screen bg-[#0D0D0D] text-white flex flex-col items-center px-4 pb-16">
       <div
@@ -129,6 +143,7 @@ export default function Home() {
         <QuoteInput
           onSubmit={handleSubmit}
           onSurpriseMe={handleSurpriseMe}
+          onViewAll={handleViewAll}
           disabled={loading}
           allCharacters={ALL_CHARACTERS}
         />
@@ -175,6 +190,19 @@ export default function Home() {
           message={rateLimitInfo.message}
           retryAfter={rateLimitInfo.retryAfter}
           onDismiss={() => setRateLimitInfo(null)}
+        />
+      )}
+
+      {browseMode !== 'default' && (
+        <SpotlightCharacterMode
+          mode={browseMode}
+          allCharacters={ALL_CHARACTERS}
+          quoteCounts={quoteCounts}
+          allQuotes={allQuotes}
+          spotlightCharacter={spotlightCharacter}
+          onSelectCharacter={handleSelectCharacter}
+          onBack={handleBackToGrid}
+          onClose={handleCloseGrid}
         />
       )}
     </main>

@@ -57,11 +57,12 @@ function OnboardingHint() {
 interface Props {
   onSubmit: (message: string, character: string | null) => void;
   onSurpriseMe: (character: string | null) => void;
+  onViewAll: () => void;
   disabled: boolean;
   allCharacters: string[];
 }
 
-export default function QuoteInput({ onSubmit, onSurpriseMe, disabled, allCharacters }: Props) {
+export default function QuoteInput({ onSubmit, onSurpriseMe, onViewAll, disabled, allCharacters }: Props) {
   const [value, setValue] = useState('');
   const [shake, setShake] = useState(false);
   const [selectedCharacter, setSelectedCharacter] = useState<string | null>(null);
@@ -143,8 +144,14 @@ export default function QuoteInput({ onSubmit, onSurpriseMe, disabled, allCharac
         </div>
       </div>
 
-      {/* Surprise Me */}
-      <div className="flex justify-center mt-4">
+      {/* Surprise Me + View All */}
+      <div className="flex justify-center items-center gap-3 mt-4">
+        <button
+          onClick={onViewAll}
+          className="flex items-center gap-2 px-5 py-2 rounded-full bg-[#1C1C1C] text-[#777] text-sm hover:text-white hover:bg-[#242424] transition-all"
+        >
+          View All
+        </button>
         <button
           onClick={() => onSurpriseMe(selectedCharacter)}
           disabled={disabled}
