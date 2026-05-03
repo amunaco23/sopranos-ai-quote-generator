@@ -22,6 +22,7 @@ const GRID_DISPLAY_NAMES: Record<string, string> = {
   'Uncle Junior': 'Junior',
   'Ralph Cifaretto': 'Ralphie',
   'Big Pussy Bonpensiero': 'Pussy',
+  'Dr. Jennifer Melfi': 'Dr. Melfi',
 };
 
 function getGridFirstName(name: string): string {
@@ -118,22 +119,22 @@ function GridView({
       onAnimationEnd={handleAnimationEnd}
     >
       <div className="max-w-[640px] mx-auto px-4 pt-6 pb-16">
-        {/* Back button */}
-        <button
-          onClick={onClose}
-          className="flex items-center gap-1.5 text-[#555] text-sm hover:text-white transition-colors mb-6"
-        >
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-            <path d="M10 3L5 8l5 5" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
-          </svg>
-          Back
-        </button>
-
-        {/* Hint */}
-        <p className="text-center text-[#444] text-xs mb-6">
-          <span className="hidden sm:inline">Tap a character to see their quotes</span>
-          <span className="sm:hidden">Tap to see quotes</span>
-        </p>
+        {/* Back + hint on one line */}
+        <div className="flex items-center justify-between mb-6">
+          <button
+            onClick={onClose}
+            className="flex items-center gap-1.5 text-[#555] text-sm hover:text-white transition-colors"
+          >
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M10 3L5 8l5 5" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+            Back
+          </button>
+          <p className="text-[#444] text-xs">
+            <span className="hidden sm:inline">Tap a character to see their quotes</span>
+            <span className="sm:hidden">Tap to see quotes</span>
+          </p>
+        </div>
 
         {/* Character grid */}
         <div
