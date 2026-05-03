@@ -3332,6 +3332,156 @@
         "italian food",
         "dinner"
       ]
+    },
+    {
+      "id": 281,
+      "text": "I did, then I put it in drive.",
+      "character": "Richie Aprile",
+      "season": 2,
+      "episode": 3,
+      "tags": [
+        "violence",
+        "dark humor",
+        "defiance"
+      ]
+    },
+    {
+      "id": 282,
+      "text": "Suckin up to Tony Soprano has done wonders for you. I go away, I come back... you're a tough guy.",
+      "character": "Richie Aprile",
+      "season": 2,
+      "episode": 3,
+      "tags": [
+        "intimidation",
+        "power",
+        "respect"
+      ]
+    },
+    {
+      "id": 283,
+      "text": "I put you in action. You got bad memory, veal parmesan sandwich... fuck you. I'll be back every Saturday partner.",
+      "character": "Richie Aprile",
+      "season": 2,
+      "episode": 3,
+      "tags": [
+        "intimidation",
+        "food",
+        "business",
+        "loyalty"
+      ]
+    },
+    {
+      "id": 284,
+      "text": "Look kid, I shouldn't have to explain myself. I'm from the old school. You wanna raise your hand, you give her your last name. Then it's none of my fuckin' business. Until then, keep your hands in your pockets.",
+      "character": "Richie Aprile",
+      "season": 2,
+      "episode": 3,
+      "tags": [
+        "mob protocol",
+        "family",
+        "respect",
+        "old school"
+      ]
+    },
+    {
+      "id": 285,
+      "text": "I'm the guy who saved you from the hit parade.",
+      "character": "Richie Aprile",
+      "season": 2,
+      "episode": 3,
+      "tags": [
+        "power",
+        "loyalty",
+        "respect"
+      ]
+    },
+    {
+      "id": 286,
+      "text": "Not as crazy as I used to be, still crazy enough to take an eye out.",
+      "character": "Richie Aprile",
+      "season": 2,
+      "episode": 1,
+      "tags": [
+        "intimidation",
+        "violence",
+        "identity"
+      ]
+    },
+    {
+      "id": 287,
+      "text": "Did you ever notice he's the only motherfucker who can smoke a cigarette in the rain with his hands tied behind his back? That nose is like a natural canopy.",
+      "character": "Richie Aprile",
+      "season": 2,
+      "episode": 4,
+      "tags": [
+        "crude humor",
+        "insult",
+        "comedy"
+      ]
+    },
+    {
+      "id": 288,
+      "text": "The attitude on that camel-nose fuck. He ever lays his hand on my niece again I'm gonna tear him apart piece by piece.",
+      "character": "Richie Aprile",
+      "season": 2,
+      "episode": 4,
+      "tags": [
+        "family",
+        "violence",
+        "anger",
+        "intimidation"
+      ]
+    },
+    {
+      "id": 289,
+      "text": "You crossed the line on me once, Anthony, and I held my tongue. She may be your sister, but back the fuck off.",
+      "character": "Richie Aprile",
+      "season": 2,
+      "episode": 6,
+      "tags": [
+        "power",
+        "family",
+        "anger",
+        "defiance"
+      ]
+    },
+    {
+      "id": 290,
+      "text": "It's your ball. You make the rules.",
+      "character": "Richie Aprile",
+      "season": 2,
+      "episode": 7,
+      "tags": [
+        "power",
+        "respect",
+        "submission"
+      ]
+    },
+    {
+      "id": 291,
+      "text": "When I think of that jacket I gave your brother and he spit on it. I could slice an ear off his head.",
+      "character": "Richie Aprile",
+      "season": 2,
+      "episode": 9,
+      "tags": [
+        "anger",
+        "loyalty",
+        "respect",
+        "betrayal"
+      ]
+    },
+    {
+      "id": 292,
+      "text": "I've been in line for ten fuckin years.",
+      "character": "Richie Aprile",
+      "season": 2,
+      "episode": 12,
+      "tags": [
+        "power",
+        "status",
+        "respect",
+        "entitlement"
+      ]
     }
   ]
 }
