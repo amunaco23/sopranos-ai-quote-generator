@@ -1,5 +1,22 @@
 # sopranos-ai-quote-generator — Releases
 
+## May 2, 2026 — AFM-168: Spotlight Character Mode Polish
+**Shipped:** 11:55 PM CT
+
+### What shipped
+- Fixed flash when tapping a character — overlay now stays mounted during grid→spotlight transition, no white flash
+- Quote cards now animate in after the hero avatar, not before
+- Hint text ("Tap a character to see their quotes") centered on same line as Back button
+- Grid display name overrides: Uncle Junior → Junior, Ralph → Ralphie, Big Pussy → Pussy, Dr. Jennifer Melfi → Dr. Melfi
+- Left-edge scroll fade in character filter row now starts 4px earlier to cover partially-visible avatars
+
+### Stack
+- Modified: `components/SpotlightCharacterMode.tsx` — grid/spotlight state moved fully internal; single fixed overlay; display name map
+- Modified: `app/page.tsx` — simplified browseMode to `'default' | 'browse'`
+- Modified: `components/CharacterAvatars.tsx` — left fade `left: -4px` fix
+
+---
+
 ## May 2, 2026 — AFM-168: Spotlight Character Mode
 **Shipped:** 11:30 PM CT
 
