@@ -1,5 +1,21 @@
 # sopranos-ai-quote-generator — Releases
 
+## May 2, 2026 — Quote DB: Rename Carmine + 17 new quotes
+**Shipped:** 12:10 AM CT
+
+### What shipped
+- Renamed "Carmine Lupertazzi" → "Little Carmine Lupertazzi" across all 11 existing quotes
+- Grid displays him as "Carmine" via display name override
+- Added 17 new quotes (IDs 259–275) — Tony, Christopher, Paulie, Livia, Phil, Johnny Sack, Uncle Junior, Little Carmine
+- Total quote count: 258 → 275
+
+### Stack
+- Modified: `data/quotes.json`
+- Modified: `lib/characterData.ts` — updated CHARACTER_IMAGES key
+- Modified: `components/SpotlightCharacterMode.tsx` — added Little Carmine display name override
+
+---
+
 ## May 2, 2026 — AFM-166: Character Avatars in Quote Results
 **Shipped:** 11:59 PM CT
 
