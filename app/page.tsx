@@ -48,8 +48,7 @@ export default function Home() {
   const [rateLimitInfo, setRateLimitInfo] = useState<{ message: string; retryAfter: number } | null>(null);
   const [hasSubmitted, setHasSubmitted] = useState(false);
   const [lastBody, setLastBody] = useState<object | null>(null);
-  const [browseMode, setBrowseMode] = useState<'default' | 'grid' | 'spotlight'>('default');
-  const [spotlightCharacter, setSpotlightCharacter] = useState<string | null>(null);
+  const [browseMode, setBrowseMode] = useState<'default' | 'browse'>('default');
 
   const callApi = useCallback(async (body: object) => {
     setLoading(true);
@@ -121,15 +120,7 @@ export default function Home() {
     callApi({ surpriseMe: true, character });
   }, [callApi]);
 
-  const handleViewAll = useCallback(() => setBrowseMode('grid'), []);
-  const handleSelectCharacter = useCallback((name: string) => {
-    setSpotlightCharacter(name);
-    setBrowseMode('spotlight');
-  }, []);
-  const handleBackToGrid = useCallback(() => {
-    setSpotlightCharacter(null);
-    setBrowseMode('grid');
-  }, []);
+  const handleViewAll = useCallback(() => setBrowseMode('browse'), []);
   const handleCloseGrid = useCallback(() => setBrowseMode('default'), []);
 
   return (
@@ -193,15 +184,11 @@ export default function Home() {
         />
       )}
 
-      {browseMode !== 'default' && (
+      {browseMode === 'browse' && (
         <SpotlightCharacterMode
-          mode={browseMode}
           allCharacters={ALL_CHARACTERS}
           quoteCounts={quoteCounts}
           allQuotes={allQuotes}
-          spotlightCharacter={spotlightCharacter}
-          onSelectCharacter={handleSelectCharacter}
-          onBack={handleBackToGrid}
           onClose={handleCloseGrid}
         />
       )}
