@@ -206,7 +206,7 @@ export default function SpotlightCharacterMode({ allCharacters, quoteCounts, all
                     animationFillMode: 'both',
                   }}
                 >
-                  <QuoteCard quote={quote} />
+                  <QuoteCard quote={quote} showAvatar={false} />
                 </div>
               ))}
             </div>

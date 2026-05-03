@@ -1,10 +1,13 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 import { Quote } from '@/lib/types';
+import { CHARACTER_IMAGES, getInitials } from '@/lib/characterData';
 
 interface Props {
   quote: Quote;
+  showAvatar?: boolean;
 }
 
 function CopyIcon() {
@@ -45,7 +48,9 @@ function CopyCheck() {
   );
 }
 
-export default function QuoteCard({ quote }: Props) {
+const AVATAR_SIZE = 44;
+
+export default function QuoteCard({ quote, showAvatar = true }: Props) {
   const [copied, setCopied] = useState(false);
 
   const handleCopy = async () => {
@@ -64,20 +69,48 @@ export default function QuoteCard({ quote }: Props) {
     return `— ${quote.character}`;
   })();
 
+  const imgSrc = CHARACTER_IMAGES[quote.character];
+
   return (
     <div className="bg-[#1A1A1A] border border-[#272727] rounded-xl p-5 flex items-center gap-3">
+      {/* Character avatar — only on main search results */}
+      {showAvatar && (
+        <div
+          className="flex-shrink-0 self-center rounded-full overflow-hidden ring-1 ring-white/10"
+          style={{
+            width: AVATAR_SIZE,
+            height: AVATAR_SIZE,
+            filter: 'drop-shadow(0 2px 5px rgba(0,0,0,0.5))',
+          }}
+        >
+          {imgSrc ? (
+            <Image
+              src={imgSrc}
+              alt={quote.character}
+              width={AVATAR_SIZE * 2}
+              height={AVATAR_SIZE * 2}
+              className="w-full h-full object-cover"
+            />
+          ) : (
+            <div className="w-full h-full flex items-center justify-center bg-[#2a2a2a] text-[#777] text-[11px] font-semibold">
+              {getInitials(quote.character)}
+            </div>
+          )}
+        </div>
+      )}
+
       {/* Text block */}
       <div className="flex-1 min-w-0">
         <p className="text-white text-base leading-relaxed">
           &ldquo;{quote.text}&rdquo;
         </p>
-        <p className="text-[#666666] text-xs mt-3">{attribution}</p>
+        <p className="text-[#666666] text-xs mt-1.5">{attribution}</p>
         {quote.context && (
           <p className="text-[#444444] text-xs mt-1">{quote.context}</p>
         )}
       </div>
 
-      {/* Copy button — centered against full card height */}
+      {/* Copy button */}
       <button
         onClick={handleCopy}
         className="flex-shrink-0 self-center text-[#444444] hover:text-white transition-colors min-w-[44px] min-h-[44px] flex items-center justify-center"
