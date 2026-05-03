@@ -3136,8 +3136,16 @@
     },
     {
       "id": 264,
-      "text": "It's a joke! I was here, it's a joke.\tVito Spatafore",
-      "character": "S6 E6"
+      "text": "It's a joke! I was here, it's a joke.",
+      "character": "Vito Spatafore",
+      "season": 6,
+      "episode": 6,
+      "tags": [
+        "excuse",
+        "fear",
+        "comedy",
+        "gay"
+      ]
     },
     {
       "id": 265,
@@ -3153,8 +3161,14 @@
     },
     {
       "id": 266,
-      "text": "You tellin' me you never pondered that, the back thing with Notre Dame?\tBobby Bacala",
-      "character": "S4 E1"
+      "text": "You tellin' me you never pondered that, the back thing with Notre Dame?",
+      "character": "Bobby Bacala",
+      "season": 4,
+      "episode": 1,
+      "tags": [
+        "comedy",
+        "confusion"
+      ]
     },
     {
       "id": 267,
@@ -3275,8 +3289,14 @@
     },
     {
       "id": 277,
-      "text": "Mud? What are you, Marge Hingenbrender now? What do you know about the mud? You been spying on me? What, I can't go to the cemetery? I got to get permission from you?\tBobby Bacala",
-      "character": "S4 E11"
+      "text": "Mud? What are you, Marge Hingenbrender now? What do you know about the mud? You been spying on me? What, I can't go to the cemetery? I got to get permission from you?",
+      "character": "Bobby Bacala",
+      "season": 4,
+      "episode": 11,
+      "tags": [
+        "defensiveness",
+        "argument"
+      ]
     },
     {
       "id": 278,
