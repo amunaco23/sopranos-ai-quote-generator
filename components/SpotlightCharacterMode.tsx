@@ -17,6 +17,18 @@ interface Props {
   onClose: () => void;  // grid → default
 }
 
+// Override display names for characters where first name isn't the right label
+const GRID_DISPLAY_NAMES: Record<string, string> = {
+  'Uncle Junior': 'Junior',
+  'Ralph Cifaretto': 'Ralphie',
+  'Big Pussy Bonpensiero': 'Pussy',
+};
+
+function getGridFirstName(name: string): string {
+  if (GRID_DISPLAY_NAMES[name]) return GRID_DISPLAY_NAMES[name];
+  return name.replace(/^Dr\.\s*/, '').split(' ')[0];
+}
+
 // ── Internal grid cell ──────────────────────────────────────────────────────
 function CharacterGridCell({
   name,
@@ -27,7 +39,7 @@ function CharacterGridCell({
 }) {
   const [hovered, setHovered] = useState(false);
   const imgSrc = CHARACTER_IMAGES[name];
-  const firstName = name.replace(/^Dr\.\s*/, '').split(' ')[0];
+  const firstName = getGridFirstName(name);
 
   return (
     <div className="flex flex-col items-center gap-1.5">
@@ -117,6 +129,12 @@ function GridView({
           Back
         </button>
 
+        {/* Hint */}
+        <p className="text-center text-[#444] text-xs mb-6">
+          <span className="hidden sm:inline">Tap a character to see their quotes</span>
+          <span className="sm:hidden">Tap to see quotes</span>
+        </p>
+
         {/* Character grid */}
         <div
           style={{
@@ -133,11 +151,6 @@ function GridView({
             />
           ))}
         </div>
-
-        {/* Hint */}
-        <p className="text-center text-[#444] text-xs mt-8">
-          Tap a character to see their quotes
-        </p>
       </div>
     </div>
   );
