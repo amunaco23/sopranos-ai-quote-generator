@@ -1,0 +1,20 @@
+# sopranos-ai-quote-generator — Releases
+
+## May 2, 2026 — AFM-168: Spotlight Character Mode
+**Shipped:** 11:30 PM CT
+
+### What shipped
+- New "View All" button next to "Surprise Me" opens a full-screen character browse mode
+- Character grid: all 25 characters displayed as large 80px circular headshots with first name labels; red ring on hover
+- Tap any character to enter Spotlight view: hero avatar (72px, red ring), full name, quote count, and all their quotes as stacked cards
+- Staggered animations: grid fade-in, grid fade-out + scale on character tap, hero slide-in from left, quote cards stagger up 50ms apart
+- Back from spotlight → grid (instant); Back from grid → default view (fade)
+- All quote data filtered client-side from local quotes.json — no extra API calls
+
+### Stack
+- New: `components/SpotlightCharacterMode.tsx` — full character browse component (grid + spotlight sub-views)
+- New: `lib/characterData.ts` — shared CHARACTER_IMAGES map and getInitials helper (extracted from CharacterAvatars)
+- Modified: `components/QuoteInput.tsx` — added onViewAll prop + "View All" pill button
+- Modified: `app/page.tsx` — browseMode/spotlightCharacter state + wiring
+- Modified: `app/globals.css` — 4 new keyframes: gridFadeIn, gridFadeOut, heroSlideIn, quoteCardIn
+- Modified: `components/CharacterAvatars.tsx` — imports from shared lib/characterData.ts
