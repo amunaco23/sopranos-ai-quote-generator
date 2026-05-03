@@ -3103,7 +3103,14 @@
     {
       "id": 261,
       "text": "What's different between you and me is you're going to hell when you die!",
-      "character": "Carmela Soprano\tS1 E13"
+      "character": "Carmela Soprano",
+      "season": 1,
+      "episode": 13,
+      "tags": [
+        "religion",
+        "anger",
+        "morality"
+      ]
     },
     {
       "id": 262,
