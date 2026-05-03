@@ -5,7 +5,7 @@ export const CHARACTER_IMAGES: Record<string, string> = {
   'Ralph Cifaretto': '/Ralphie.png',
   'Dr. Jennifer Melfi': '/Dr. Melfi.png',
   'Paulie Gualtieri': '/Paulie.png',
-  'Carmine Lupertazzi': '/Carmine.png',
+  'Little Carmine Lupertazzi': '/Carmine.png',
   'Silvio Dante': '/Silvio.png',
   'Phil Leotardo': '/Phil.png',
   'Johnny Sack': '/Johnny Sack.png',

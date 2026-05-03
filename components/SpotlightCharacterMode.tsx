@@ -19,6 +19,7 @@ const GRID_DISPLAY_NAMES: Record<string, string> = {
   'Ralph Cifaretto': 'Ralphie',
   'Big Pussy Bonpensiero': 'Pussy',
   'Dr. Jennifer Melfi': 'Dr. Melfi',
+  'Little Carmine Lupertazzi': 'Carmine',
 };
 
 function getGridFirstName(name: string): string {
