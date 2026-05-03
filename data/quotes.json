@@ -1129,7 +1129,7 @@
     {
       "id": 107,
       "text": "The sacred and the propane.",
-      "character": "Little Carmine Lupertazzi",
+      "character": "Carmine Lupertazzi",
       "season": 6,
       "episode": 14,
       "tags": [
@@ -1140,7 +1140,7 @@
     {
       "id": 108,
       "text": "The Soprano family has always been a little pushy. Family? They're a glorified crew!",
-      "character": "Little Carmine Lupertazzi",
+      "character": "Carmine Lupertazzi",
       "season": 4,
       "episode": 12,
       "tags": [
@@ -1654,7 +1654,7 @@
     {
       "id": 155,
       "text": "Your brother, Billy, whatever happened there...",
-      "character": "Little Carmine Lupertazzi",
+      "character": "Carmine Lupertazzi",
       "tags": [
         "brother",
         "brothers"
@@ -1663,7 +1663,7 @@
     {
       "id": 156,
       "text": "The fundamental question is, will I be as effective as a boss like my dad was? And I will be, even more so? But until I am, it's going to be hard to verify that I think I'll be more effective.",
-      "character": "Little Carmine Lupertazzi",
+      "character": "Carmine Lupertazzi",
       "season": 5,
       "episode": 9,
       "tags": [
@@ -1675,7 +1675,7 @@
     {
       "id": 157,
       "text": "It wasn't about being boss. It was about being happy.",
-      "character": "Little Carmine Lupertazzi",
+      "character": "Carmine Lupertazzi",
       "season": 6,
       "episode": 14,
       "tags": [
@@ -1687,7 +1687,7 @@
     {
       "id": 158,
       "text": "I am reminded of Louis the whatever's finance minister...he built this chateau — Nicole and I saw it when we went to Paris — it even outshone Versailles, where the king lived. In the end, Louis clapped him in irons.",
-      "character": "Little Carmine Lupertazzi",
+      "character": "Carmine Lupertazzi",
       "season": 4,
       "episode": 11,
       "tags": [
@@ -1697,7 +1697,7 @@
     {
       "id": 159,
       "text": "He's an old-fashioned guy, Pop, very allegorical",
-      "character": "Little Carmine Lupertazzi",
+      "character": "Carmine Lupertazzi",
       "season": 4,
       "episode": 12,
       "tags": [
@@ -1710,7 +1710,7 @@
     {
       "id": 160,
       "text": "He's a bit of a poseur, you ask me.",
-      "character": "Little Carmine Lupertazzi",
+      "character": "Carmine Lupertazzi",
       "season": 4,
       "episode": 12,
       "tags": [
@@ -1722,7 +1722,7 @@
     {
       "id": 161,
       "text": "Much like a child, a film has many parents, that is to say, many individuals who act like parents...or that by a version, the film is their baby. I, as an executive producer, am one of those individuals.",
-      "character": "Little Carmine Lupertazzi",
+      "character": "Carmine Lupertazzi",
       "season": 6,
       "episode": 14,
       "tags": [
@@ -1733,7 +1733,7 @@
     {
       "id": 162,
       "text": "If there's one thing my father taught me, it's this: A pint of blood costs more than a gallon of gold.",
-      "character": "Little Carmine Lupertazzi",
+      "character": "Carmine Lupertazzi",
       "season": 6,
       "episode": 12,
       "tags": [
@@ -2810,7 +2810,7 @@
     {
       "id": 240,
       "text": "Yeah, again with the money. It's settled, John. So either name a price or get the fuck over it.",
-      "character": "Little Carmine Lupertazzi",
+      "character": "Carmine Lupertazzi",
       "season": 4,
       "episode": 4,
       "tags": [
@@ -3074,205 +3074,231 @@
     },
     {
       "id": 259,
-      "text": "He killed sixteen Czechoslovakians. The guy was an interior decorator.",
-      "character": "Christopher Moltisanti",
-      "season": 3,
-      "episode": 11,
+      "text": "I'm losing my balls over here! This fucking moron's playing hazelnuts!",
+      "character": "Silvio Dante",
+      "season": 2,
+      "episode": 6,
       "tags": [
-        "Comedy",
-        "Violence",
-        "Misunderstanding"
+        "frustration",
+        "losing",
+        "loss",
+        "game"
       ]
     },
     {
       "id": 260,
-      "text": "His house looked like shit.",
-      "character": "Paulie Gualtieri",
-      "season": 3,
-      "episode": 11,
+      "text": "You equate love with money",
+      "character": "Carmela Soprano",
+      "season": 4,
+      "episode": 4,
       "tags": [
-        "Comedy",
-        "Insult"
+        "love",
+        "money",
+        "marriage",
+        "relationships",
+        "disfunction",
+        "marriage issues"
       ]
     },
     {
       "id": 261,
-      "text": "'Remember when' is the lowest form of conversation.",
-      "character": "Tony Soprano",
-      "season": 6,
-      "episode": 15,
-      "tags": [
-        "Nostalgia",
-        "Annoyance",
-        "Philosophy"
-      ]
+      "text": "What's different between you and me is you're going to hell when you die!",
+      "character": "Carmela Soprano\tS1 E13"
     },
     {
       "id": 262,
-      "text": "I wish the Lord would take me now.",
-      "character": "Livia Soprano",
-      "season": 1,
-      "episode": 2,
+      "text": "Is nothing sacred?!",
+      "character": "Johnny Sack",
+      "season": 4,
+      "episode": 4,
       "tags": [
-        "Drama",
-        "Manipulation",
-        "Negativity"
+        "anger",
+        "respect",
+        "insult"
       ]
     },
     {
       "id": 263,
-      "text": "Those who want respect, give respect.",
-      "character": "Tony Soprano",
-      "season": 2,
-      "episode": 12,
-      "tags": [
-        "Respect",
-        "Power",
-        "Advice"
-      ]
+      "text": "Poor you!",
+      "character": "Livia Soprano"
     },
     {
       "id": 264,
-      "text": "Whatever happened there? ... THE SHOOTING!",
-      "character": "Little Carmine Lupertazzi",
-      "season": 5,
-      "episode": 11,
-      "tags": [
-        "Comedy",
-        "Mob Politics",
-        "Cluelessness"
-      ]
+      "text": "It's a joke! I was here, it's a joke.\tVito Spatafore",
+      "character": "S6 E6"
     },
     {
       "id": 265,
-      "text": "Log off. That 'cookies' shit makes me nervous.",
-      "character": "Tony Soprano",
-      "season": 3,
+      "text": "Give me one thousand dollars.",
+      "character": "Furio Giunta",
+      "season": 2,
       "episode": 8,
       "tags": [
-        "Technology",
-        "Paranoia",
-        "Comedy"
+        "extortion",
+        "intimidation",
+        "comedy"
       ]
     },
     {
       "id": 266,
-      "text": "There's no chemical solution to a spiritual problem.",
-      "character": "Christopher Moltisanti",
-      "season": 5,
-      "episode": 11,
-      "tags": [
-        "Addiction",
-        "Philosophy",
-        "Recovery"
-      ]
+      "text": "You tellin' me you never pondered that, the back thing with Notre Dame?\tBobby Bacala",
+      "character": "S4 E1"
     },
     {
       "id": 267,
-      "text": "Word to the wise: remember Pearl Harbor.",
-      "character": "Paulie Gualtieri",
-      "season": 2,
+      "text": "ROADIES?!",
+      "character": "Bobby Bacala",
+      "season": 6,
       "episode": 13,
       "tags": [
-        "History",
-        "Paranoia",
-        "Warning"
+        "comedy",
+        "shock"
       ]
     },
     {
       "id": 268,
-      "text": "I wipe my ass with your feelings.",
-      "character": "Tony Soprano",
-      "season": 4,
-      "episode": 3,
+      "text": "Fuck this! It's not bad enough you wake me in the middle of the night, I gotta get my balls broken too? I got my limits too, Junior.",
+      "character": "Bobby Bacala",
+      "season": 2,
+      "episode": 11,
       "tags": [
-        "Anger",
-        "Insult",
-        "Power"
+        "anger",
+        "boundaries"
       ]
     },
     {
       "id": 269,
-      "text": "A pint of blood costs more than a gallon of gold.",
-      "character": "Little Carmine Lupertazzi",
-      "season": 5,
-      "episode": 11,
+      "text": "I get it",
+      "character": "he drives a Lincoln. So what?\tBobby Bacala",
+      "season": 4,
+      "episode": 5,
       "tags": [
-        "Mob Politics",
-        "Philosophy",
-        "Malapropism"
+        "comedy",
+        "ignorance"
       ]
     },
     {
       "id": 270,
-      "text": "I'm the motherfucking fucking one who calls the shots!",
-      "character": "Tony Soprano",
-      "season": 2,
-      "episode": 12,
+      "text": "It's hard to say. Flesh wound maybe. Head shot, I dunno. On the other hand, anything's possible.",
+      "character": "Bobby Bacala",
+      "season": 3,
+      "episode": 11,
       "tags": [
-        "Power",
-        "Anger",
-        "Control"
+        "comedy",
+        "indecision"
       ]
     },
     {
       "id": 271,
-      "text": "To the victor, belongs the spoils.",
-      "character": "Paulie Gualtieri",
+      "text": "I'm in awe of you.",
+      "character": "Bobby Bacala",
       "season": 2,
-      "episode": 6,
+      "episode": 12,
       "tags": [
-        "Power",
-        "Theft",
-        "Justification"
+        "respect",
+        "malapropism"
       ]
     },
     {
       "id": 272,
-      "text": "Next time, there'll be no next time.",
-      "character": "Phil Leotardo",
-      "season": 6,
-      "episode": 12,
+      "text": "Why don't you look in the mirror sometime, you insensitive cocksucker.",
+      "character": "Bobby Bacala",
+      "season": 4,
+      "episode": 1,
       "tags": [
-        "Threat",
-        "Violence",
-        "Finality"
+        "anger",
+        "insult",
+        "weight",
+        "fat"
       ]
     },
     {
       "id": 273,
-      "text": "You know, it wasn't long ago you used to wait in the car. And as far as I'm concerned, you should STILL BE THERE!",
-      "character": "Johnny Sack",
-      "season": 5,
-      "episode": 1,
+      "text": "It's like a whole different language with these computuhs!",
+      "character": "Bobby Bacala",
+      "season": 4,
+      "episode": 11,
       "tags": [
-        "Anger",
-        "Disrespect",
-        "Status"
+        "technology",
+        "confusion",
+        "tech",
+        "ai",
+        "artificial intelligence"
       ]
     },
     {
       "id": 274,
-      "text": "Some people are so far behind in the race that they actually believe they're leading.",
-      "character": "Uncle Junior",
-      "season": 2,
-      "episode": 7,
+      "text": "This guy ever stop breakin' balls?",
+      "character": "Bobby Bacala",
+      "season": 6,
+      "episode": 6,
       "tags": [
-        "Insult",
-        "Philosophy",
-        "Delusion"
+        "annoyance"
       ]
     },
     {
       "id": 275,
-      "text": "I don't care how close you are: in the end, your friends are gonna let you down. Family. They're the only ones you can depend on.",
-      "character": "Tony Soprano",
-      "season": 6,
-      "episode": 1,
+      "text": "If I were to lend my support to a man like Dick Hoffman, I might as well put a bullet - here, here and here.",
+      "character": "Bobby Bacala",
+      "season": 4,
+      "episode": 7,
       "tags": [
-        "Family",
-        "Loyalty",
-        "Betrayal"
+        "politics",
+        "drama"
+      ]
+    },
+    {
+      "id": 276,
+      "text": "I wouldn't mind sittin' around all day smokin' mushrooms and collectin' government checks.",
+      "character": "Bobby Bacala",
+      "season": 4,
+      "episode": 3,
+      "tags": [
+        "ignorance",
+        "comedy",
+        "indians",
+        "native americans",
+        "handouts"
+      ]
+    },
+    {
+      "id": 277,
+      "text": "Mud? What are you, Marge Hingenbrender now? What do you know about the mud? You been spying on me? What, I can't go to the cemetery? I got to get permission from you?\tBobby Bacala",
+      "character": "S4 E11"
+    },
+    {
+      "id": 278,
+      "text": "The Parker Brothers took the time to think all this out. I think we should respect that.",
+      "character": "Bobby Bacala",
+      "season": 6,
+      "episode": 13,
+      "tags": [
+        "comedy",
+        "rules",
+        "games"
+      ]
+    },
+    {
+      "id": 279,
+      "text": "You probably don't even hear it when it happens",
+      "character": "Bobby Bacala",
+      "season": 6,
+      "episode": 11,
+      "tags": [
+        "death",
+        "morbidity"
+      ]
+    },
+    {
+      "id": 280,
+      "text": "Karens Ziti?",
+      "character": "Bobby Bacala",
+      "season": 4,
+      "episode": 11,
+      "tags": [
+        "food",
+        "italian food",
+        "dinner"
       ]
     }
   ]
