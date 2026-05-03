@@ -1,5 +1,19 @@
 # sopranos-ai-quote-generator — Releases
 
+## May 2, 2026 — AFM-166: Character Avatars in Quote Results
+**Shipped:** 11:59 PM CT
+
+### What shipped
+- Character headshot (44px circle) now appears on the left of every quote card in main search results
+- Avatars hidden in Spotlight/View All mode (already shown in hero row — no redundancy)
+- Slightly tightened spacing between quote text and attribution line
+
+### Stack
+- Modified: `components/QuoteCard.tsx` — added avatar with `showAvatar` prop (default true), imports from `lib/characterData`
+- Modified: `components/SpotlightCharacterMode.tsx` — passes `showAvatar={false}`
+
+---
+
 ## May 2, 2026 — AFM-168: Spotlight Character Mode Polish
 **Shipped:** 11:55 PM CT
 
